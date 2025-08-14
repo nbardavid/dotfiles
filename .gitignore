@@ -1,6 +1,6 @@
-./dconf
-./htop
-./neofetch
-./session
-./kde.org
-./dolphinrc
+dcon/
+htop/
+neofetch/
+session/
+kde.org/
+dolphinrc/
