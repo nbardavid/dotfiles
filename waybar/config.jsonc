@@ -1,0 +1,36 @@
+{
+    "layer": "top",
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-right": ["pulseaudio", "clock", "custom/power"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+
+    "custom/power": {
+        "format": " ",
+        "on-click": "wlogout"
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% {icon} ",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": "0% {icon} ",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+}
