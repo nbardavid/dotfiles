@@ -1,17 +1,32 @@
 {
     "layer": "top",
-    "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-right": ["pulseaudio", "clock", "custom/power"],
+    "modules-left": ["clock", "hyprland/workspaces", "sway/mode"],
+    "modules-right": ["pulseaudio", "custom/power"],
     "sway/window": {
         "max-length": 50
     },
     "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}"
+        "format": "  {:%H:%M}",// 24H
     },
 
     "custom/power": {
         "format": " ",
         "on-click": "wlogout"
+    },
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "disable-scroll": true,
+        "on-click": "hyprctl dispatch workspace {name}",
+        "sort-by-number": true,
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "default": ""
+        }
     },
 
     "pulseaudio": {
@@ -32,5 +47,4 @@
         },
         "on-click": "pavucontrol"
     },
-
 }
