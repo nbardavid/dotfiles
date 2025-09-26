@@ -1,7 +1,21 @@
 [config]
 output_path = "~/.config/matugen/generated"
 
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland.conf'
+output_path = '~/.config/hypr/colors.conf'
+post_hook = 'hyprctl reload'
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty.conf'
+output_path = '~/.config/kitty/colors.conf'
+post_hook = 'pkill -SIGUSR1 kitty'
+
 [templates.waybar]
-input_path = "~/.config/matugen/templates/colors.css"
+input_path = "~/.config/matugen/templates/waybar.conf"
 output_path = "~/.config/waybar/colors.css"
 post_hook = "pkill -SIGUSR2 waybar"
+
+[templates.rofi]
+input_path = '~/.config/matugen/templates/rofi.conf'
+output_path = '~/.config/rofi/colors.rasi'

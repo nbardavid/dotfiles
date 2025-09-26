@@ -1,0 +1,2187 @@
+[2025-09-26 17:22:38.418] [info]  (utilityPlatformInfo) {
+  isWindows: false,
+  isMac: false,
+  isArm: false,
+  oracleSupported: true,
+  parsedArgs: { _: [] },
+  isLinux: true,
+  sessionType: 'wayland',
+  isWayland: false,
+  isPortable: false,
+  isDevelopment: false,
+  isAppImage: false,
+  resourcesPath: '/usr/lib/beekeeper-studio',
+  env: { development: false, test: false, production: true },
+  debugEnabled: false,
+  platform: 'linux',
+  darkMode: false,
+  userDirectory: '/home/nbardavid/.config/beekeeper-studio',
+  downloadsDirectory: '/home/nbardavid/Downloads',
+  homeDirectory: '/home/nbardavid',
+  pluginsDirectory: '/home/nbardavid/.config/beekeeper-studio/plugins',
+  testMode: false,
+  appDbPath: '/home/nbardavid/.config/beekeeper-studio/app.db',
+  updatesDisabled: true,
+  appVersion: '5.3.4',
+  parsedAppVersion: { major: 5, minor: 3, patch: 4, channel: 'stable' },
+  cloudUrl: 'https://app.beekeeperstudio.io',
+  locale: ''
+}
+[2025-09-26 17:22:38.430] [info]  (BksConfig)           Loading configs.
+[2025-09-26 17:22:38.430] [debug] (BksConfig)           Loading config default.config.ini.
+[2025-09-26 17:22:38.430] [info]  (BksConfig)           Copying bundled config default.config.ini to /home/nbardavid/.config/beekeeper-studio/default.config.ini.
+[2025-09-26 17:22:38.430] [warn]  (BksConfig)           Skipping copy of default.config.ini. Permission denied or dest not writable: ENOENT: no such file or directory, access '/home/nbardavid/.config/beekeeper-studio/default.config.ini'
+[2025-09-26 17:22:38.432] [debug] (BksConfig)           Successfully read config /usr/lib/beekeeper-studio/default.config.ini.
+[2025-09-26 17:22:38.432] [debug] (BksConfig)           Loading config system.config.ini.
+[2025-09-26 17:22:38.432] [warn]  (BksConfig)           Failed loading system config. System config path not found: /etc/beekeeper-studio/system.config.ini
+[2025-09-26 17:22:38.432] [debug] (BksConfig)           Loading config user.config.ini.
+[2025-09-26 17:22:38.432] [info]  (BksConfig)           Copying bundled config user.config.ini to /home/nbardavid/.config/beekeeper-studio/user.config.ini.
+[2025-09-26 17:22:38.432] [warn]  (BksConfig)           Skipping copy of user.config.ini. Permission denied or dest not writable: ENOENT: no such file or directory, access '/home/nbardavid/.config/beekeeper-studio/user.config.ini'
+[2025-09-26 17:22:38.433] [error] (BksConfig)           Failed reading config /home/nbardavid/.config/beekeeper-studio/user.config.ini. Error: ENOENT: no such file or directory, open '/home/nbardavid/.config/beekeeper-studio/user.config.ini'
+    at readFileSync (node:fs:448:20)
+    at t.readFileSync (node:electron/js2c/node_init:2:10175)
+    at readConfig (/usr/lib/beekeeper-studio/app.asar/dist/utility.js:461007:77)
+    at loadConfig (/usr/lib/beekeeper-studio/app.asar/dist/utility.js:461054:10)
+    at mainBksConfig (/usr/lib/beekeeper-studio/app.asar/dist/utility.js:461096:18)
+    at Object.<anonymous> (/usr/lib/beekeeper-studio/app.asar/dist/utility.js:461124:15)
+    at Module._compile (node:internal/modules/cjs/loader:1484:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1564:10)
+    at Module.load (node:internal/modules/cjs/loader:1295:32)
+    at Module._load (node:internal/modules/cjs/loader:1111:12)
+[2025-09-26 17:22:38.455] [warn]  (BksConfig)           Failed loading user config. Ignoring. Error: ENOENT: no such file or directory, open '/home/nbardavid/.config/beekeeper-studio/user.config.ini'
+    at readFileSync (node:fs:448:20)
+    at t.readFileSync (node:electron/js2c/node_init:2:10175)
+    at readConfig (/usr/lib/beekeeper-studio/app.asar/dist/utility.js:461007:77)
+    at loadConfig (/usr/lib/beekeeper-studio/app.asar/dist/utility.js:461054:10)
+    at mainBksConfig (/usr/lib/beekeeper-studio/app.asar/dist/utility.js:461096:18)
+    at Object.<anonymous> (/usr/lib/beekeeper-studio/app.asar/dist/utility.js:461124:15)
+    at Module._compile (node:internal/modules/cjs/loader:1484:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1564:10)
+    at Module.load (node:internal/modules/cjs/loader:1295:32)
+    at Module._load (node:internal/modules/cjs/loader:1111:12)
+[2025-09-26 17:22:38.455] [info]  (BksConfig)           Configs successfully loaded with 0 warnings.
+[2025-09-26 17:22:38.455] [warn]  (BksConfig)           Warnings: []
+[2025-09-26 17:22:38.456] [info]  (BksConfig)           Default config: {
+  "general": {
+    "checkForUpdatesInterval": 86400000,
+    "dataSyncInterval": 30000,
+    "workspaceSyncInterval": 5000
+  },
+  "security": {
+    "disconnectOnSuspend": false,
+    "disconnectOnLock": false,
+    "disconnectOnIdle": false,
+    "lockMode": "disabled",
+    "idleThresholdSeconds": 300,
+    "idleCheckIntervalSeconds": 30,
+    "minPinLength": 6
+  },
+  "ui": {
+    "general": {
+      "binaryEncoding": "hex"
+    },
+    "layout": {
+      "mainContentMinWidth": 200,
+      "primarySidebarMinWidth": 150,
+      "secondarySidebarMinWidth": 150
+    },
+    "queryEditor": {
+      "maxResults": 50000
+    },
+    "tableTable": {
+      "pageSize": 100,
+      "largeFieldWidth": 300,
+      "maxColumnWidth": 1000,
+      "minColumnWidth": 100,
+      "maxInitialWidth": 500,
+      "defaultColumnWidth": 125
+    },
+    "tableTriggers": {
+      "maxColumnWidth": 300
+    },
+    "tableList": {
+      "itemHeight": 22.8
+    },
+    "export": {
+      "errorNoticeTimeout": 60000
+    }
+  },
+  "db": {
+    "mysql": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "mariadb": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "tidb": {
+      "allowSkipToLastPage": true
+    },
+    "postgres": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": true
+    },
+    "cockroachdb": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "redshift": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "sqlite": {
+      "allowSkipToLastPage": true
+    },
+    "sqlserver": {
+      "allowSkipToLastPage": false
+    },
+    "bigquery": {
+      "allowSkipToLastPage": false
+    },
+    "oracle": {
+      "allowSkipToLastPage": false
+    },
+    "cassandra": {
+      "allowSkipToLastPage": false
+    },
+    "firebird": {
+      "allowSkipToLastPage": false
+    },
+    "clickhouse": {
+      "allowSkipToLastPage": false
+    },
+    "mongodb": {
+      "allowSkipToLastPage": false
+    },
+    "duckdb": {
+      "allowSkipToLastPage": false
+    },
+    "sqlanywhere": {
+      "allowSkipToLastPage": false
+    }
+  },
+  "keybindings": {
+    "general": {
+      "refresh": [
+        "f5",
+        "ctrlOrCmd+r"
+      ],
+      "addRow": "ctrlOrCmd+n",
+      "save": "ctrlOrCmd+s",
+      "openInSqlEditor": "ctrlOrCmd+shift+s",
+      "openQuickSearch": "ctrlOrCmd+p",
+      "copySelection": "ctrlOrCmd+c",
+      "pasteSelection": "ctrlOrCmd+v",
+      "cloneSelection": "ctrlOrCmd+d",
+      "deleteSelection": "delete"
+    },
+    "tab": {
+      "closeTab": "ctrlOrCmd+w",
+      "nextTab": [
+        "ctrl+tab",
+        "ctrlOrCmd+pagedown"
+      ],
+      "previousTab": [
+        "ctrl+shift+tab",
+        "ctrlOrCmd+pageup"
+      ],
+      "reopenLastClosedTab": "ctrlOrCmd+shift+t",
+      "switchTab1": "alt+1",
+      "switchTab2": "alt+2",
+      "switchTab3": "alt+3",
+      "switchTab4": "alt+4",
+      "switchTab5": "alt+5",
+      "switchTab6": "alt+6",
+      "switchTab7": "alt+7",
+      "switchTab8": "alt+8",
+      "switchTab9": "alt+9"
+    },
+    "quickSearch": {
+      "focusSearch": [
+        "ctrlOrCmd+k",
+        "ctrlOrCmd+o"
+      ],
+      "close": "esc",
+      "selectUp": [
+        "up",
+        "ctrlOrCmd+p"
+      ],
+      "selectDown": [
+        "down",
+        "ctrlOrCmd+n"
+      ],
+      "open": "enter",
+      "altOpen": "ctrlOrCmd+enter",
+      "openInBackground": "right",
+      "altOpenInBackground": "ctrlOrCmd+right"
+    },
+    "queryEditor": {
+      "selectEditor": "ctrlOrCmd+l",
+      "submitTabQuery": [
+        "ctrlOrCmd+enter",
+        "f5"
+      ],
+      "submitCurrentQuery": [
+        "ctrlOrCmd+shift+enter",
+        "shift+f5"
+      ],
+      "submitQueryToFile": "ctrlOrCmd+i",
+      "submitCurrentQueryToFile": "ctrlOrCmd+shift+i",
+      "selectNextResult": "shift+up",
+      "selectPreviousResult": "shift+down",
+      "copyResultSelection": "ctrlOrCmd+c",
+      "switchPaneFocus": "ctrlOrCmd+`",
+      "openTableFilter": "ctrlOrCmd+f",
+      "closeTableFilter": "esc"
+    },
+    "tableTable": {
+      "nextPage": "ctrlOrCmd+right",
+      "previousPage": "ctrlOrCmd+left",
+      "focusOnFilterInput": "ctrlOrCmd+f",
+      "openEditorModal": "shift+enter",
+      "firstPage": "ctrlOrCmd+h",
+      "lastPage": "ctrlOrCmd+l"
+    }
+  }
+}
+[2025-09-26 17:22:38.456] [info]  (BksConfig)           System config: {}
+[2025-09-26 17:22:38.456] [info]  (BksConfig)           User config: {}
+[2025-09-26 17:22:39.047] [info]                        initializing utility
+[2025-09-26 17:22:39.062] [debug] (PluginManager)       Loaded plugin settings: {}
+[2025-09-26 17:22:39.063] [debug] (PluginManager)       Installing plugin "bks-ai-shell"...
+[2025-09-26 17:22:39.063] [debug] (PluginRegistry)      Fetching registry...
+[2025-09-26 17:22:39.119] [debug] (PluginRegistry)      Fetching info for plugin "bks-ai-shell" (repo: beekeeper-studio/bks-ai-shell)...
+[2025-09-26 17:22:39.172] [debug] (PluginFileManager)   Downloading plugin "bks-ai-shell" version "1.4.1"...
+[2025-09-26 17:22:39.172] [debug] (PluginFileManager)   Downloading plugin source archive: "https://github.com/beekeeper-studio/bks-ai-shell/releases/download/v1.4.1/bks-ai-shell-1.4.1.zip"...
+[2025-09-26 17:22:39.262] [debug] (PluginFileManager)   Extracting plugin archive...
+[2025-09-26 17:22:39.343] [debug] (PluginManager)       Saved plugin settings.
+[2025-09-26 17:22:39.343] [debug] (PluginManager)       Plugin "bks-ai-shell" installed!
+[2025-09-26 17:22:39.343] [debug] (PluginRegistry)      Fetching info for plugin "bks-ai-shell" (repo: beekeeper-studio/bks-ai-shell)...
+[2025-09-26 17:22:40.070] [info]  (UtilityProcess)      RECEIVED PORT:  {
+  _events: {},
+  _eventsCount: 0,
+  _internalPort: {
+    postMessage: '[function] function postMessage() { [native code] }',
+    start: '[function] function start() { [native code] }',
+    close: '[function] function close() { [native code] }',
+    emit: '[function] (e,t)=>{"message"===e&&(t={...t,ports:t.ports.map((e=>new MessagePortMain(e)))}),this.emit(e,t)}'
+  }
+}
+[2025-09-26 17:22:40.075] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus bd95fb09-640c-4bed-8542-4f0561697d22
+[2025-09-26 17:22:40.076] [info]  (OfflineLicense)      Loading offline license from /home/nbardavid/.config/beekeeper-studio/license.json
+[2025-09-26 17:22:40.076] [info]  (OfflineLicense)      Offline license does not exist /home/nbardavid/.config/beekeeper-studio/license.json
+[2025-09-26 17:22:40.076] [info]  (OfflineLicense)      Loading public key from /usr/lib/beekeeper-studio/production_pub.pem
+[2025-09-26 17:22:40.076] [info]  (OfflineLicense)      Loaded public key
+[2025-09-26 17:22:40.076] [info]  (OfflineLicense)      Validated license -  null
+[2025-09-26 17:22:40.078] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/setting/find 63327b3a-8fbe-41b8-8aa4-fb9b68737830
+[2025-09-26 17:22:40.080] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get b31b665b-0849-4709-99d6-1d5cc80964fd
+[2025-09-26 17:22:40.082] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getInstallationId 5baec592-3c4b-4e59-a463-a56c8cc4cca8
+[2025-09-26 17:22:40.083] [info]  (InstallationId)      Found ID: {
+  id: 1,
+  createdAt: '2025-09-26T15:22:37.000Z',
+  updatedAt: '2025-09-26T15:22:37.000Z',
+  version: 0,
+  installationId: '3b0b262b-c1e3-482c-baa7-c7704c8fdaa3'
+}
+[2025-09-26 17:22:40.085] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  enum/init 1743c0df-0be2-4371-8aa7-933e4f176357
+[2025-09-26 17:22:40.086] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  enum/load a9a26eea-1aef-4bb2-9a75-068551905d97
+[2025-09-26 17:22:40.087] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  plugin/enabledPlugins 60123c4f-2fb7-4cdf-a492-913db715bc3f
+[2025-09-26 17:22:40.136] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/query/find cb2d20d1-9428-4e19-92c0-f902434fa7a9
+[2025-09-26 17:22:40.138] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/saved/find 0ac0a97e-cc26-41b3-928a-7ea63ff32f72
+[2025-09-26 17:22:40.139] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/usedQuery/find 59de8ba2-02ef-40e7-97b1-c1753ff166bc
+[2025-09-26 17:22:40.140] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/used/find 48aec859-2496-49c2-9fe7-f9c6842b95f5
+[2025-09-26 17:22:40.141] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 4f9c0d9d-d307-4d43-a355-6778ce05897e
+[2025-09-26 17:22:40.174] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/credential/find 98b83770-0cd2-48b3-aef9-1980dd5685c5
+[2025-09-26 17:22:40.234] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/setting/get 9b311176-8f05-4921-ad1b-6f9d5d970046
+[2025-09-26 17:22:40.234] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/setting/get f23bef9e-1263-4de4-87b4-8b0702eea94e
+[2025-09-26 17:22:40.235] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/saved/new 51e0b1c4-02ff-4938-9996-eed6fbc82b9f
+[2025-09-26 17:22:40.291] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get eddec3bb-ae19-4148-9384-f99ef43aaec0
+[2025-09-26 17:22:40.294] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/saved/new 6ad5c741-1acb-4026-b268-140c8d766391
+[2025-09-26 17:22:40.295] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/pinconn/find 67e809b2-d85a-4307-861f-06469961ab11
+[2025-09-26 17:22:40.309] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/pinconn/save 19feb8f4-4a11-4833-b415-631e6baaaa6c
+[2025-09-26 17:22:40.311] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/credential/find 0b8093b5-7323-41ec-8599-672d09fb501d
+[2025-09-26 17:22:45.638] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/saved/new e3c864c2-db82-47af-a671-5659d1508b7d
+[2025-09-26 17:23:31.310] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/test 659a6041-bfd3-42e8-8ee7-325277e3a6b9
+[2025-09-26 17:23:31.333] [debug] (postgresql)          connected
+[2025-09-26 17:23:31.335] [info]  (postgresql)          Acquiring new connection for:  SELECT CURRENT_SCHEMA() AS schema
+[2025-09-26 17:23:31.336] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:31.336] [info]  (postgresql)          RUNNING SELECT CURRENT_SCHEMA() AS schema undefined
+[2025-09-26 17:23:31.341] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:31.341] [info]  (postgresql)          Acquiring new connection for:  select version()
+[2025-09-26 17:23:31.341] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:31.342] [info]  (postgresql)          RUNNING select version() undefined
+[2025-09-26 17:23:31.342] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:31.343] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT      n.nspname as schema, t.typname as typename, t.oid::integer as typeid
+      FROM        pg_type t
+        LEFT JOIN   pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+      WHERE       (t.typrelid = 0 OR (SELECT c.relkind = 'c' FROM pg_catalog.pg_class c WHERE c.oid = t.typrelid))
+        AND     n.nspname NOT IN ('pg_catalog', 'information_schema')
+     AND     NOT EXISTS(SELECT 1 FROM pg_catalog.pg_type el WHERE el.oid = t.typelem AND el.typarray = t.oid);
+[2025-09-26 17:23:31.343] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:31.343] [info]  (postgresql)          RUNNING 
+      SELECT      n.nspname as schema, t.typname as typename, t.oid::integer as typeid
+      FROM        pg_type t
+        LEFT JOIN   pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+      WHERE       (t.typrelid = 0 OR (SELECT c.relkind = 'c' FROM pg_catalog.pg_class c WHERE c.oid = t.typrelid))
+        AND     n.nspname NOT IN ('pg_catalog', 'information_schema')
+     AND     NOT EXISTS(SELECT 1 FROM pg_catalog.pg_type el WHERE el.oid = t.typelem AND el.typarray = t.oid); undefined
+[2025-09-26 17:23:31.351] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:36.476] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/create 73d98088-b2d1-480d-98be-292b918cc312
+[2025-09-26 17:23:36.490] [debug] (postgresql)          connected
+[2025-09-26 17:23:36.522] [info]  (postgresql)          Acquiring new connection for:  SELECT CURRENT_SCHEMA() AS schema
+[2025-09-26 17:23:36.522] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:36.522] [info]  (postgresql)          RUNNING SELECT CURRENT_SCHEMA() AS schema undefined
+[2025-09-26 17:23:36.523] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:36.523] [info]  (postgresql)          Acquiring new connection for:  select version()
+[2025-09-26 17:23:36.524] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:36.524] [info]  (postgresql)          RUNNING select version() undefined
+[2025-09-26 17:23:36.524] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:36.525] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT      n.nspname as schema, t.typname as typename, t.oid::integer as typeid
+      FROM        pg_type t
+        LEFT JOIN   pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+      WHERE       (t.typrelid = 0 OR (SELECT c.relkind = 'c' FROM pg_catalog.pg_class c WHERE c.oid = t.typrelid))
+        AND     n.nspname NOT IN ('pg_catalog', 'information_schema')
+     AND     NOT EXISTS(SELECT 1 FROM pg_catalog.pg_type el WHERE el.oid = t.typelem AND el.typarray = t.oid);
+[2025-09-26 17:23:36.526] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:36.526] [info]  (postgresql)          RUNNING 
+      SELECT      n.nspname as schema, t.typname as typename, t.oid::integer as typeid
+      FROM        pg_type t
+        LEFT JOIN   pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+      WHERE       (t.typrelid = 0 OR (SELECT c.relkind = 'c' FROM pg_catalog.pg_class c WHERE c.oid = t.typrelid))
+        AND     n.nspname NOT IN ('pg_catalog', 'information_schema')
+     AND     NOT EXISTS(SELECT 1 FROM pg_catalog.pg_type el WHERE el.oid = t.typelem AND el.typarray = t.oid); undefined
+[2025-09-26 17:23:36.528] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:36.530] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/defaultSchema 35eb18f5-9ee7-4bc3-8803-bfc111d14984
+[2025-09-26 17:23:36.530] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/supportedFeatures 18115c4f-9d11-4fd2-acaf-94aa1f280eec
+[2025-09-26 17:23:36.531] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/versionString ea9c381a-7b7b-4a12-8b0e-6edc773b029d
+[2025-09-26 17:23:36.531] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getServerConfig 169bb340-372e-486a-80e9-8dd54549d157
+[2025-09-26 17:23:36.534] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/used/save f0a66ebb-45c0-4463-9115-aaeadf662558
+[2025-09-26 17:23:36.534] [info]  (Appdb handlers)      Saving used:  {
+  id: null,
+  createdAt: '2025-09-26T15:23:36.534Z',
+  updatedAt: '2025-09-26T15:23:36.534Z',
+  _connectionType: 'postgresql',
+  host: 'localhost',
+  _port: 5432,
+  _socketPath: '/var/run/postgresql',
+  socketPathEnabled: false,
+  username: 'myuser',
+  domain: null,
+  defaultDatabase: 'mydatabase',
+  url: null,
+  uniqueHash: 'DEPRECATED',
+  sshEnabled: false,
+  sshHost: null,
+  sshPort: 22,
+  sshKeyfile: null,
+  sshUsername: null,
+  sshBastionHost: null,
+  sshKeepaliveInterval: 60,
+  ssl: false,
+  sslCaFile: null,
+  sslCertFile: null,
+  sslKeyFile: null,
+  sslRejectUnauthorized: true,
+  readOnlyMode: false,
+  options: { connectionMethod: 'manual' },
+  redshiftOptions: {},
+  cassandraOptions: {},
+  bigQueryOptions: {},
+  azureAuthOptions: {},
+  authId: null,
+  libsqlOptions: { mode: 'url' },
+  sqlAnywhereOptions: { mode: 'server' },
+  trustServerCertificate: false,
+  serviceName: null,
+  connectionId: null,
+  workspaceId: -1
+}
+[2025-09-26 17:23:36.576] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/setting/get d1f89a21-cd84-4835-b2e6-dbefb4fa54e5
+[2025-09-26 17:23:36.577] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/setting/get 1215378c-ecdc-4df7-9e48-103d32d431e2
+[2025-09-26 17:23:36.644] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listDatabases 03aefdb8-f667-47f7-bf83-4ccbfaa42cfc
+[2025-09-26 17:23:36.645] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT datname
+      FROM pg_database
+      WHERE datistemplate = $1
+        
+      ORDER BY datname
+    
+[2025-09-26 17:23:36.646] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:36.646] [info]  (postgresql)          RUNNING 
+      SELECT datname
+      FROM pg_database
+      WHERE datistemplate = $1
+        
+      ORDER BY datname
+     [ false ]
+[2025-09-26 17:23:36.647] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/pins/find eebb0d6b-cf4b-41be-991f-996e1e306a77
+[2025-09-26 17:23:36.648] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:36.658] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/find 9be0e5d9-c547-4780-bc2e-e5818d779966
+[2025-09-26 17:23:36.660] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/setting/set 84af268f-d5bb-4b41-8c17-de5251412fdf
+[2025-09-26 17:23:36.668] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/setting/set 914f4b67-522d-4a5c-9ab9-ac3efb4553ba
+[2025-09-26 17:23:36.680] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listTables bda68807-15c9-4e6a-b52a-0a698a2af63e
+[2025-09-26 17:23:36.680] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        t.table_schema as schema,
+        t.table_name as name,
+    
+          pc.relkind as tabletype,
+          parent_pc.relkind as parenttype
+        FROM information_schema.tables AS t
+        JOIN pg_class AS pc
+          ON t.table_name = pc.relname AND quote_ident(t.table_schema) = pc.relnamespace::regnamespace::text
+        LEFT OUTER JOIN pg_inherits AS i
+          ON pc.oid = i.inhrelid
+        LEFT OUTER JOIN pg_class AS parent_pc
+          ON parent_pc.oid = i.inhparent
+        WHERE t.table_type NOT LIKE '%VIEW%'
+      
+      
+      ORDER BY t.table_schema, t.table_name
+    
+[2025-09-26 17:23:36.681] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:36.681] [info]  (postgresql)          RUNNING 
+      SELECT
+        t.table_schema as schema,
+        t.table_name as name,
+    
+          pc.relkind as tabletype,
+          parent_pc.relkind as parenttype
+        FROM information_schema.tables AS t
+        JOIN pg_class AS pc
+          ON t.table_name = pc.relname AND quote_ident(t.table_schema) = pc.relnamespace::regnamespace::text
+        LEFT OUTER JOIN pg_inherits AS i
+          ON pc.oid = i.inhrelid
+        LEFT OUTER JOIN pg_class AS parent_pc
+          ON parent_pc.oid = i.inhparent
+        WHERE t.table_type NOT LIKE '%VIEW%'
+      
+      
+      ORDER BY t.table_schema, t.table_name
+     undefined
+[2025-09-26 17:23:36.690] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:36.732] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  file/pathJoin 844f0926-3045-45e5-81bf-0b9a3532695d
+[2025-09-26 17:23:36.743] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listViews 45ce7a6e-6060-4154-b85b-71166af0aa4d
+[2025-09-26 17:23:36.743] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        table_schema as schema,
+        table_name as name
+      FROM information_schema.views
+        
+      ORDER BY table_schema, table_name
+    
+[2025-09-26 17:23:36.743] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:36.743] [info]  (postgresql)          RUNNING 
+      SELECT
+        table_schema as schema,
+        table_name as name
+      FROM information_schema.views
+        
+      ORDER BY table_schema, table_name
+     undefined
+[2025-09-26 17:23:36.744] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  file/exists 36cebf73-250d-4aa9-9298-8fa04ea1780d
+[2025-09-26 17:23:36.748] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:36.751] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listMaterializedViews 052b1c0b-0aca-4c4c-9186-312509d513fc
+[2025-09-26 17:23:36.752] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        schemaname as schema,
+        matviewname as name
+      FROM pg_matviews
+        
+      order by schemaname, matviewname;
+    
+[2025-09-26 17:23:36.752] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:36.752] [info]  (postgresql)          RUNNING 
+      SELECT
+        schemaname as schema,
+        matviewname as name
+      FROM pg_matviews
+        
+      order by schemaname, matviewname;
+     undefined
+[2025-09-26 17:23:36.756] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:36.769] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listRoutines 15e701e9-91be-4fb7-9d38-8648390b2bc3
+[2025-09-26 17:23:36.770] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        r.specific_name as id,
+        r.routine_schema as routine_schema,
+        r.routine_name as name,
+        r.routine_type as routine_type,
+        r.data_type as data_type
+      FROM INFORMATION_SCHEMA.ROUTINES r
+      where r.routine_schema not in ('sys', 'information_schema',
+                                     'pg_catalog', 'performance_schema')
+        
+      ORDER BY routine_schema, routine_name
+    
+[2025-09-26 17:23:36.770] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:36.770] [info]  (postgresql)          RUNNING 
+      SELECT
+        r.specific_name as id,
+        r.routine_schema as routine_schema,
+        r.routine_name as name,
+        r.routine_type as routine_type,
+        r.data_type as data_type
+      FROM INFORMATION_SCHEMA.ROUTINES r
+      where r.routine_schema not in ('sys', 'information_schema',
+                                     'pg_catalog', 'performance_schema')
+        
+      ORDER BY routine_schema, routine_name
+     undefined
+[2025-09-26 17:23:36.778] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:36.778] [info]  (postgresql)          Acquiring new connection for:  
+      select
+        r.routine_schema as routine_schema,
+        r.specific_name as specific_name,
+        p.parameter_name as parameter_name,
+        p.character_maximum_length as char_length,
+          p.data_type as data_type
+      from information_schema.routines r
+        left join information_schema.parameters p
+      on p.specific_schema = r.routine_schema
+        and p.specific_name = r.specific_name
+      where r.routine_schema not in ('sys', 'information_schema',
+        'pg_catalog', 'performance_schema')
+        
+
+        AND p.parameter_mode = 'IN'
+      order by r.routine_schema,
+        r.specific_name,
+        p.ordinal_position;
+
+    
+[2025-09-26 17:23:36.779] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:36.779] [info]  (postgresql)          RUNNING 
+      select
+        r.routine_schema as routine_schema,
+        r.specific_name as specific_name,
+        p.parameter_name as parameter_name,
+        p.character_maximum_length as char_length,
+          p.data_type as data_type
+      from information_schema.routines r
+        left join information_schema.parameters p
+      on p.specific_schema = r.routine_schema
+        and p.specific_name = r.specific_name
+      where r.routine_schema not in ('sys', 'information_schema',
+        'pg_catalog', 'performance_schema')
+        
+
+        AND p.parameter_mode = 'IN'
+      order by r.routine_schema,
+        r.specific_name,
+        p.ordinal_position;
+
+     undefined
+[2025-09-26 17:23:36.998] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:37.004] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabhistory/clearDeletedTabs 16606106-b10b-421e-9a81-aaf0889fdc06
+[2025-09-26 17:23:37.177] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save 0d4983fa-305d-47bf-b61a-1b74d66ea83a
+[2025-09-26 17:23:37.716] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save a1e71d9f-be63-478c-9d17-9927ac9cac01
+[2025-09-26 17:23:47.942] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/changeDatabase aa191a4e-c455-4028-8b0d-6e09e9e0554d
+[2025-09-26 17:23:47.953] [debug] (postgresql)          connected
+[2025-09-26 17:23:47.954] [info]  (postgresql)          Acquiring new connection for:  SELECT CURRENT_SCHEMA() AS schema
+[2025-09-26 17:23:47.954] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:47.955] [info]  (postgresql)          RUNNING SELECT CURRENT_SCHEMA() AS schema undefined
+[2025-09-26 17:23:47.960] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:47.960] [info]  (postgresql)          Acquiring new connection for:  select version()
+[2025-09-26 17:23:47.960] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:47.960] [info]  (postgresql)          RUNNING select version() undefined
+[2025-09-26 17:23:47.962] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:47.963] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT      n.nspname as schema, t.typname as typename, t.oid::integer as typeid
+      FROM        pg_type t
+        LEFT JOIN   pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+      WHERE       (t.typrelid = 0 OR (SELECT c.relkind = 'c' FROM pg_catalog.pg_class c WHERE c.oid = t.typrelid))
+        AND     n.nspname NOT IN ('pg_catalog', 'information_schema')
+     AND     NOT EXISTS(SELECT 1 FROM pg_catalog.pg_type el WHERE el.oid = t.typelem AND el.typarray = t.oid);
+[2025-09-26 17:23:47.963] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:47.963] [info]  (postgresql)          RUNNING 
+      SELECT      n.nspname as schema, t.typname as typename, t.oid::integer as typeid
+      FROM        pg_type t
+        LEFT JOIN   pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+      WHERE       (t.typrelid = 0 OR (SELECT c.relkind = 'c' FROM pg_catalog.pg_class c WHERE c.oid = t.typrelid))
+        AND     n.nspname NOT IN ('pg_catalog', 'information_schema')
+     AND     NOT EXISTS(SELECT 1 FROM pg_catalog.pg_type el WHERE el.oid = t.typelem AND el.typarray = t.oid); undefined
+[2025-09-26 17:23:47.980] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:47.981] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listTables 0b93edc5-36ca-4f6c-b6f3-f3f6bd62ebaa
+[2025-09-26 17:23:47.982] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        t.table_schema as schema,
+        t.table_name as name,
+    
+          pc.relkind as tabletype,
+          parent_pc.relkind as parenttype
+        FROM information_schema.tables AS t
+        JOIN pg_class AS pc
+          ON t.table_name = pc.relname AND quote_ident(t.table_schema) = pc.relnamespace::regnamespace::text
+        LEFT OUTER JOIN pg_inherits AS i
+          ON pc.oid = i.inhrelid
+        LEFT OUTER JOIN pg_class AS parent_pc
+          ON parent_pc.oid = i.inhparent
+        WHERE t.table_type NOT LIKE '%VIEW%'
+      
+      
+      ORDER BY t.table_schema, t.table_name
+    
+[2025-09-26 17:23:47.982] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:47.982] [info]  (postgresql)          RUNNING 
+      SELECT
+        t.table_schema as schema,
+        t.table_name as name,
+    
+          pc.relkind as tabletype,
+          parent_pc.relkind as parenttype
+        FROM information_schema.tables AS t
+        JOIN pg_class AS pc
+          ON t.table_name = pc.relname AND quote_ident(t.table_schema) = pc.relnamespace::regnamespace::text
+        LEFT OUTER JOIN pg_inherits AS i
+          ON pc.oid = i.inhrelid
+        LEFT OUTER JOIN pg_class AS parent_pc
+          ON parent_pc.oid = i.inhparent
+        WHERE t.table_type NOT LIKE '%VIEW%'
+      
+      
+      ORDER BY t.table_schema, t.table_name
+     undefined
+[2025-09-26 17:23:47.998] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:48.000] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listViews 06b3c2ba-5b55-438c-81e0-2c2976c67e87
+[2025-09-26 17:23:48.001] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        table_schema as schema,
+        table_name as name
+      FROM information_schema.views
+        
+      ORDER BY table_schema, table_name
+    
+[2025-09-26 17:23:48.001] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:48.001] [info]  (postgresql)          RUNNING 
+      SELECT
+        table_schema as schema,
+        table_name as name
+      FROM information_schema.views
+        
+      ORDER BY table_schema, table_name
+     undefined
+[2025-09-26 17:23:48.003] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:48.003] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listMaterializedViews c1a521bf-eb15-4328-8c42-8fd042548cad
+[2025-09-26 17:23:48.004] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        schemaname as schema,
+        matviewname as name
+      FROM pg_matviews
+        
+      order by schemaname, matviewname;
+    
+[2025-09-26 17:23:48.004] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:48.004] [info]  (postgresql)          RUNNING 
+      SELECT
+        schemaname as schema,
+        matviewname as name
+      FROM pg_matviews
+        
+      order by schemaname, matviewname;
+     undefined
+[2025-09-26 17:23:48.005] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:48.023] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listDatabases 2648dab4-6406-4ff9-a215-162e37f999bd
+[2025-09-26 17:23:48.024] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT datname
+      FROM pg_database
+      WHERE datistemplate = $1
+        
+      ORDER BY datname
+    
+[2025-09-26 17:23:48.025] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:48.025] [info]  (postgresql)          RUNNING 
+      SELECT datname
+      FROM pg_database
+      WHERE datistemplate = $1
+        
+      ORDER BY datname
+     [ false ]
+[2025-09-26 17:23:48.028] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:48.033] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listRoutines 90c3b185-165a-4435-b9d4-9b1bebed233a
+[2025-09-26 17:23:48.033] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        r.specific_name as id,
+        r.routine_schema as routine_schema,
+        r.routine_name as name,
+        r.routine_type as routine_type,
+        r.data_type as data_type
+      FROM INFORMATION_SCHEMA.ROUTINES r
+      where r.routine_schema not in ('sys', 'information_schema',
+                                     'pg_catalog', 'performance_schema')
+        
+      ORDER BY routine_schema, routine_name
+    
+[2025-09-26 17:23:48.034] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:48.034] [info]  (postgresql)          RUNNING 
+      SELECT
+        r.specific_name as id,
+        r.routine_schema as routine_schema,
+        r.routine_name as name,
+        r.routine_type as routine_type,
+        r.data_type as data_type
+      FROM INFORMATION_SCHEMA.ROUTINES r
+      where r.routine_schema not in ('sys', 'information_schema',
+                                     'pg_catalog', 'performance_schema')
+        
+      ORDER BY routine_schema, routine_name
+     undefined
+[2025-09-26 17:23:48.048] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:48.049] [info]  (postgresql)          Acquiring new connection for:  
+      select
+        r.routine_schema as routine_schema,
+        r.specific_name as specific_name,
+        p.parameter_name as parameter_name,
+        p.character_maximum_length as char_length,
+          p.data_type as data_type
+      from information_schema.routines r
+        left join information_schema.parameters p
+      on p.specific_schema = r.routine_schema
+        and p.specific_name = r.specific_name
+      where r.routine_schema not in ('sys', 'information_schema',
+        'pg_catalog', 'performance_schema')
+        
+
+        AND p.parameter_mode = 'IN'
+      order by r.routine_schema,
+        r.specific_name,
+        p.ordinal_position;
+
+    
+[2025-09-26 17:23:48.050] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:48.050] [info]  (postgresql)          RUNNING 
+      select
+        r.routine_schema as routine_schema,
+        r.specific_name as specific_name,
+        p.parameter_name as parameter_name,
+        p.character_maximum_length as char_length,
+          p.data_type as data_type
+      from information_schema.routines r
+        left join information_schema.parameters p
+      on p.specific_schema = r.routine_schema
+        and p.specific_name = r.specific_name
+      where r.routine_schema not in ('sys', 'information_schema',
+        'pg_catalog', 'performance_schema')
+        
+
+        AND p.parameter_mode = 'IN'
+      order by r.routine_schema,
+        r.specific_name,
+        p.ordinal_position;
+
+     undefined
+[2025-09-26 17:23:48.105] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:50.155] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/changeDatabase 431b2c40-ed96-459c-89aa-303a531a2dd3
+[2025-09-26 17:23:50.161] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listTables 675a2c6d-89ff-415e-a663-99ad59dd2495
+[2025-09-26 17:23:50.161] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        t.table_schema as schema,
+        t.table_name as name,
+    
+          pc.relkind as tabletype,
+          parent_pc.relkind as parenttype
+        FROM information_schema.tables AS t
+        JOIN pg_class AS pc
+          ON t.table_name = pc.relname AND quote_ident(t.table_schema) = pc.relnamespace::regnamespace::text
+        LEFT OUTER JOIN pg_inherits AS i
+          ON pc.oid = i.inhrelid
+        LEFT OUTER JOIN pg_class AS parent_pc
+          ON parent_pc.oid = i.inhparent
+        WHERE t.table_type NOT LIKE '%VIEW%'
+      
+      
+      ORDER BY t.table_schema, t.table_name
+    
+[2025-09-26 17:23:50.161] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:50.161] [info]  (postgresql)          RUNNING 
+      SELECT
+        t.table_schema as schema,
+        t.table_name as name,
+    
+          pc.relkind as tabletype,
+          parent_pc.relkind as parenttype
+        FROM information_schema.tables AS t
+        JOIN pg_class AS pc
+          ON t.table_name = pc.relname AND quote_ident(t.table_schema) = pc.relnamespace::regnamespace::text
+        LEFT OUTER JOIN pg_inherits AS i
+          ON pc.oid = i.inhrelid
+        LEFT OUTER JOIN pg_class AS parent_pc
+          ON parent_pc.oid = i.inhparent
+        WHERE t.table_type NOT LIKE '%VIEW%'
+      
+      
+      ORDER BY t.table_schema, t.table_name
+     undefined
+[2025-09-26 17:23:50.165] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:50.167] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listViews bf35e07c-aae6-4f40-af41-1c77e825d011
+[2025-09-26 17:23:50.167] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        table_schema as schema,
+        table_name as name
+      FROM information_schema.views
+        
+      ORDER BY table_schema, table_name
+    
+[2025-09-26 17:23:50.167] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:50.167] [info]  (postgresql)          RUNNING 
+      SELECT
+        table_schema as schema,
+        table_name as name
+      FROM information_schema.views
+        
+      ORDER BY table_schema, table_name
+     undefined
+[2025-09-26 17:23:50.169] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:50.171] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listMaterializedViews 5f5fcdaa-5172-43f1-a487-75ad842fdb64
+[2025-09-26 17:23:50.171] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        schemaname as schema,
+        matviewname as name
+      FROM pg_matviews
+        
+      order by schemaname, matviewname;
+    
+[2025-09-26 17:23:50.171] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:50.171] [info]  (postgresql)          RUNNING 
+      SELECT
+        schemaname as schema,
+        matviewname as name
+      FROM pg_matviews
+        
+      order by schemaname, matviewname;
+     undefined
+[2025-09-26 17:23:50.172] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:50.189] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listDatabases 23314a13-80fa-4640-a837-ff923be06d2b
+[2025-09-26 17:23:50.190] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT datname
+      FROM pg_database
+      WHERE datistemplate = $1
+        
+      ORDER BY datname
+    
+[2025-09-26 17:23:50.190] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:50.190] [info]  (postgresql)          RUNNING 
+      SELECT datname
+      FROM pg_database
+      WHERE datistemplate = $1
+        
+      ORDER BY datname
+     [ false ]
+[2025-09-26 17:23:50.191] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:50.197] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listRoutines 3064372e-b5a1-4b49-ad5f-c4e5894e7c83
+[2025-09-26 17:23:50.197] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        r.specific_name as id,
+        r.routine_schema as routine_schema,
+        r.routine_name as name,
+        r.routine_type as routine_type,
+        r.data_type as data_type
+      FROM INFORMATION_SCHEMA.ROUTINES r
+      where r.routine_schema not in ('sys', 'information_schema',
+                                     'pg_catalog', 'performance_schema')
+        
+      ORDER BY routine_schema, routine_name
+    
+[2025-09-26 17:23:50.198] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:50.198] [info]  (postgresql)          RUNNING 
+      SELECT
+        r.specific_name as id,
+        r.routine_schema as routine_schema,
+        r.routine_name as name,
+        r.routine_type as routine_type,
+        r.data_type as data_type
+      FROM INFORMATION_SCHEMA.ROUTINES r
+      where r.routine_schema not in ('sys', 'information_schema',
+                                     'pg_catalog', 'performance_schema')
+        
+      ORDER BY routine_schema, routine_name
+     undefined
+[2025-09-26 17:23:50.201] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:50.201] [info]  (postgresql)          Acquiring new connection for:  
+      select
+        r.routine_schema as routine_schema,
+        r.specific_name as specific_name,
+        p.parameter_name as parameter_name,
+        p.character_maximum_length as char_length,
+          p.data_type as data_type
+      from information_schema.routines r
+        left join information_schema.parameters p
+      on p.specific_schema = r.routine_schema
+        and p.specific_name = r.specific_name
+      where r.routine_schema not in ('sys', 'information_schema',
+        'pg_catalog', 'performance_schema')
+        
+
+        AND p.parameter_mode = 'IN'
+      order by r.routine_schema,
+        r.specific_name,
+        p.ordinal_position;
+
+    
+[2025-09-26 17:23:50.202] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:50.202] [info]  (postgresql)          RUNNING 
+      select
+        r.routine_schema as routine_schema,
+        r.specific_name as specific_name,
+        p.parameter_name as parameter_name,
+        p.character_maximum_length as char_length,
+          p.data_type as data_type
+      from information_schema.routines r
+        left join information_schema.parameters p
+      on p.specific_schema = r.routine_schema
+        and p.specific_name = r.specific_name
+      where r.routine_schema not in ('sys', 'information_schema',
+        'pg_catalog', 'performance_schema')
+        
+
+        AND p.parameter_mode = 'IN'
+      order by r.routine_schema,
+        r.specific_name,
+        p.ordinal_position;
+
+     undefined
+[2025-09-26 17:23:50.235] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:54.399] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listTableColumns 2e72dedf-f93c-4bdf-8a24-86c028a6af9a
+[2025-09-26 17:23:54.400] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+    
+[2025-09-26 17:23:54.400] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:54.400] [info]  (postgresql)          RUNNING 
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+     [ 'public', 'schema_migrations' ]
+[2025-09-26 17:23:54.421] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:23:58.152] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listTableColumns db02b464-e60c-4721-ba29-6fd50c2e93c1
+[2025-09-26 17:23:58.153] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+    
+[2025-09-26 17:23:58.153] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:23:58.154] [info]  (postgresql)          RUNNING 
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+     [ 'public', 'users' ]
+[2025-09-26 17:23:58.205] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:00.033] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save 30f7f817-a8e6-4db5-a00e-88c6ac5ebdd6
+[2025-09-26 17:24:00.033] [info]  (Appdb handlers)      Saving tabs:  {
+  id: null,
+  createdAt: '2025-09-26T15:24:00.033Z',
+  updatedAt: '2025-09-26T15:24:00.033Z',
+  tabType: 'table',
+  unsavedChanges: false,
+  alert: false,
+  position: 100,
+  isRunning: false,
+  title: 'users',
+  titleScope: 'all',
+  active: true,
+  tableName: 'users',
+  schemaName: 'public',
+  entityType: 'table',
+  connectionId: 1,
+  workspaceId: -1,
+  filters: null,
+  deletedAt: null
+}
+[2025-09-26 17:24:00.085] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save aad7f83a-5862-4fb8-b3cf-b12b8d78a421
+[2025-09-26 17:24:00.095] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listTableColumns 967bd108-2563-4492-a50f-582951502373
+[2025-09-26 17:24:00.095] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+    
+[2025-09-26 17:24:00.096] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:00.096] [info]  (postgresql)          RUNNING 
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+     [ 'public', 'users' ]
+[2025-09-26 17:24:00.100] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:00.101] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getTableKeys f3990f68-41dc-4ad1-8512-7a243059afc4
+[2025-09-26 17:24:00.102] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        tc.constraint_name,
+        kcu.column_name,
+        kcu.table_schema AS from_schema,
+        kcu.table_name AS from_table,
+        kcu2.column_name AS to_column,
+        kcu2.table_name AS to_table,
+        rc.unique_constraint_schema AS to_schema,
+        rc.update_rule,
+        rc.delete_rule,
+        kcu.ordinal_position
+      FROM
+        information_schema.table_constraints AS tc
+        JOIN information_schema.key_column_usage AS kcu
+          ON tc.constraint_name = kcu.constraint_name
+          AND tc.table_schema = kcu.table_schema
+        JOIN information_schema.referential_constraints AS rc
+          ON rc.constraint_name = tc.constraint_name
+          AND rc.constraint_schema = tc.table_schema
+        JOIN information_schema.key_column_usage AS kcu2
+          ON kcu2.constraint_name = rc.unique_constraint_name
+          AND kcu.ordinal_position = kcu2.ordinal_position
+          AND kcu2.constraint_schema = rc.unique_constraint_schema
+      WHERE
+        tc.constraint_type = 'FOREIGN KEY'
+        AND tc.table_schema = $1
+        AND tc.table_name = $2
+      ORDER BY
+        tc.constraint_name,
+        kcu.ordinal_position;
+    
+[2025-09-26 17:24:00.102] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:00.102] [info]  (postgresql)          RUNNING 
+      SELECT
+        tc.constraint_name,
+        kcu.column_name,
+        kcu.table_schema AS from_schema,
+        kcu.table_name AS from_table,
+        kcu2.column_name AS to_column,
+        kcu2.table_name AS to_table,
+        rc.unique_constraint_schema AS to_schema,
+        rc.update_rule,
+        rc.delete_rule,
+        kcu.ordinal_position
+      FROM
+        information_schema.table_constraints AS tc
+        JOIN information_schema.key_column_usage AS kcu
+          ON tc.constraint_name = kcu.constraint_name
+          AND tc.table_schema = kcu.table_schema
+        JOIN information_schema.referential_constraints AS rc
+          ON rc.constraint_name = tc.constraint_name
+          AND rc.constraint_schema = tc.table_schema
+        JOIN information_schema.key_column_usage AS kcu2
+          ON kcu2.constraint_name = rc.unique_constraint_name
+          AND kcu.ordinal_position = kcu2.ordinal_position
+          AND kcu2.constraint_schema = rc.unique_constraint_schema
+      WHERE
+        tc.constraint_type = 'FOREIGN KEY'
+        AND tc.table_schema = $1
+        AND tc.table_name = $2
+      ORDER BY
+        tc.constraint_name,
+        kcu.ordinal_position;
+     [ 'public', 'users' ]
+[2025-09-26 17:24:00.112] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:00.113] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getPrimaryKeys 2268f1f6-5f6c-46cf-ab2c-7545577c61f6
+[2025-09-26 17:24:00.114] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        a.attname as column_name,
+        format_type(a.atttypid, a.atttypmod) AS data_type,
+        a.attnum as position
+      FROM   pg_index i
+        JOIN   pg_attribute a ON a.attrelid = i.indrelid
+        AND a.attnum = ANY(i.indkey)
+      WHERE  i.indrelid = '"public"."users"'::regclass
+        AND    i.indisprimary
+      ORDER BY a.attnum
+    
+[2025-09-26 17:24:00.114] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:00.114] [info]  (postgresql)          RUNNING 
+      SELECT
+        a.attname as column_name,
+        format_type(a.atttypid, a.atttypmod) AS data_type,
+        a.attnum as position
+      FROM   pg_index i
+        JOIN   pg_attribute a ON a.attrelid = i.indrelid
+        AND a.attnum = ANY(i.indkey)
+      WHERE  i.indrelid = '"public"."users"'::regclass
+        AND    i.indisprimary
+      ORDER BY a.attnum
+     undefined
+[2025-09-26 17:24:00.116] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:00.147] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/selectTop 7585e2e2-46d3-4ba6-9978-773e31742f6c
+[2025-09-26 17:24:00.148] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT * 
+      FROM "public"."users"
+      
+    
+      ORDER BY "id" ASC
+      LIMIT 101
+      OFFSET 0
+      
+[2025-09-26 17:24:00.148] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:00.148] [info]  (postgresql)          RUNNING 
+      SELECT * 
+      FROM "public"."users"
+      
+    
+      ORDER BY "id" ASC
+      LIMIT 101
+      OFFSET 0
+       []
+[2025-09-26 17:24:00.150] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:00.152] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listTableColumns 53e6c4fa-472e-4cdc-a69d-01a506ed0e6d
+[2025-09-26 17:24:00.152] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+    
+[2025-09-26 17:24:00.153] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:00.153] [info]  (postgresql)          RUNNING 
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+     [ 'public', 'users' ]
+[2025-09-26 17:24:00.159] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:00.161] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getTableKeys 7d763d0b-bdac-4645-8d5e-fa1d97109f5d
+[2025-09-26 17:24:00.161] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        tc.constraint_name,
+        kcu.column_name,
+        kcu.table_schema AS from_schema,
+        kcu.table_name AS from_table,
+        kcu2.column_name AS to_column,
+        kcu2.table_name AS to_table,
+        rc.unique_constraint_schema AS to_schema,
+        rc.update_rule,
+        rc.delete_rule,
+        kcu.ordinal_position
+      FROM
+        information_schema.table_constraints AS tc
+        JOIN information_schema.key_column_usage AS kcu
+          ON tc.constraint_name = kcu.constraint_name
+          AND tc.table_schema = kcu.table_schema
+        JOIN information_schema.referential_constraints AS rc
+          ON rc.constraint_name = tc.constraint_name
+          AND rc.constraint_schema = tc.table_schema
+        JOIN information_schema.key_column_usage AS kcu2
+          ON kcu2.constraint_name = rc.unique_constraint_name
+          AND kcu.ordinal_position = kcu2.ordinal_position
+          AND kcu2.constraint_schema = rc.unique_constraint_schema
+      WHERE
+        tc.constraint_type = 'FOREIGN KEY'
+        AND tc.table_schema = $1
+        AND tc.table_name = $2
+      ORDER BY
+        tc.constraint_name,
+        kcu.ordinal_position;
+    
+[2025-09-26 17:24:00.161] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:00.161] [info]  (postgresql)          RUNNING 
+      SELECT
+        tc.constraint_name,
+        kcu.column_name,
+        kcu.table_schema AS from_schema,
+        kcu.table_name AS from_table,
+        kcu2.column_name AS to_column,
+        kcu2.table_name AS to_table,
+        rc.unique_constraint_schema AS to_schema,
+        rc.update_rule,
+        rc.delete_rule,
+        kcu.ordinal_position
+      FROM
+        information_schema.table_constraints AS tc
+        JOIN information_schema.key_column_usage AS kcu
+          ON tc.constraint_name = kcu.constraint_name
+          AND tc.table_schema = kcu.table_schema
+        JOIN information_schema.referential_constraints AS rc
+          ON rc.constraint_name = tc.constraint_name
+          AND rc.constraint_schema = tc.table_schema
+        JOIN information_schema.key_column_usage AS kcu2
+          ON kcu2.constraint_name = rc.unique_constraint_name
+          AND kcu.ordinal_position = kcu2.ordinal_position
+          AND kcu2.constraint_schema = rc.unique_constraint_schema
+      WHERE
+        tc.constraint_type = 'FOREIGN KEY'
+        AND tc.table_schema = $1
+        AND tc.table_name = $2
+      ORDER BY
+        tc.constraint_name,
+        kcu.ordinal_position;
+     [ 'public', 'users' ]
+[2025-09-26 17:24:00.162] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save fc3cb95c-c129-4c2f-ab5a-349688ee2fe6
+[2025-09-26 17:24:00.196] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:00.197] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getPrimaryKeys 6399f331-104a-4973-bc23-a6a508d28b62
+[2025-09-26 17:24:00.197] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        a.attname as column_name,
+        format_type(a.atttypid, a.atttypmod) AS data_type,
+        a.attnum as position
+      FROM   pg_index i
+        JOIN   pg_attribute a ON a.attrelid = i.indrelid
+        AND a.attnum = ANY(i.indkey)
+      WHERE  i.indrelid = '"public"."users"'::regclass
+        AND    i.indisprimary
+      ORDER BY a.attnum
+    
+[2025-09-26 17:24:00.197] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:00.197] [info]  (postgresql)          RUNNING 
+      SELECT
+        a.attname as column_name,
+        format_type(a.atttypid, a.atttypmod) AS data_type,
+        a.attnum as position
+      FROM   pg_index i
+        JOIN   pg_attribute a ON a.attrelid = i.indrelid
+        AND a.attnum = ANY(i.indkey)
+      WHERE  i.indrelid = '"public"."users"'::regclass
+        AND    i.indisprimary
+      ORDER BY a.attnum
+     undefined
+[2025-09-26 17:24:00.198] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:00.425] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save d4660021-d6bb-4b0d-a1de-17af4ae223c0
+[2025-09-26 17:24:00.624] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save 0f5ccce8-c23d-4828-8816-9211f3c56562
+[2025-09-26 17:24:02.219] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save dd2e055c-7f88-4578-a606-fb4557872555
+[2025-09-26 17:24:02.219] [info]  (Appdb handlers)      Saving tabs:  {
+  id: null,
+  createdAt: '2025-09-26T15:24:02.219Z',
+  updatedAt: '2025-09-26T15:24:02.219Z',
+  tabType: 'table',
+  unsavedChanges: false,
+  alert: false,
+  position: 101,
+  isRunning: false,
+  title: 'schema_migrations',
+  titleScope: 'all',
+  active: true,
+  tableName: 'schema_migrations',
+  schemaName: 'public',
+  entityType: 'table',
+  connectionId: 1,
+  workspaceId: -1,
+  filters: null,
+  deletedAt: null
+}
+[2025-09-26 17:24:02.242] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save 4ecbcecc-50ce-4124-ad42-7c89bfb052d9
+[2025-09-26 17:24:02.253] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listTableColumns fb30c619-2ba9-4304-9a74-f997f39cb2f7
+[2025-09-26 17:24:02.253] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+    
+[2025-09-26 17:24:02.253] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:02.253] [info]  (postgresql)          RUNNING 
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+     [ 'public', 'schema_migrations' ]
+[2025-09-26 17:24:02.261] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:02.264] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getTableKeys 902e4deb-6946-41b6-8c62-fd2e276f75d9
+[2025-09-26 17:24:02.265] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        tc.constraint_name,
+        kcu.column_name,
+        kcu.table_schema AS from_schema,
+        kcu.table_name AS from_table,
+        kcu2.column_name AS to_column,
+        kcu2.table_name AS to_table,
+        rc.unique_constraint_schema AS to_schema,
+        rc.update_rule,
+        rc.delete_rule,
+        kcu.ordinal_position
+      FROM
+        information_schema.table_constraints AS tc
+        JOIN information_schema.key_column_usage AS kcu
+          ON tc.constraint_name = kcu.constraint_name
+          AND tc.table_schema = kcu.table_schema
+        JOIN information_schema.referential_constraints AS rc
+          ON rc.constraint_name = tc.constraint_name
+          AND rc.constraint_schema = tc.table_schema
+        JOIN information_schema.key_column_usage AS kcu2
+          ON kcu2.constraint_name = rc.unique_constraint_name
+          AND kcu.ordinal_position = kcu2.ordinal_position
+          AND kcu2.constraint_schema = rc.unique_constraint_schema
+      WHERE
+        tc.constraint_type = 'FOREIGN KEY'
+        AND tc.table_schema = $1
+        AND tc.table_name = $2
+      ORDER BY
+        tc.constraint_name,
+        kcu.ordinal_position;
+    
+[2025-09-26 17:24:02.265] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:02.265] [info]  (postgresql)          RUNNING 
+      SELECT
+        tc.constraint_name,
+        kcu.column_name,
+        kcu.table_schema AS from_schema,
+        kcu.table_name AS from_table,
+        kcu2.column_name AS to_column,
+        kcu2.table_name AS to_table,
+        rc.unique_constraint_schema AS to_schema,
+        rc.update_rule,
+        rc.delete_rule,
+        kcu.ordinal_position
+      FROM
+        information_schema.table_constraints AS tc
+        JOIN information_schema.key_column_usage AS kcu
+          ON tc.constraint_name = kcu.constraint_name
+          AND tc.table_schema = kcu.table_schema
+        JOIN information_schema.referential_constraints AS rc
+          ON rc.constraint_name = tc.constraint_name
+          AND rc.constraint_schema = tc.table_schema
+        JOIN information_schema.key_column_usage AS kcu2
+          ON kcu2.constraint_name = rc.unique_constraint_name
+          AND kcu.ordinal_position = kcu2.ordinal_position
+          AND kcu2.constraint_schema = rc.unique_constraint_schema
+      WHERE
+        tc.constraint_type = 'FOREIGN KEY'
+        AND tc.table_schema = $1
+        AND tc.table_name = $2
+      ORDER BY
+        tc.constraint_name,
+        kcu.ordinal_position;
+     [ 'public', 'schema_migrations' ]
+[2025-09-26 17:24:02.270] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:02.271] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getPrimaryKeys 4494a3bd-3745-4320-a356-37f0b644ad42
+[2025-09-26 17:24:02.271] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        a.attname as column_name,
+        format_type(a.atttypid, a.atttypmod) AS data_type,
+        a.attnum as position
+      FROM   pg_index i
+        JOIN   pg_attribute a ON a.attrelid = i.indrelid
+        AND a.attnum = ANY(i.indkey)
+      WHERE  i.indrelid = '"public"."schema_migrations"'::regclass
+        AND    i.indisprimary
+      ORDER BY a.attnum
+    
+[2025-09-26 17:24:02.272] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:02.272] [info]  (postgresql)          RUNNING 
+      SELECT
+        a.attname as column_name,
+        format_type(a.atttypid, a.atttypmod) AS data_type,
+        a.attnum as position
+      FROM   pg_index i
+        JOIN   pg_attribute a ON a.attrelid = i.indrelid
+        AND a.attnum = ANY(i.indkey)
+      WHERE  i.indrelid = '"public"."schema_migrations"'::regclass
+        AND    i.indisprimary
+      ORDER BY a.attnum
+     undefined
+[2025-09-26 17:24:02.272] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:02.286] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/selectTop 1484f1cc-a275-4d8a-922a-4eb259825bb3
+[2025-09-26 17:24:02.287] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT * 
+      FROM "public"."schema_migrations"
+      
+    
+      ORDER BY "version" ASC
+      LIMIT 101
+      OFFSET 0
+      
+[2025-09-26 17:24:02.287] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:02.287] [info]  (postgresql)          RUNNING 
+      SELECT * 
+      FROM "public"."schema_migrations"
+      
+    
+      ORDER BY "version" ASC
+      LIMIT 101
+      OFFSET 0
+       []
+[2025-09-26 17:24:02.289] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:02.289] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listTableColumns 55d2cd0b-0632-4b42-8d8f-5be072dea15f
+[2025-09-26 17:24:02.290] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+    
+[2025-09-26 17:24:02.290] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:02.290] [info]  (postgresql)          RUNNING 
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+     [ 'public', 'schema_migrations' ]
+[2025-09-26 17:24:02.294] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:02.296] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getTableKeys ded53f25-389f-4cf4-a964-20f22e3998a7
+[2025-09-26 17:24:02.296] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        tc.constraint_name,
+        kcu.column_name,
+        kcu.table_schema AS from_schema,
+        kcu.table_name AS from_table,
+        kcu2.column_name AS to_column,
+        kcu2.table_name AS to_table,
+        rc.unique_constraint_schema AS to_schema,
+        rc.update_rule,
+        rc.delete_rule,
+        kcu.ordinal_position
+      FROM
+        information_schema.table_constraints AS tc
+        JOIN information_schema.key_column_usage AS kcu
+          ON tc.constraint_name = kcu.constraint_name
+          AND tc.table_schema = kcu.table_schema
+        JOIN information_schema.referential_constraints AS rc
+          ON rc.constraint_name = tc.constraint_name
+          AND rc.constraint_schema = tc.table_schema
+        JOIN information_schema.key_column_usage AS kcu2
+          ON kcu2.constraint_name = rc.unique_constraint_name
+          AND kcu.ordinal_position = kcu2.ordinal_position
+          AND kcu2.constraint_schema = rc.unique_constraint_schema
+      WHERE
+        tc.constraint_type = 'FOREIGN KEY'
+        AND tc.table_schema = $1
+        AND tc.table_name = $2
+      ORDER BY
+        tc.constraint_name,
+        kcu.ordinal_position;
+    
+[2025-09-26 17:24:02.296] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:02.296] [info]  (postgresql)          RUNNING 
+      SELECT
+        tc.constraint_name,
+        kcu.column_name,
+        kcu.table_schema AS from_schema,
+        kcu.table_name AS from_table,
+        kcu2.column_name AS to_column,
+        kcu2.table_name AS to_table,
+        rc.unique_constraint_schema AS to_schema,
+        rc.update_rule,
+        rc.delete_rule,
+        kcu.ordinal_position
+      FROM
+        information_schema.table_constraints AS tc
+        JOIN information_schema.key_column_usage AS kcu
+          ON tc.constraint_name = kcu.constraint_name
+          AND tc.table_schema = kcu.table_schema
+        JOIN information_schema.referential_constraints AS rc
+          ON rc.constraint_name = tc.constraint_name
+          AND rc.constraint_schema = tc.table_schema
+        JOIN information_schema.key_column_usage AS kcu2
+          ON kcu2.constraint_name = rc.unique_constraint_name
+          AND kcu.ordinal_position = kcu2.ordinal_position
+          AND kcu2.constraint_schema = rc.unique_constraint_schema
+      WHERE
+        tc.constraint_type = 'FOREIGN KEY'
+        AND tc.table_schema = $1
+        AND tc.table_name = $2
+      ORDER BY
+        tc.constraint_name,
+        kcu.ordinal_position;
+     [ 'public', 'schema_migrations' ]
+[2025-09-26 17:24:02.296] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save 989606f3-47f6-45b5-86a0-29b57f23e66e
+[2025-09-26 17:24:02.304] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:02.306] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getPrimaryKeys b94644f5-aabd-43a7-9c79-4cf96d25cd72
+[2025-09-26 17:24:02.306] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        a.attname as column_name,
+        format_type(a.atttypid, a.atttypmod) AS data_type,
+        a.attnum as position
+      FROM   pg_index i
+        JOIN   pg_attribute a ON a.attrelid = i.indrelid
+        AND a.attnum = ANY(i.indkey)
+      WHERE  i.indrelid = '"public"."schema_migrations"'::regclass
+        AND    i.indisprimary
+      ORDER BY a.attnum
+    
+[2025-09-26 17:24:02.306] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:24:02.306] [info]  (postgresql)          RUNNING 
+      SELECT
+        a.attname as column_name,
+        format_type(a.atttypid, a.atttypmod) AS data_type,
+        a.attnum as position
+      FROM   pg_index i
+        JOIN   pg_attribute a ON a.attrelid = i.indrelid
+        AND a.attnum = ANY(i.indkey)
+      WHERE  i.indrelid = '"public"."schema_migrations"'::regclass
+        AND    i.indisprimary
+      ORDER BY a.attnum
+     undefined
+[2025-09-26 17:24:02.308] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:24:02.577] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save fe59fffa-daba-4ed4-ba44-21476e85202f
+[2025-09-26 17:24:02.778] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save 6c39d042-26b9-4d35-b920-6ddf54a3db2a
+[2025-09-26 17:24:07.052] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save ca1be75e-fb73-44bb-84fc-1a592fd5395a
+[2025-09-26 17:24:07.552] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save d6efefc4-0437-4d81-9cd3-57b1c653b534
+[2025-09-26 17:25:03.636] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save 09e47b38-2aef-4ff3-b42e-9847bafedbf5
+[2025-09-26 17:25:04.136] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save 055ca2ab-4463-4b0b-a408-2f94cf4ab514
+[2025-09-26 17:25:11.924] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save f4f26417-51de-4e61-9853-d0ee6cabb0e7
+[2025-09-26 17:25:12.426] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save fccdf489-97b5-48f7-87ce-2b8a67fc4ce7
+[2025-09-26 17:25:48.146] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/setting/find 0c3adbf2-acce-429f-b0f5-cd95148d377c
+[2025-09-26 17:25:50.709] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/setting/find c75a106e-283a-4c3b-90e1-5f62c86b863e
+[2025-09-26 17:25:54.652] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/setting/find fc0bda4c-1a1e-4b3e-a033-45d2d7f523ea
+[2025-09-26 17:26:00.843] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/setting/find 640567a2-c8d6-4cc7-945e-d0fc502b4a63
+[2025-09-26 17:29:16.126] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/selectTop cddf5ec8-0ed6-4eb0-9cf4-2607801e0e8f
+[2025-09-26 17:29:16.127] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT * 
+      FROM "public"."users"
+      
+    
+      ORDER BY "id" ASC
+      LIMIT 101
+      OFFSET 0
+      
+[2025-09-26 17:29:16.133] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:29:16.133] [info]  (postgresql)          RUNNING 
+      SELECT * 
+      FROM "public"."users"
+      
+    
+      ORDER BY "id" ASC
+      LIMIT 101
+      OFFSET 0
+       []
+[2025-09-26 17:29:16.135] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:29:16.135] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listTableColumns 416f7d76-5936-4d42-a479-1a61ea1ac0bc
+[2025-09-26 17:29:16.136] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+    
+[2025-09-26 17:29:16.136] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:29:16.136] [info]  (postgresql)          RUNNING 
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+     [ 'public', 'users' ]
+[2025-09-26 17:29:16.150] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:29:16.151] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getTableKeys 392cdad2-70be-420b-aa53-9a67e77de096
+[2025-09-26 17:29:16.151] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        tc.constraint_name,
+        kcu.column_name,
+        kcu.table_schema AS from_schema,
+        kcu.table_name AS from_table,
+        kcu2.column_name AS to_column,
+        kcu2.table_name AS to_table,
+        rc.unique_constraint_schema AS to_schema,
+        rc.update_rule,
+        rc.delete_rule,
+        kcu.ordinal_position
+      FROM
+        information_schema.table_constraints AS tc
+        JOIN information_schema.key_column_usage AS kcu
+          ON tc.constraint_name = kcu.constraint_name
+          AND tc.table_schema = kcu.table_schema
+        JOIN information_schema.referential_constraints AS rc
+          ON rc.constraint_name = tc.constraint_name
+          AND rc.constraint_schema = tc.table_schema
+        JOIN information_schema.key_column_usage AS kcu2
+          ON kcu2.constraint_name = rc.unique_constraint_name
+          AND kcu.ordinal_position = kcu2.ordinal_position
+          AND kcu2.constraint_schema = rc.unique_constraint_schema
+      WHERE
+        tc.constraint_type = 'FOREIGN KEY'
+        AND tc.table_schema = $1
+        AND tc.table_name = $2
+      ORDER BY
+        tc.constraint_name,
+        kcu.ordinal_position;
+    
+[2025-09-26 17:29:16.151] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:29:16.151] [info]  (postgresql)          RUNNING 
+      SELECT
+        tc.constraint_name,
+        kcu.column_name,
+        kcu.table_schema AS from_schema,
+        kcu.table_name AS from_table,
+        kcu2.column_name AS to_column,
+        kcu2.table_name AS to_table,
+        rc.unique_constraint_schema AS to_schema,
+        rc.update_rule,
+        rc.delete_rule,
+        kcu.ordinal_position
+      FROM
+        information_schema.table_constraints AS tc
+        JOIN information_schema.key_column_usage AS kcu
+          ON tc.constraint_name = kcu.constraint_name
+          AND tc.table_schema = kcu.table_schema
+        JOIN information_schema.referential_constraints AS rc
+          ON rc.constraint_name = tc.constraint_name
+          AND rc.constraint_schema = tc.table_schema
+        JOIN information_schema.key_column_usage AS kcu2
+          ON kcu2.constraint_name = rc.unique_constraint_name
+          AND kcu.ordinal_position = kcu2.ordinal_position
+          AND kcu2.constraint_schema = rc.unique_constraint_schema
+      WHERE
+        tc.constraint_type = 'FOREIGN KEY'
+        AND tc.table_schema = $1
+        AND tc.table_name = $2
+      ORDER BY
+        tc.constraint_name,
+        kcu.ordinal_position;
+     [ 'public', 'users' ]
+[2025-09-26 17:29:16.151] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save db44568f-37e8-453c-a383-bb9bd9d12833
+[2025-09-26 17:29:16.158] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:29:16.159] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getPrimaryKeys 8202b47b-e7bb-4a65-ad75-58211d46fd87
+[2025-09-26 17:29:16.159] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        a.attname as column_name,
+        format_type(a.atttypid, a.atttypmod) AS data_type,
+        a.attnum as position
+      FROM   pg_index i
+        JOIN   pg_attribute a ON a.attrelid = i.indrelid
+        AND a.attnum = ANY(i.indkey)
+      WHERE  i.indrelid = '"public"."users"'::regclass
+        AND    i.indisprimary
+      ORDER BY a.attnum
+    
+[2025-09-26 17:29:16.159] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:29:16.159] [info]  (postgresql)          RUNNING 
+      SELECT
+        a.attname as column_name,
+        format_type(a.atttypid, a.atttypmod) AS data_type,
+        a.attnum as position
+      FROM   pg_index i
+        JOIN   pg_attribute a ON a.attrelid = i.indrelid
+        AND a.attnum = ANY(i.indkey)
+      WHERE  i.indrelid = '"public"."users"'::regclass
+        AND    i.indisprimary
+      ORDER BY a.attnum
+     undefined
+[2025-09-26 17:29:16.161] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:29:16.188] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/selectTop f118de64-59d2-43d6-8797-53d310def822
+[2025-09-26 17:29:16.188] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT * 
+      FROM "public"."users"
+      
+    
+      ORDER BY "id" ASC
+      LIMIT 101
+      OFFSET 0
+      
+[2025-09-26 17:29:16.189] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:29:16.189] [info]  (postgresql)          RUNNING 
+      SELECT * 
+      FROM "public"."users"
+      
+    
+      ORDER BY "id" ASC
+      LIMIT 101
+      OFFSET 0
+       []
+[2025-09-26 17:29:16.189] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:29:16.191] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/listTableColumns 1a4f2720-b147-4a95-9756-b6c65dfe176c
+[2025-09-26 17:29:16.192] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+    
+[2025-09-26 17:29:16.192] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:29:16.192] [info]  (postgresql)          RUNNING 
+      SELECT
+        table_schema,
+        table_name,
+        column_name,
+        is_nullable,
+        is_generated,
+          ordinal_position,
+        column_default,
+        CASE
+          WHEN character_maximum_length is not null  and udt_name != 'text'
+            THEN udt_name || '(' || character_maximum_length::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is not null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ',' || numeric_scale::varchar(255) || ')'
+          WHEN numeric_precision is not null and numeric_scale is null
+            THEN udt_name || '(' || numeric_precision::varchar(255) || ')'
+          WHEN datetime_precision is not null AND udt_name != 'date' THEN
+            udt_name || '(' || datetime_precision::varchar(255) || ')'
+          ELSE udt_name
+      END as data_type,
+        CASE
+          WHEN data_type = 'ARRAY' THEN 'YES'
+          ELSE 'NO'
+      END as is_array,
+        pg_catalog.col_description(format('%I.%I', table_schema, table_name)::regclass::oid, ordinal_position) as column_comment
+      FROM information_schema.columns
+      WHERE table_schema = $1 AND table_name = $2
+      ORDER BY table_schema, table_name, ordinal_position
+     [ 'public', 'users' ]
+[2025-09-26 17:29:16.197] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:29:16.200] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getTableKeys 923776ab-f10c-4b82-bb4b-2c3b1d352f2e
+[2025-09-26 17:29:16.201] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        tc.constraint_name,
+        kcu.column_name,
+        kcu.table_schema AS from_schema,
+        kcu.table_name AS from_table,
+        kcu2.column_name AS to_column,
+        kcu2.table_name AS to_table,
+        rc.unique_constraint_schema AS to_schema,
+        rc.update_rule,
+        rc.delete_rule,
+        kcu.ordinal_position
+      FROM
+        information_schema.table_constraints AS tc
+        JOIN information_schema.key_column_usage AS kcu
+          ON tc.constraint_name = kcu.constraint_name
+          AND tc.table_schema = kcu.table_schema
+        JOIN information_schema.referential_constraints AS rc
+          ON rc.constraint_name = tc.constraint_name
+          AND rc.constraint_schema = tc.table_schema
+        JOIN information_schema.key_column_usage AS kcu2
+          ON kcu2.constraint_name = rc.unique_constraint_name
+          AND kcu.ordinal_position = kcu2.ordinal_position
+          AND kcu2.constraint_schema = rc.unique_constraint_schema
+      WHERE
+        tc.constraint_type = 'FOREIGN KEY'
+        AND tc.table_schema = $1
+        AND tc.table_name = $2
+      ORDER BY
+        tc.constraint_name,
+        kcu.ordinal_position;
+    
+[2025-09-26 17:29:16.201] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:29:16.201] [info]  (postgresql)          RUNNING 
+      SELECT
+        tc.constraint_name,
+        kcu.column_name,
+        kcu.table_schema AS from_schema,
+        kcu.table_name AS from_table,
+        kcu2.column_name AS to_column,
+        kcu2.table_name AS to_table,
+        rc.unique_constraint_schema AS to_schema,
+        rc.update_rule,
+        rc.delete_rule,
+        kcu.ordinal_position
+      FROM
+        information_schema.table_constraints AS tc
+        JOIN information_schema.key_column_usage AS kcu
+          ON tc.constraint_name = kcu.constraint_name
+          AND tc.table_schema = kcu.table_schema
+        JOIN information_schema.referential_constraints AS rc
+          ON rc.constraint_name = tc.constraint_name
+          AND rc.constraint_schema = tc.table_schema
+        JOIN information_schema.key_column_usage AS kcu2
+          ON kcu2.constraint_name = rc.unique_constraint_name
+          AND kcu.ordinal_position = kcu2.ordinal_position
+          AND kcu2.constraint_schema = rc.unique_constraint_schema
+      WHERE
+        tc.constraint_type = 'FOREIGN KEY'
+        AND tc.table_schema = $1
+        AND tc.table_name = $2
+      ORDER BY
+        tc.constraint_name,
+        kcu.ordinal_position;
+     [ 'public', 'users' ]
+[2025-09-26 17:29:16.202] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  appdb/tabs/save c061aab1-49b4-41c1-b94c-26e0f2d9ed8d
+[2025-09-26 17:29:16.209] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:29:16.210] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  conn/getPrimaryKeys 3f2d6ea4-30b1-46db-805c-096154bf21d1
+[2025-09-26 17:29:16.210] [info]  (postgresql)          Acquiring new connection for:  
+      SELECT
+        a.attname as column_name,
+        format_type(a.atttypid, a.atttypmod) AS data_type,
+        a.attnum as position
+      FROM   pg_index i
+        JOIN   pg_attribute a ON a.attrelid = i.indrelid
+        AND a.attnum = ANY(i.indkey)
+      WHERE  i.indrelid = '"public"."users"'::regclass
+        AND    i.indisprimary
+      ORDER BY a.attnum
+    
+[2025-09-26 17:29:16.210] [debug] (postgresql)          Pool event: connection acquired
+[2025-09-26 17:29:16.210] [info]  (postgresql)          RUNNING 
+      SELECT
+        a.attname as column_name,
+        format_type(a.atttypid, a.atttypmod) AS data_type,
+        a.attnum as position
+      FROM   pg_index i
+        JOIN   pg_attribute a ON a.attrelid = i.indrelid
+        AND a.attnum = ANY(i.indkey)
+      WHERE  i.indrelid = '"public"."users"'::regclass
+        AND    i.indisprimary
+      ORDER BY a.attnum
+     undefined
+[2025-09-26 17:29:16.210] [debug] (postgresql)          Pool event: connection released
+[2025-09-26 17:32:40.112] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 76a8a87d-e310-4640-9023-e833212d643a
+[2025-09-26 17:32:40.113] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 6530992a-5d98-4605-8d8c-6eb3afdc1dd2
+[2025-09-26 17:32:40.113] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get 0d7cf975-47c7-438a-9e93-259ffc049450
+[2025-09-26 17:32:40.113] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get ef717be8-8679-4060-aaf7-fec36df4befd
+[2025-09-26 17:32:40.140] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 1ed014e2-7f49-4d4f-a63c-390a518a4a28
+[2025-09-26 17:32:40.142] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get cd71d51e-bc2b-474f-852e-a82c1a4a3ccc
+[2025-09-26 17:42:40.086] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus eb11ad34-34d5-4ef8-a7e0-5bbe64f3f325
+[2025-09-26 17:42:40.113] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get 3a6e12bf-5fe6-4820-9dd5-5e75040bff13
+[2025-09-26 17:42:40.113] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 6bd9b641-1ae5-4355-973b-79712c9a0a98
+[2025-09-26 17:42:40.117] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get 2b41b907-d401-4d06-b824-11cbaa2343ec
+[2025-09-26 17:42:40.139] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus fa752581-b203-4616-938e-b201c729edcc
+[2025-09-26 17:42:40.140] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get 40846a41-34af-45c7-b972-b5fdf9648ff7
+[2025-09-26 17:52:40.085] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 12da76f6-b0fa-41c2-b0c5-bd094e84a2ae
+[2025-09-26 17:52:40.112] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get a06c0063-107f-45d0-99e1-4d517b21f1ea
+[2025-09-26 17:52:40.112] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 10bd77cd-3b4d-416c-b1ec-7a5060cea5c2
+[2025-09-26 17:52:40.116] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get 7a347552-5681-498a-b821-55b118293f7e
+[2025-09-26 17:52:40.139] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus f6e0f20f-cec7-4afb-a553-0dbe86cf6299
+[2025-09-26 17:52:40.140] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get d33f794b-6a5b-448a-b3f0-f4364a80f954
+[2025-09-26 18:02:40.085] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 11e54ee1-26b6-41c8-8e49-c25f7971c8b9
+[2025-09-26 18:02:40.086] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get cb152d66-797b-4a3d-b95b-9f88a9ed57b7
+[2025-09-26 18:02:40.114] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus f4bd5918-db72-4020-a679-deed4e841662
+[2025-09-26 18:02:40.115] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get ad2b5ebe-d1c5-4d47-be84-1492466f0200
+[2025-09-26 18:02:40.139] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 0d6f42fe-f06f-4725-8f14-aab285bb5231
+[2025-09-26 18:02:40.140] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get bad652b4-67d2-42e5-ae7c-48e1b580a07c
+[2025-09-26 18:12:40.085] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus d223b4f4-35cd-4d64-9cac-9b344de2c1bf
+[2025-09-26 18:12:40.087] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get c7e60a6e-fed1-40a4-9e70-9e7b944d370a
+[2025-09-26 18:12:40.118] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 4d01e375-e307-4711-8988-abd4a5679c68
+[2025-09-26 18:12:40.119] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get d9b8f646-606c-4c56-bd26-2d7210805be2
+[2025-09-26 18:12:40.139] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 67871c3a-da13-4020-9da8-14804f55f3b5
+[2025-09-26 18:12:40.140] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get 61451421-382d-403b-836a-d5a57b0a9875
+[2025-09-26 18:22:40.085] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus b1a8c7b1-5079-42ad-83e5-0a2f2edc09f1
+[2025-09-26 18:22:40.087] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get fb01ac58-05ef-46ea-ab86-b5db568ba5fc
+[2025-09-26 18:22:40.116] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 099ef912-0859-427a-821c-528fa68d09e3
+[2025-09-26 18:22:40.118] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get 748d3d95-3d27-4ab5-ba06-65bac52fb051
+[2025-09-26 18:22:40.139] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/getStatus 9dfa5921-1ba7-44f6-bbe2-96a70c8ad834
+[2025-09-26 18:22:40.140] [info]  (UtilityProcess)      RECEIVED REQUEST FOR NAME, ID:  license/get 496a0373-11b4-4bd6-9a42-bdae0661cf00
+[2025-09-26 18:25:27.943] [info]  (UtilityProcess)      REMOVING STATE FOR:  35098757-5c6a-4691-91c0-df2c339d72c1

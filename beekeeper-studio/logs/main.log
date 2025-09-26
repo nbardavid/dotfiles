@@ -1,0 +1,2956 @@
+[2025-09-26 17:20:15.017] [warn]  (jsonViewer)      Failed to parse JSON for column invalidJson: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at parse (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/src/lib/data/jsonViewer.ts:183:35)
+    at Array.forEach (<anonymous>)
+    at forEach (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/src/lib/data/jsonViewer.ts:160:16)
+    at Object.<anonymous> (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/tests/unit/lib/data/detail_view.spec.js:177:47)
+    at Promise.then.completed (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/run.js:121:9)
+    at _runTestsForDescribeBlock (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:76:19)
+    at runTestInternal (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-runner/build/runTest.js:281:16)
+    at runTest (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-runner/build/runTest.js:341:7)
+[2025-09-26 17:20:19.185] [info]  (BksConfig)           Loading configs.
+[2025-09-26 17:20:19.188] [debug] (BksConfig)           Loading config default.config.ini.
+[2025-09-26 17:20:19.238] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/default.config.ini.
+[2025-09-26 17:20:19.238] [debug] (BksConfig)           Loading config system.config.ini.
+[2025-09-26 17:20:19.239] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/system.config.ini.
+[2025-09-26 17:20:19.239] [debug] (BksConfig)           Loading config user.config.ini.
+[2025-09-26 17:20:19.239] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/user.config.ini.
+[2025-09-26 17:20:19.240] [info]  (BksConfig)           Configs successfully loaded with 0 warnings.
+[2025-09-26 17:20:19.241] [warn]  (BksConfig)           Warnings: []
+[2025-09-26 17:20:19.242] [info]  (BksConfig)           Default config: {
+  "general": {
+    "checkForUpdatesInterval": 86400000,
+    "dataSyncInterval": 30000,
+    "workspaceSyncInterval": 5000
+  },
+  "security": {
+    "disconnectOnSuspend": false,
+    "disconnectOnLock": false,
+    "disconnectOnIdle": false,
+    "lockMode": "disabled",
+    "idleThresholdSeconds": 300,
+    "idleCheckIntervalSeconds": 30,
+    "minPinLength": 6
+  },
+  "ui": {
+    "general": {
+      "binaryEncoding": "hex"
+    },
+    "layout": {
+      "mainContentMinWidth": 200,
+      "primarySidebarMinWidth": 150,
+      "secondarySidebarMinWidth": 150
+    },
+    "queryEditor": {
+      "maxResults": 50000
+    },
+    "tableTable": {
+      "pageSize": 100,
+      "largeFieldWidth": 300,
+      "maxColumnWidth": 1000,
+      "minColumnWidth": 100,
+      "maxInitialWidth": 500,
+      "defaultColumnWidth": 125
+    },
+    "tableTriggers": {
+      "maxColumnWidth": 300
+    },
+    "tableList": {
+      "itemHeight": 22.8
+    },
+    "export": {
+      "errorNoticeTimeout": 60000
+    }
+  },
+  "db": {
+    "mysql": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "mariadb": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "tidb": {
+      "allowSkipToLastPage": true
+    },
+    "postgres": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": true
+    },
+    "cockroachdb": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "redshift": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "sqlite": {
+      "allowSkipToLastPage": true
+    },
+    "sqlserver": {
+      "allowSkipToLastPage": false
+    },
+    "bigquery": {
+      "allowSkipToLastPage": false
+    },
+    "oracle": {
+      "allowSkipToLastPage": false
+    },
+    "cassandra": {
+      "allowSkipToLastPage": false
+    },
+    "firebird": {
+      "allowSkipToLastPage": false
+    },
+    "clickhouse": {
+      "allowSkipToLastPage": false
+    },
+    "mongodb": {
+      "allowSkipToLastPage": false
+    },
+    "duckdb": {
+      "allowSkipToLastPage": false
+    },
+    "sqlanywhere": {
+      "allowSkipToLastPage": false
+    }
+  },
+  "keybindings": {
+    "general": {
+      "refresh": [
+        "f5",
+        "ctrlOrCmd+r"
+      ],
+      "addRow": "ctrlOrCmd+n",
+      "save": "ctrlOrCmd+s",
+      "openInSqlEditor": "ctrlOrCmd+shift+s",
+      "openQuickSearch": "ctrlOrCmd+p",
+      "copySelection": "ctrlOrCmd+c",
+      "pasteSelection": "ctrlOrCmd+v",
+      "cloneSelection": "ctrlOrCmd+d",
+      "deleteSelection": "delete"
+    },
+    "tab": {
+      "closeTab": "ctrlOrCmd+w",
+      "nextTab": [
+        "ctrl+tab",
+        "ctrlOrCmd+pagedown"
+      ],
+      "previousTab": [
+        "ctrl+shift+tab",
+        "ctrlOrCmd+pageup"
+      ],
+      "reopenLastClosedTab": "ctrlOrCmd+shift+t",
+      "switchTab1": "alt+1",
+      "switchTab2": "alt+2",
+      "switchTab3": "alt+3",
+      "switchTab4": "alt+4",
+      "switchTab5": "alt+5",
+      "switchTab6": "alt+6",
+      "switchTab7": "alt+7",
+      "switchTab8": "alt+8",
+      "switchTab9": "alt+9"
+    },
+    "quickSearch": {
+      "focusSearch": [
+        "ctrlOrCmd+k",
+        "ctrlOrCmd+o"
+      ],
+      "close": "esc",
+      "selectUp": [
+        "up",
+        "ctrlOrCmd+p"
+      ],
+      "selectDown": [
+        "down",
+        "ctrlOrCmd+n"
+      ],
+      "open": "enter",
+      "altOpen": "ctrlOrCmd+enter",
+      "openInBackground": "right",
+      "altOpenInBackground": "ctrlOrCmd+right"
+    },
+    "queryEditor": {
+      "selectEditor": "ctrlOrCmd+l",
+      "submitTabQuery": [
+        "ctrlOrCmd+enter",
+        "f5"
+      ],
+      "submitCurrentQuery": [
+        "ctrlOrCmd+shift+enter",
+        "shift+f5"
+      ],
+      "submitQueryToFile": "ctrlOrCmd+i",
+      "submitCurrentQueryToFile": "ctrlOrCmd+shift+i",
+      "selectNextResult": "shift+up",
+      "selectPreviousResult": "shift+down",
+      "copyResultSelection": "ctrlOrCmd+c",
+      "switchPaneFocus": "ctrlOrCmd+`",
+      "openTableFilter": "ctrlOrCmd+f",
+      "closeTableFilter": "esc"
+    },
+    "tableTable": {
+      "nextPage": "ctrlOrCmd+right",
+      "previousPage": "ctrlOrCmd+left",
+      "focusOnFilterInput": "ctrlOrCmd+f",
+      "openEditorModal": "shift+enter",
+      "firstPage": "ctrlOrCmd+h",
+      "lastPage": "ctrlOrCmd+l"
+    }
+  }
+}
+[2025-09-26 17:20:19.243] [info]  (BksConfig)           System config: {}
+[2025-09-26 17:20:19.243] [info]  (BksConfig)           User config: {}
+[2025-09-26 17:20:19.501] [info]  (BksConfig)           Loading configs.
+[2025-09-26 17:20:19.502] [debug] (BksConfig)           Loading config default.config.ini.
+[2025-09-26 17:20:19.503] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/default.config.ini.
+[2025-09-26 17:20:19.503] [debug] (BksConfig)           Loading config system.config.ini.
+[2025-09-26 17:20:19.503] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/system.config.ini.
+[2025-09-26 17:20:19.503] [debug] (BksConfig)           Loading config user.config.ini.
+[2025-09-26 17:20:19.503] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/user.config.ini.
+[2025-09-26 17:20:19.503] [info]  (BksConfig)           Configs successfully loaded with 0 warnings.
+[2025-09-26 17:20:19.504] [warn]  (BksConfig)           Warnings: []
+[2025-09-26 17:20:19.504] [info]  (BksConfig)           Default config: {
+  "general": {
+    "checkForUpdatesInterval": 86400000,
+    "dataSyncInterval": 30000,
+    "workspaceSyncInterval": 5000
+  },
+  "security": {
+    "disconnectOnSuspend": false,
+    "disconnectOnLock": false,
+    "disconnectOnIdle": false,
+    "lockMode": "disabled",
+    "idleThresholdSeconds": 300,
+    "idleCheckIntervalSeconds": 30,
+    "minPinLength": 6
+  },
+  "ui": {
+    "general": {
+      "binaryEncoding": "hex"
+    },
+    "layout": {
+      "mainContentMinWidth": 200,
+      "primarySidebarMinWidth": 150,
+      "secondarySidebarMinWidth": 150
+    },
+    "queryEditor": {
+      "maxResults": 50000
+    },
+    "tableTable": {
+      "pageSize": 100,
+      "largeFieldWidth": 300,
+      "maxColumnWidth": 1000,
+      "minColumnWidth": 100,
+      "maxInitialWidth": 500,
+      "defaultColumnWidth": 125
+    },
+    "tableTriggers": {
+      "maxColumnWidth": 300
+    },
+    "tableList": {
+      "itemHeight": 22.8
+    },
+    "export": {
+      "errorNoticeTimeout": 60000
+    }
+  },
+  "db": {
+    "mysql": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "mariadb": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "tidb": {
+      "allowSkipToLastPage": true
+    },
+    "postgres": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": true
+    },
+    "cockroachdb": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "redshift": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "sqlite": {
+      "allowSkipToLastPage": true
+    },
+    "sqlserver": {
+      "allowSkipToLastPage": false
+    },
+    "bigquery": {
+      "allowSkipToLastPage": false
+    },
+    "oracle": {
+      "allowSkipToLastPage": false
+    },
+    "cassandra": {
+      "allowSkipToLastPage": false
+    },
+    "firebird": {
+      "allowSkipToLastPage": false
+    },
+    "clickhouse": {
+      "allowSkipToLastPage": false
+    },
+    "mongodb": {
+      "allowSkipToLastPage": false
+    },
+    "duckdb": {
+      "allowSkipToLastPage": false
+    },
+    "sqlanywhere": {
+      "allowSkipToLastPage": false
+    }
+  },
+  "keybindings": {
+    "general": {
+      "refresh": [
+        "f5",
+        "ctrlOrCmd+r"
+      ],
+      "addRow": "ctrlOrCmd+n",
+      "save": "ctrlOrCmd+s",
+      "openInSqlEditor": "ctrlOrCmd+shift+s",
+      "openQuickSearch": "ctrlOrCmd+p",
+      "copySelection": "ctrlOrCmd+c",
+      "pasteSelection": "ctrlOrCmd+v",
+      "cloneSelection": "ctrlOrCmd+d",
+      "deleteSelection": "delete"
+    },
+    "tab": {
+      "closeTab": "ctrlOrCmd+w",
+      "nextTab": [
+        "ctrl+tab",
+        "ctrlOrCmd+pagedown"
+      ],
+      "previousTab": [
+        "ctrl+shift+tab",
+        "ctrlOrCmd+pageup"
+      ],
+      "reopenLastClosedTab": "ctrlOrCmd+shift+t",
+      "switchTab1": "alt+1",
+      "switchTab2": "alt+2",
+      "switchTab3": "alt+3",
+      "switchTab4": "alt+4",
+      "switchTab5": "alt+5",
+      "switchTab6": "alt+6",
+      "switchTab7": "alt+7",
+      "switchTab8": "alt+8",
+      "switchTab9": "alt+9"
+    },
+    "quickSearch": {
+      "focusSearch": [
+        "ctrlOrCmd+k",
+        "ctrlOrCmd+o"
+      ],
+      "close": "esc",
+      "selectUp": [
+        "up",
+        "ctrlOrCmd+p"
+      ],
+      "selectDown": [
+        "down",
+        "ctrlOrCmd+n"
+      ],
+      "open": "enter",
+      "altOpen": "ctrlOrCmd+enter",
+      "openInBackground": "right",
+      "altOpenInBackground": "ctrlOrCmd+right"
+    },
+    "queryEditor": {
+      "selectEditor": "ctrlOrCmd+l",
+      "submitTabQuery": [
+        "ctrlOrCmd+enter",
+        "f5"
+      ],
+      "submitCurrentQuery": [
+        "ctrlOrCmd+shift+enter",
+        "shift+f5"
+      ],
+      "submitQueryToFile": "ctrlOrCmd+i",
+      "submitCurrentQueryToFile": "ctrlOrCmd+shift+i",
+      "selectNextResult": "shift+up",
+      "selectPreviousResult": "shift+down",
+      "copyResultSelection": "ctrlOrCmd+c",
+      "switchPaneFocus": "ctrlOrCmd+`",
+      "openTableFilter": "ctrlOrCmd+f",
+      "closeTableFilter": "esc"
+    },
+    "tableTable": {
+      "nextPage": "ctrlOrCmd+right",
+      "previousPage": "ctrlOrCmd+left",
+      "focusOnFilterInput": "ctrlOrCmd+f",
+      "openEditorModal": "shift+enter",
+      "firstPage": "ctrlOrCmd+h",
+      "lastPage": "ctrlOrCmd+l"
+    }
+  }
+}
+[2025-09-26 17:20:19.504] [info]  (BksConfig)           System config: {}
+[2025-09-26 17:20:19.505] [info]  (BksConfig)           User config: {}
+[2025-09-26 17:20:19.513] [info]  (OfflineLicense)      Loading offline license from tests/resources/good.license
+[2025-09-26 17:20:19.523] [info]  (OfflineLicense)      Loaded offline license
+[2025-09-26 17:20:19.523] [info]  (OfflineLicense)      Loading public key from tests/resources/public.pem
+[2025-09-26 17:20:19.524] [info]  (OfflineLicense)      Loaded public key
+[2025-09-26 17:20:19.524] [info]  (OfflineLicense)      Validated license -  {
+  license_key: {
+    valid_until: '2099-01-01T06:00:00.000Z',
+    support_until: '2099-01-01T06:00:00.000Z',
+    customer_support_until: '2099-01-01T06:00:00.000Z',
+    created_at: '2024-12-14T03:38:52.989Z',
+    license_type: 'PersonalLicense',
+    email: '123',
+    id: 4,
+    key: 'e605ca57-2115-4b21-b1ec-690f997df38e',
+    subscription: true,
+    max_allowed_app_release: null
+  },
+  errors: null,
+  status: 200
+}
+[2025-09-26 17:20:19.526] [info]  (OfflineLicense)      Loading offline license from tests/resources/bad.license
+[2025-09-26 17:20:19.526] [info]  (OfflineLicense)      Loaded offline license
+[2025-09-26 17:20:19.528] [info]  (OfflineLicense)      Loading public key from tests/resources/public.pem
+[2025-09-26 17:20:19.528] [info]  (OfflineLicense)      Loaded public key
+[2025-09-26 17:20:19.529] [info]  (OfflineLicense)      Validated license -  null
+[2025-09-26 17:20:19.529] [info]  (OfflineLicense)      Loading offline license from tests/resources/nonexistent.license
+[2025-09-26 17:20:19.530] [info]  (OfflineLicense)      Offline license does not exist tests/resources/nonexistent.license
+[2025-09-26 17:20:19.530] [info]  (OfflineLicense)      Loading public key from tests/resources/public.pem
+[2025-09-26 17:20:19.530] [info]  (OfflineLicense)      Loaded public key
+[2025-09-26 17:20:19.530] [info]  (OfflineLicense)      Validated license -  null
+[2025-09-26 17:20:19.532] [info]  (OfflineLicense)      Loading offline license from tests/resources/good.license
+[2025-09-26 17:20:19.532] [info]  (OfflineLicense)      Loaded offline license
+[2025-09-26 17:20:19.532] [info]  (OfflineLicense)      Loading public key from tests/resources/nonexistent.pem
+[2025-09-26 17:20:19.532] [info]  (OfflineLicense)      Public key does not exist tests/resources/nonexistent.pem
+[2025-09-26 17:20:19.533] [info]  (OfflineLicense)      Validated license -  null
+[2025-09-26 17:20:19.533] [info]  (OfflineLicense)      Loading offline license from tests/resources/invalid_json.license
+[2025-09-26 17:20:19.534] [error] (OfflineLicense)      Unable to validate license - SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at new parse (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/src/backend/lib/OfflineLicense.ts:66:32)
+    at Object.<anonymous> (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/tests/unit/backend/lib/OfflineLicense.spec.js:117:21)
+    at Promise.then.completed (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/run.js:121:9)
+    at run (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:76:19)
+    at runTestInternal (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-runner/build/runTest.js:281:16)
+    at runTest (/home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/jest-runner/build/runTest.js:341:7)
+[2025-09-26 17:20:19.539] [info]  (OfflineLicense)      Loading offline license from tests/resources/bad.license
+[2025-09-26 17:20:19.540] [info]  (OfflineLicense)      Loaded offline license
+[2025-09-26 17:20:19.540] [info]  (OfflineLicense)      Loading public key from tests/resources/public.pem
+[2025-09-26 17:20:19.540] [info]  (OfflineLicense)      Loaded public key
+[2025-09-26 17:20:19.540] [info]  (OfflineLicense)      Validated license -  null
+[2025-09-26 17:20:19.541] [info]  (OfflineLicense)      Loading offline license from tests/resources/good.license
+[2025-09-26 17:20:19.541] [info]  (OfflineLicense)      Loaded offline license
+[2025-09-26 17:20:19.541] [info]  (OfflineLicense)      Loading public key from tests/resources/public.pem
+[2025-09-26 17:20:19.541] [info]  (OfflineLicense)      Loaded public key
+[2025-09-26 17:20:19.542] [info]  (OfflineLicense)      Validated license -  {
+  license_key: {
+    valid_until: '2099-01-01T06:00:00.000Z',
+    support_until: '2099-01-01T06:00:00.000Z',
+    customer_support_until: '2099-01-01T06:00:00.000Z',
+    created_at: '2024-12-14T03:38:52.989Z',
+    license_type: 'PersonalLicense',
+    email: '123',
+    id: 4,
+    key: 'e605ca57-2115-4b21-b1ec-690f997df38e',
+    subscription: true,
+    max_allowed_app_release: null
+  },
+  errors: null,
+  status: 200
+}
+[2025-09-26 17:20:19.542] [info]  (OfflineLicense)      Loading offline license from tests/resources/missing_signature.license
+[2025-09-26 17:20:19.543] [info]  (OfflineLicense)      Loaded offline license
+[2025-09-26 17:20:19.543] [info]  (OfflineLicense)      Loading public key from tests/resources/public.pem
+[2025-09-26 17:20:19.543] [info]  (OfflineLicense)      Loaded public key
+[2025-09-26 17:20:19.543] [info]  (OfflineLicense)      Validated license -  null
+[2025-09-26 17:20:19.543] [info]  (OfflineLicense)      Loading offline license from tests/resources/missing_data.license
+[2025-09-26 17:20:19.544] [info]  (OfflineLicense)      Loaded offline license
+[2025-09-26 17:20:19.544] [info]  (OfflineLicense)      Loading public key from tests/resources/public.pem
+[2025-09-26 17:20:19.544] [info]  (OfflineLicense)      Loaded public key
+[2025-09-26 17:20:19.544] [info]  (OfflineLicense)      Validated license -  null
+[2025-09-26 17:20:19.544] [info]  (OfflineLicense)      Loading offline license from tmp/license.json
+[2025-09-26 17:20:19.545] [info]  (OfflineLicense)      Offline license does not exist tmp/license.json
+[2025-09-26 17:20:19.545] [info]  (OfflineLicense)      Loading public key from /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/electron/dist/resources/production_pub.pem
+[2025-09-26 17:20:19.545] [info]  (OfflineLicense)      Public key does not exist /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/node_modules/electron/dist/resources/production_pub.pem
+[2025-09-26 17:20:19.545] [info]  (OfflineLicense)      Validated license -  null
+[2025-09-26 17:20:21.762] [info]  (BksConfig)           Loading configs.
+[2025-09-26 17:20:21.764] [debug] (BksConfig)           Loading config default.config.ini.
+[2025-09-26 17:20:21.764] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/default.config.ini.
+[2025-09-26 17:20:21.764] [debug] (BksConfig)           Loading config system.config.ini.
+[2025-09-26 17:20:21.764] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/system.config.ini.
+[2025-09-26 17:20:21.764] [debug] (BksConfig)           Loading config user.config.ini.
+[2025-09-26 17:20:21.764] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/user.config.ini.
+[2025-09-26 17:20:21.764] [info]  (BksConfig)           Configs successfully loaded with 0 warnings.
+[2025-09-26 17:20:21.765] [warn]  (BksConfig)           Warnings: []
+[2025-09-26 17:20:21.765] [info]  (BksConfig)           Default config: {
+  "general": {
+    "checkForUpdatesInterval": 86400000,
+    "dataSyncInterval": 30000,
+    "workspaceSyncInterval": 5000
+  },
+  "security": {
+    "disconnectOnSuspend": false,
+    "disconnectOnLock": false,
+    "disconnectOnIdle": false,
+    "lockMode": "disabled",
+    "idleThresholdSeconds": 300,
+    "idleCheckIntervalSeconds": 30,
+    "minPinLength": 6
+  },
+  "ui": {
+    "general": {
+      "binaryEncoding": "hex"
+    },
+    "layout": {
+      "mainContentMinWidth": 200,
+      "primarySidebarMinWidth": 150,
+      "secondarySidebarMinWidth": 150
+    },
+    "queryEditor": {
+      "maxResults": 50000
+    },
+    "tableTable": {
+      "pageSize": 100,
+      "largeFieldWidth": 300,
+      "maxColumnWidth": 1000,
+      "minColumnWidth": 100,
+      "maxInitialWidth": 500,
+      "defaultColumnWidth": 125
+    },
+    "tableTriggers": {
+      "maxColumnWidth": 300
+    },
+    "tableList": {
+      "itemHeight": 22.8
+    },
+    "export": {
+      "errorNoticeTimeout": 60000
+    }
+  },
+  "db": {
+    "mysql": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "mariadb": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "tidb": {
+      "allowSkipToLastPage": true
+    },
+    "postgres": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": true
+    },
+    "cockroachdb": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "redshift": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "sqlite": {
+      "allowSkipToLastPage": true
+    },
+    "sqlserver": {
+      "allowSkipToLastPage": false
+    },
+    "bigquery": {
+      "allowSkipToLastPage": false
+    },
+    "oracle": {
+      "allowSkipToLastPage": false
+    },
+    "cassandra": {
+      "allowSkipToLastPage": false
+    },
+    "firebird": {
+      "allowSkipToLastPage": false
+    },
+    "clickhouse": {
+      "allowSkipToLastPage": false
+    },
+    "mongodb": {
+      "allowSkipToLastPage": false
+    },
+    "duckdb": {
+      "allowSkipToLastPage": false
+    },
+    "sqlanywhere": {
+      "allowSkipToLastPage": false
+    }
+  },
+  "keybindings": {
+    "general": {
+      "refresh": [
+        "f5",
+        "ctrlOrCmd+r"
+      ],
+      "addRow": "ctrlOrCmd+n",
+      "save": "ctrlOrCmd+s",
+      "openInSqlEditor": "ctrlOrCmd+shift+s",
+      "openQuickSearch": "ctrlOrCmd+p",
+      "copySelection": "ctrlOrCmd+c",
+      "pasteSelection": "ctrlOrCmd+v",
+      "cloneSelection": "ctrlOrCmd+d",
+      "deleteSelection": "delete"
+    },
+    "tab": {
+      "closeTab": "ctrlOrCmd+w",
+      "nextTab": [
+        "ctrl+tab",
+        "ctrlOrCmd+pagedown"
+      ],
+      "previousTab": [
+        "ctrl+shift+tab",
+        "ctrlOrCmd+pageup"
+      ],
+      "reopenLastClosedTab": "ctrlOrCmd+shift+t",
+      "switchTab1": "alt+1",
+      "switchTab2": "alt+2",
+      "switchTab3": "alt+3",
+      "switchTab4": "alt+4",
+      "switchTab5": "alt+5",
+      "switchTab6": "alt+6",
+      "switchTab7": "alt+7",
+      "switchTab8": "alt+8",
+      "switchTab9": "alt+9"
+    },
+    "quickSearch": {
+      "focusSearch": [
+        "ctrlOrCmd+k",
+        "ctrlOrCmd+o"
+      ],
+      "close": "esc",
+      "selectUp": [
+        "up",
+        "ctrlOrCmd+p"
+      ],
+      "selectDown": [
+        "down",
+        "ctrlOrCmd+n"
+      ],
+      "open": "enter",
+      "altOpen": "ctrlOrCmd+enter",
+      "openInBackground": "right",
+      "altOpenInBackground": "ctrlOrCmd+right"
+    },
+    "queryEditor": {
+      "selectEditor": "ctrlOrCmd+l",
+      "submitTabQuery": [
+        "ctrlOrCmd+enter",
+        "f5"
+      ],
+      "submitCurrentQuery": [
+        "ctrlOrCmd+shift+enter",
+        "shift+f5"
+      ],
+      "submitQueryToFile": "ctrlOrCmd+i",
+      "submitCurrentQueryToFile": "ctrlOrCmd+shift+i",
+      "selectNextResult": "shift+up",
+      "selectPreviousResult": "shift+down",
+      "copyResultSelection": "ctrlOrCmd+c",
+      "switchPaneFocus": "ctrlOrCmd+`",
+      "openTableFilter": "ctrlOrCmd+f",
+      "closeTableFilter": "esc"
+    },
+    "tableTable": {
+      "nextPage": "ctrlOrCmd+right",
+      "previousPage": "ctrlOrCmd+left",
+      "focusOnFilterInput": "ctrlOrCmd+f",
+      "openEditorModal": "shift+enter",
+      "firstPage": "ctrlOrCmd+h",
+      "lastPage": "ctrlOrCmd+l"
+    }
+  }
+}
+[2025-09-26 17:20:21.765] [info]  (BksConfig)           System config: {}
+[2025-09-26 17:20:21.766] [info]  (BksConfig)           User config: {}
+[2025-09-26 17:20:22.460] [debug] (db/util)         building selectTop for table 0 10 [ { field: 'id', dir: 'asc' } ] [ '*' ]
+[2025-09-26 17:20:22.461] [debug] (db/util)         building selectTop for users 10 100 null [ '*' ]
+[2025-09-26 17:20:22.461] [debug] (db/util)         building selectTop for info 100 10 null [ '*' ]
+[2025-09-26 17:20:22.461] [info]  (db/util)         FILTER:  WHERE `id` > ?
+[2025-09-26 17:20:22.463] [debug] (db/util)         building selectTop for info 100 10 null [ '*' ]
+[2025-09-26 17:20:22.463] [info]  (db/util)         FILTER:  WHERE `id` > ? AND `id` < ?
+[2025-09-26 17:20:22.463] [debug] (db/util)         building selectTop for info 100 10 null [ '*' ]
+[2025-09-26 17:20:22.464] [info]  (db/util)         FILTER:  WHERE `id` > ? AND `id` < ? OR `name` LIKE ?
+[2025-09-26 17:20:24.143] [info]  (BksConfig)           Loading configs.
+[2025-09-26 17:20:24.144] [debug] (BksConfig)           Loading config default.config.ini.
+[2025-09-26 17:20:24.144] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/default.config.ini.
+[2025-09-26 17:20:24.144] [debug] (BksConfig)           Loading config system.config.ini.
+[2025-09-26 17:20:24.144] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/system.config.ini.
+[2025-09-26 17:20:24.145] [debug] (BksConfig)           Loading config user.config.ini.
+[2025-09-26 17:20:24.145] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/user.config.ini.
+[2025-09-26 17:20:24.145] [info]  (BksConfig)           Configs successfully loaded with 0 warnings.
+[2025-09-26 17:20:24.145] [warn]  (BksConfig)           Warnings: []
+[2025-09-26 17:20:24.145] [info]  (BksConfig)           Default config: {
+  "general": {
+    "checkForUpdatesInterval": 86400000,
+    "dataSyncInterval": 30000,
+    "workspaceSyncInterval": 5000
+  },
+  "security": {
+    "disconnectOnSuspend": false,
+    "disconnectOnLock": false,
+    "disconnectOnIdle": false,
+    "lockMode": "disabled",
+    "idleThresholdSeconds": 300,
+    "idleCheckIntervalSeconds": 30,
+    "minPinLength": 6
+  },
+  "ui": {
+    "general": {
+      "binaryEncoding": "hex"
+    },
+    "layout": {
+      "mainContentMinWidth": 200,
+      "primarySidebarMinWidth": 150,
+      "secondarySidebarMinWidth": 150
+    },
+    "queryEditor": {
+      "maxResults": 50000
+    },
+    "tableTable": {
+      "pageSize": 100,
+      "largeFieldWidth": 300,
+      "maxColumnWidth": 1000,
+      "minColumnWidth": 100,
+      "maxInitialWidth": 500,
+      "defaultColumnWidth": 125
+    },
+    "tableTriggers": {
+      "maxColumnWidth": 300
+    },
+    "tableList": {
+      "itemHeight": 22.8
+    },
+    "export": {
+      "errorNoticeTimeout": 60000
+    }
+  },
+  "db": {
+    "mysql": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "mariadb": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "tidb": {
+      "allowSkipToLastPage": true
+    },
+    "postgres": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": true
+    },
+    "cockroachdb": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "redshift": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "sqlite": {
+      "allowSkipToLastPage": true
+    },
+    "sqlserver": {
+      "allowSkipToLastPage": false
+    },
+    "bigquery": {
+      "allowSkipToLastPage": false
+    },
+    "oracle": {
+      "allowSkipToLastPage": false
+    },
+    "cassandra": {
+      "allowSkipToLastPage": false
+    },
+    "firebird": {
+      "allowSkipToLastPage": false
+    },
+    "clickhouse": {
+      "allowSkipToLastPage": false
+    },
+    "mongodb": {
+      "allowSkipToLastPage": false
+    },
+    "duckdb": {
+      "allowSkipToLastPage": false
+    },
+    "sqlanywhere": {
+      "allowSkipToLastPage": false
+    }
+  },
+  "keybindings": {
+    "general": {
+      "refresh": [
+        "f5",
+        "ctrlOrCmd+r"
+      ],
+      "addRow": "ctrlOrCmd+n",
+      "save": "ctrlOrCmd+s",
+      "openInSqlEditor": "ctrlOrCmd+shift+s",
+      "openQuickSearch": "ctrlOrCmd+p",
+      "copySelection": "ctrlOrCmd+c",
+      "pasteSelection": "ctrlOrCmd+v",
+      "cloneSelection": "ctrlOrCmd+d",
+      "deleteSelection": "delete"
+    },
+    "tab": {
+      "closeTab": "ctrlOrCmd+w",
+      "nextTab": [
+        "ctrl+tab",
+        "ctrlOrCmd+pagedown"
+      ],
+      "previousTab": [
+        "ctrl+shift+tab",
+        "ctrlOrCmd+pageup"
+      ],
+      "reopenLastClosedTab": "ctrlOrCmd+shift+t",
+      "switchTab1": "alt+1",
+      "switchTab2": "alt+2",
+      "switchTab3": "alt+3",
+      "switchTab4": "alt+4",
+      "switchTab5": "alt+5",
+      "switchTab6": "alt+6",
+      "switchTab7": "alt+7",
+      "switchTab8": "alt+8",
+      "switchTab9": "alt+9"
+    },
+    "quickSearch": {
+      "focusSearch": [
+        "ctrlOrCmd+k",
+        "ctrlOrCmd+o"
+      ],
+      "close": "esc",
+      "selectUp": [
+        "up",
+        "ctrlOrCmd+p"
+      ],
+      "selectDown": [
+        "down",
+        "ctrlOrCmd+n"
+      ],
+      "open": "enter",
+      "altOpen": "ctrlOrCmd+enter",
+      "openInBackground": "right",
+      "altOpenInBackground": "ctrlOrCmd+right"
+    },
+    "queryEditor": {
+      "selectEditor": "ctrlOrCmd+l",
+      "submitTabQuery": [
+        "ctrlOrCmd+enter",
+        "f5"
+      ],
+      "submitCurrentQuery": [
+        "ctrlOrCmd+shift+enter",
+        "shift+f5"
+      ],
+      "submitQueryToFile": "ctrlOrCmd+i",
+      "submitCurrentQueryToFile": "ctrlOrCmd+shift+i",
+      "selectNextResult": "shift+up",
+      "selectPreviousResult": "shift+down",
+      "copyResultSelection": "ctrlOrCmd+c",
+      "switchPaneFocus": "ctrlOrCmd+`",
+      "openTableFilter": "ctrlOrCmd+f",
+      "closeTableFilter": "esc"
+    },
+    "tableTable": {
+      "nextPage": "ctrlOrCmd+right",
+      "previousPage": "ctrlOrCmd+left",
+      "focusOnFilterInput": "ctrlOrCmd+f",
+      "openEditorModal": "shift+enter",
+      "firstPage": "ctrlOrCmd+h",
+      "lastPage": "ctrlOrCmd+l"
+    }
+  }
+}
+[2025-09-26 17:20:24.145] [info]  (BksConfig)           System config: {}
+[2025-09-26 17:20:24.146] [info]  (BksConfig)           User config: {}
+[2025-09-26 17:20:25.835] [info]  (BksConfig)           Loading configs.
+[2025-09-26 17:20:25.837] [debug] (BksConfig)           Loading config default.config.ini.
+[2025-09-26 17:20:25.840] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/default.config.ini.
+[2025-09-26 17:20:25.840] [debug] (BksConfig)           Loading config system.config.ini.
+[2025-09-26 17:20:25.840] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/system.config.ini.
+[2025-09-26 17:20:25.840] [debug] (BksConfig)           Loading config user.config.ini.
+[2025-09-26 17:20:25.840] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/user.config.ini.
+[2025-09-26 17:20:25.840] [info]  (BksConfig)           Configs successfully loaded with 0 warnings.
+[2025-09-26 17:20:25.840] [warn]  (BksConfig)           Warnings: []
+[2025-09-26 17:20:25.840] [info]  (BksConfig)           Default config: {
+  "general": {
+    "checkForUpdatesInterval": 86400000,
+    "dataSyncInterval": 30000,
+    "workspaceSyncInterval": 5000
+  },
+  "security": {
+    "disconnectOnSuspend": false,
+    "disconnectOnLock": false,
+    "disconnectOnIdle": false,
+    "lockMode": "disabled",
+    "idleThresholdSeconds": 300,
+    "idleCheckIntervalSeconds": 30,
+    "minPinLength": 6
+  },
+  "ui": {
+    "general": {
+      "binaryEncoding": "hex"
+    },
+    "layout": {
+      "mainContentMinWidth": 200,
+      "primarySidebarMinWidth": 150,
+      "secondarySidebarMinWidth": 150
+    },
+    "queryEditor": {
+      "maxResults": 50000
+    },
+    "tableTable": {
+      "pageSize": 100,
+      "largeFieldWidth": 300,
+      "maxColumnWidth": 1000,
+      "minColumnWidth": 100,
+      "maxInitialWidth": 500,
+      "defaultColumnWidth": 125
+    },
+    "tableTriggers": {
+      "maxColumnWidth": 300
+    },
+    "tableList": {
+      "itemHeight": 22.8
+    },
+    "export": {
+      "errorNoticeTimeout": 60000
+    }
+  },
+  "db": {
+    "mysql": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "mariadb": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "tidb": {
+      "allowSkipToLastPage": true
+    },
+    "postgres": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": true
+    },
+    "cockroachdb": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "redshift": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "sqlite": {
+      "allowSkipToLastPage": true
+    },
+    "sqlserver": {
+      "allowSkipToLastPage": false
+    },
+    "bigquery": {
+      "allowSkipToLastPage": false
+    },
+    "oracle": {
+      "allowSkipToLastPage": false
+    },
+    "cassandra": {
+      "allowSkipToLastPage": false
+    },
+    "firebird": {
+      "allowSkipToLastPage": false
+    },
+    "clickhouse": {
+      "allowSkipToLastPage": false
+    },
+    "mongodb": {
+      "allowSkipToLastPage": false
+    },
+    "duckdb": {
+      "allowSkipToLastPage": false
+    },
+    "sqlanywhere": {
+      "allowSkipToLastPage": false
+    }
+  },
+  "keybindings": {
+    "general": {
+      "refresh": [
+        "f5",
+        "ctrlOrCmd+r"
+      ],
+      "addRow": "ctrlOrCmd+n",
+      "save": "ctrlOrCmd+s",
+      "openInSqlEditor": "ctrlOrCmd+shift+s",
+      "openQuickSearch": "ctrlOrCmd+p",
+      "copySelection": "ctrlOrCmd+c",
+      "pasteSelection": "ctrlOrCmd+v",
+      "cloneSelection": "ctrlOrCmd+d",
+      "deleteSelection": "delete"
+    },
+    "tab": {
+      "closeTab": "ctrlOrCmd+w",
+      "nextTab": [
+        "ctrl+tab",
+        "ctrlOrCmd+pagedown"
+      ],
+      "previousTab": [
+        "ctrl+shift+tab",
+        "ctrlOrCmd+pageup"
+      ],
+      "reopenLastClosedTab": "ctrlOrCmd+shift+t",
+      "switchTab1": "alt+1",
+      "switchTab2": "alt+2",
+      "switchTab3": "alt+3",
+      "switchTab4": "alt+4",
+      "switchTab5": "alt+5",
+      "switchTab6": "alt+6",
+      "switchTab7": "alt+7",
+      "switchTab8": "alt+8",
+      "switchTab9": "alt+9"
+    },
+    "quickSearch": {
+      "focusSearch": [
+        "ctrlOrCmd+k",
+        "ctrlOrCmd+o"
+      ],
+      "close": "esc",
+      "selectUp": [
+        "up",
+        "ctrlOrCmd+p"
+      ],
+      "selectDown": [
+        "down",
+        "ctrlOrCmd+n"
+      ],
+      "open": "enter",
+      "altOpen": "ctrlOrCmd+enter",
+      "openInBackground": "right",
+      "altOpenInBackground": "ctrlOrCmd+right"
+    },
+    "queryEditor": {
+      "selectEditor": "ctrlOrCmd+l",
+      "submitTabQuery": [
+        "ctrlOrCmd+enter",
+        "f5"
+      ],
+      "submitCurrentQuery": [
+        "ctrlOrCmd+shift+enter",
+        "shift+f5"
+      ],
+      "submitQueryToFile": "ctrlOrCmd+i",
+      "submitCurrentQueryToFile": "ctrlOrCmd+shift+i",
+      "selectNextResult": "shift+up",
+      "selectPreviousResult": "shift+down",
+      "copyResultSelection": "ctrlOrCmd+c",
+      "switchPaneFocus": "ctrlOrCmd+`",
+      "openTableFilter": "ctrlOrCmd+f",
+      "closeTableFilter": "esc"
+    },
+    "tableTable": {
+      "nextPage": "ctrlOrCmd+right",
+      "previousPage": "ctrlOrCmd+left",
+      "focusOnFilterInput": "ctrlOrCmd+f",
+      "openEditorModal": "shift+enter",
+      "firstPage": "ctrlOrCmd+h",
+      "lastPage": "ctrlOrCmd+l"
+    }
+  }
+}
+[2025-09-26 17:20:25.841] [info]  (BksConfig)           System config: {}
+[2025-09-26 17:20:25.841] [info]  (BksConfig)           User config: {}
+[2025-09-26 17:20:26.637] [info]  (BksConfig)           Loading configs.
+[2025-09-26 17:20:26.641] [debug] (BksConfig)           Loading config default.config.ini.
+[2025-09-26 17:20:26.642] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/default.config.ini.
+[2025-09-26 17:20:26.642] [debug] (BksConfig)           Loading config system.config.ini.
+[2025-09-26 17:20:26.642] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/system.config.ini.
+[2025-09-26 17:20:26.642] [debug] (BksConfig)           Loading config user.config.ini.
+[2025-09-26 17:20:26.642] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/user.config.ini.
+[2025-09-26 17:20:26.642] [info]  (BksConfig)           Configs successfully loaded with 0 warnings.
+[2025-09-26 17:20:26.642] [warn]  (BksConfig)           Warnings: []
+[2025-09-26 17:20:26.642] [info]  (BksConfig)           Default config: {
+  "general": {
+    "checkForUpdatesInterval": 86400000,
+    "dataSyncInterval": 30000,
+    "workspaceSyncInterval": 5000
+  },
+  "security": {
+    "disconnectOnSuspend": false,
+    "disconnectOnLock": false,
+    "disconnectOnIdle": false,
+    "lockMode": "disabled",
+    "idleThresholdSeconds": 300,
+    "idleCheckIntervalSeconds": 30,
+    "minPinLength": 6
+  },
+  "ui": {
+    "general": {
+      "binaryEncoding": "hex"
+    },
+    "layout": {
+      "mainContentMinWidth": 200,
+      "primarySidebarMinWidth": 150,
+      "secondarySidebarMinWidth": 150
+    },
+    "queryEditor": {
+      "maxResults": 50000
+    },
+    "tableTable": {
+      "pageSize": 100,
+      "largeFieldWidth": 300,
+      "maxColumnWidth": 1000,
+      "minColumnWidth": 100,
+      "maxInitialWidth": 500,
+      "defaultColumnWidth": 125
+    },
+    "tableTriggers": {
+      "maxColumnWidth": 300
+    },
+    "tableList": {
+      "itemHeight": 22.8
+    },
+    "export": {
+      "errorNoticeTimeout": 60000
+    }
+  },
+  "db": {
+    "mysql": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "mariadb": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "tidb": {
+      "allowSkipToLastPage": true
+    },
+    "postgres": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": true
+    },
+    "cockroachdb": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "redshift": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "sqlite": {
+      "allowSkipToLastPage": true
+    },
+    "sqlserver": {
+      "allowSkipToLastPage": false
+    },
+    "bigquery": {
+      "allowSkipToLastPage": false
+    },
+    "oracle": {
+      "allowSkipToLastPage": false
+    },
+    "cassandra": {
+      "allowSkipToLastPage": false
+    },
+    "firebird": {
+      "allowSkipToLastPage": false
+    },
+    "clickhouse": {
+      "allowSkipToLastPage": false
+    },
+    "mongodb": {
+      "allowSkipToLastPage": false
+    },
+    "duckdb": {
+      "allowSkipToLastPage": false
+    },
+    "sqlanywhere": {
+      "allowSkipToLastPage": false
+    }
+  },
+  "keybindings": {
+    "general": {
+      "refresh": [
+        "f5",
+        "ctrlOrCmd+r"
+      ],
+      "addRow": "ctrlOrCmd+n",
+      "save": "ctrlOrCmd+s",
+      "openInSqlEditor": "ctrlOrCmd+shift+s",
+      "openQuickSearch": "ctrlOrCmd+p",
+      "copySelection": "ctrlOrCmd+c",
+      "pasteSelection": "ctrlOrCmd+v",
+      "cloneSelection": "ctrlOrCmd+d",
+      "deleteSelection": "delete"
+    },
+    "tab": {
+      "closeTab": "ctrlOrCmd+w",
+      "nextTab": [
+        "ctrl+tab",
+        "ctrlOrCmd+pagedown"
+      ],
+      "previousTab": [
+        "ctrl+shift+tab",
+        "ctrlOrCmd+pageup"
+      ],
+      "reopenLastClosedTab": "ctrlOrCmd+shift+t",
+      "switchTab1": "alt+1",
+      "switchTab2": "alt+2",
+      "switchTab3": "alt+3",
+      "switchTab4": "alt+4",
+      "switchTab5": "alt+5",
+      "switchTab6": "alt+6",
+      "switchTab7": "alt+7",
+      "switchTab8": "alt+8",
+      "switchTab9": "alt+9"
+    },
+    "quickSearch": {
+      "focusSearch": [
+        "ctrlOrCmd+k",
+        "ctrlOrCmd+o"
+      ],
+      "close": "esc",
+      "selectUp": [
+        "up",
+        "ctrlOrCmd+p"
+      ],
+      "selectDown": [
+        "down",
+        "ctrlOrCmd+n"
+      ],
+      "open": "enter",
+      "altOpen": "ctrlOrCmd+enter",
+      "openInBackground": "right",
+      "altOpenInBackground": "ctrlOrCmd+right"
+    },
+    "queryEditor": {
+      "selectEditor": "ctrlOrCmd+l",
+      "submitTabQuery": [
+        "ctrlOrCmd+enter",
+        "f5"
+      ],
+      "submitCurrentQuery": [
+        "ctrlOrCmd+shift+enter",
+        "shift+f5"
+      ],
+      "submitQueryToFile": "ctrlOrCmd+i",
+      "submitCurrentQueryToFile": "ctrlOrCmd+shift+i",
+      "selectNextResult": "shift+up",
+      "selectPreviousResult": "shift+down",
+      "copyResultSelection": "ctrlOrCmd+c",
+      "switchPaneFocus": "ctrlOrCmd+`",
+      "openTableFilter": "ctrlOrCmd+f",
+      "closeTableFilter": "esc"
+    },
+    "tableTable": {
+      "nextPage": "ctrlOrCmd+right",
+      "previousPage": "ctrlOrCmd+left",
+      "focusOnFilterInput": "ctrlOrCmd+f",
+      "openEditorModal": "shift+enter",
+      "firstPage": "ctrlOrCmd+h",
+      "lastPage": "ctrlOrCmd+l"
+    }
+  }
+}
+[2025-09-26 17:20:26.643] [info]  (BksConfig)           System config: {}
+[2025-09-26 17:20:26.643] [info]  (BksConfig)           User config: {}
+[2025-09-26 17:20:39.492] [info]  (BksConfig)           Loading configs.
+[2025-09-26 17:20:39.496] [debug] (BksConfig)           Loading config default.config.ini.
+[2025-09-26 17:20:39.498] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/default.config.ini.
+[2025-09-26 17:20:39.498] [debug] (BksConfig)           Loading config system.config.ini.
+[2025-09-26 17:20:39.498] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/system.config.ini.
+[2025-09-26 17:20:39.498] [debug] (BksConfig)           Loading config user.config.ini.
+[2025-09-26 17:20:39.498] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/user.config.ini.
+[2025-09-26 17:20:39.498] [info]  (BksConfig)           Configs successfully loaded with 0 warnings.
+[2025-09-26 17:20:39.499] [warn]  (BksConfig)           Warnings: []
+[2025-09-26 17:20:39.499] [info]  (BksConfig)           Default config: {
+  "general": {
+    "checkForUpdatesInterval": 86400000,
+    "dataSyncInterval": 30000,
+    "workspaceSyncInterval": 5000
+  },
+  "security": {
+    "disconnectOnSuspend": false,
+    "disconnectOnLock": false,
+    "disconnectOnIdle": false,
+    "lockMode": "disabled",
+    "idleThresholdSeconds": 300,
+    "idleCheckIntervalSeconds": 30,
+    "minPinLength": 6
+  },
+  "ui": {
+    "general": {
+      "binaryEncoding": "hex"
+    },
+    "layout": {
+      "mainContentMinWidth": 200,
+      "primarySidebarMinWidth": 150,
+      "secondarySidebarMinWidth": 150
+    },
+    "queryEditor": {
+      "maxResults": 50000
+    },
+    "tableTable": {
+      "pageSize": 100,
+      "largeFieldWidth": 300,
+      "maxColumnWidth": 1000,
+      "minColumnWidth": 100,
+      "maxInitialWidth": 500,
+      "defaultColumnWidth": 125
+    },
+    "tableTriggers": {
+      "maxColumnWidth": 300
+    },
+    "tableList": {
+      "itemHeight": 22.8
+    },
+    "export": {
+      "errorNoticeTimeout": 60000
+    }
+  },
+  "db": {
+    "mysql": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "mariadb": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "tidb": {
+      "allowSkipToLastPage": true
+    },
+    "postgres": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": true
+    },
+    "cockroachdb": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "redshift": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "sqlite": {
+      "allowSkipToLastPage": true
+    },
+    "sqlserver": {
+      "allowSkipToLastPage": false
+    },
+    "bigquery": {
+      "allowSkipToLastPage": false
+    },
+    "oracle": {
+      "allowSkipToLastPage": false
+    },
+    "cassandra": {
+      "allowSkipToLastPage": false
+    },
+    "firebird": {
+      "allowSkipToLastPage": false
+    },
+    "clickhouse": {
+      "allowSkipToLastPage": false
+    },
+    "mongodb": {
+      "allowSkipToLastPage": false
+    },
+    "duckdb": {
+      "allowSkipToLastPage": false
+    },
+    "sqlanywhere": {
+      "allowSkipToLastPage": false
+    }
+  },
+  "keybindings": {
+    "general": {
+      "refresh": [
+        "f5",
+        "ctrlOrCmd+r"
+      ],
+      "addRow": "ctrlOrCmd+n",
+      "save": "ctrlOrCmd+s",
+      "openInSqlEditor": "ctrlOrCmd+shift+s",
+      "openQuickSearch": "ctrlOrCmd+p",
+      "copySelection": "ctrlOrCmd+c",
+      "pasteSelection": "ctrlOrCmd+v",
+      "cloneSelection": "ctrlOrCmd+d",
+      "deleteSelection": "delete"
+    },
+    "tab": {
+      "closeTab": "ctrlOrCmd+w",
+      "nextTab": [
+        "ctrl+tab",
+        "ctrlOrCmd+pagedown"
+      ],
+      "previousTab": [
+        "ctrl+shift+tab",
+        "ctrlOrCmd+pageup"
+      ],
+      "reopenLastClosedTab": "ctrlOrCmd+shift+t",
+      "switchTab1": "alt+1",
+      "switchTab2": "alt+2",
+      "switchTab3": "alt+3",
+      "switchTab4": "alt+4",
+      "switchTab5": "alt+5",
+      "switchTab6": "alt+6",
+      "switchTab7": "alt+7",
+      "switchTab8": "alt+8",
+      "switchTab9": "alt+9"
+    },
+    "quickSearch": {
+      "focusSearch": [
+        "ctrlOrCmd+k",
+        "ctrlOrCmd+o"
+      ],
+      "close": "esc",
+      "selectUp": [
+        "up",
+        "ctrlOrCmd+p"
+      ],
+      "selectDown": [
+        "down",
+        "ctrlOrCmd+n"
+      ],
+      "open": "enter",
+      "altOpen": "ctrlOrCmd+enter",
+      "openInBackground": "right",
+      "altOpenInBackground": "ctrlOrCmd+right"
+    },
+    "queryEditor": {
+      "selectEditor": "ctrlOrCmd+l",
+      "submitTabQuery": [
+        "ctrlOrCmd+enter",
+        "f5"
+      ],
+      "submitCurrentQuery": [
+        "ctrlOrCmd+shift+enter",
+        "shift+f5"
+      ],
+      "submitQueryToFile": "ctrlOrCmd+i",
+      "submitCurrentQueryToFile": "ctrlOrCmd+shift+i",
+      "selectNextResult": "shift+up",
+      "selectPreviousResult": "shift+down",
+      "copyResultSelection": "ctrlOrCmd+c",
+      "switchPaneFocus": "ctrlOrCmd+`",
+      "openTableFilter": "ctrlOrCmd+f",
+      "closeTableFilter": "esc"
+    },
+    "tableTable": {
+      "nextPage": "ctrlOrCmd+right",
+      "previousPage": "ctrlOrCmd+left",
+      "focusOnFilterInput": "ctrlOrCmd+f",
+      "openEditorModal": "shift+enter",
+      "firstPage": "ctrlOrCmd+h",
+      "lastPage": "ctrlOrCmd+l"
+    }
+  }
+}
+[2025-09-26 17:20:39.502] [info]  (BksConfig)           System config: {}
+[2025-09-26 17:20:39.502] [info]  (BksConfig)           User config: {}
+[2025-09-26 17:20:57.926] [debug] (export/export)       starting export
+[2025-09-26 17:20:57.926] [debug] (db/util)             building selectTop for toexport null null [] [ '*' ]
+[2025-09-26 17:20:57.929] [debug] (db/util)             building selectTop for toexport null null null [ '*' ]
+[2025-09-26 17:20:57.931] [debug] (export/export)       running export
+[2025-09-26 17:20:58.285] [info]  (BksConfig)           Loading configs.
+[2025-09-26 17:20:58.287] [debug] (BksConfig)           Loading config default.config.ini.
+[2025-09-26 17:20:58.288] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/default.config.ini.
+[2025-09-26 17:20:58.288] [debug] (BksConfig)           Loading config system.config.ini.
+[2025-09-26 17:20:58.288] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/system.config.ini.
+[2025-09-26 17:20:58.288] [debug] (BksConfig)           Loading config user.config.ini.
+[2025-09-26 17:20:58.288] [debug] (BksConfig)           Successfully read config /home/nbardavid/.cache/yay/beekeeper-studio/src/beekeeper-studio-5.3.4/apps/studio/user.config.ini.
+[2025-09-26 17:20:58.288] [info]  (BksConfig)           Configs successfully loaded with 0 warnings.
+[2025-09-26 17:20:58.288] [warn]  (BksConfig)           Warnings: []
+[2025-09-26 17:20:58.289] [info]  (BksConfig)           Default config: {
+  "general": {
+    "checkForUpdatesInterval": 86400000,
+    "dataSyncInterval": 30000,
+    "workspaceSyncInterval": 5000
+  },
+  "security": {
+    "disconnectOnSuspend": false,
+    "disconnectOnLock": false,
+    "disconnectOnIdle": false,
+    "lockMode": "disabled",
+    "idleThresholdSeconds": 300,
+    "idleCheckIntervalSeconds": 30,
+    "minPinLength": 6
+  },
+  "ui": {
+    "general": {
+      "binaryEncoding": "hex"
+    },
+    "layout": {
+      "mainContentMinWidth": 200,
+      "primarySidebarMinWidth": 150,
+      "secondarySidebarMinWidth": 150
+    },
+    "queryEditor": {
+      "maxResults": 50000
+    },
+    "tableTable": {
+      "pageSize": 100,
+      "largeFieldWidth": 300,
+      "maxColumnWidth": 1000,
+      "minColumnWidth": 100,
+      "maxInitialWidth": 500,
+      "defaultColumnWidth": 125
+    },
+    "tableTriggers": {
+      "maxColumnWidth": 300
+    },
+    "tableList": {
+      "itemHeight": 22.8
+    },
+    "export": {
+      "errorNoticeTimeout": 60000
+    }
+  },
+  "db": {
+    "mysql": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "mariadb": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "tidb": {
+      "allowSkipToLastPage": true
+    },
+    "postgres": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": true
+    },
+    "cockroachdb": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "redshift": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "sqlite": {
+      "allowSkipToLastPage": true
+    },
+    "sqlserver": {
+      "allowSkipToLastPage": false
+    },
+    "bigquery": {
+      "allowSkipToLastPage": false
+    },
+    "oracle": {
+      "allowSkipToLastPage": false
+    },
+    "cassandra": {
+      "allowSkipToLastPage": false
+    },
+    "firebird": {
+      "allowSkipToLastPage": false
+    },
+    "clickhouse": {
+      "allowSkipToLastPage": false
+    },
+    "mongodb": {
+      "allowSkipToLastPage": false
+    },
+    "duckdb": {
+      "allowSkipToLastPage": false
+    },
+    "sqlanywhere": {
+      "allowSkipToLastPage": false
+    }
+  },
+  "keybindings": {
+    "general": {
+      "refresh": [
+        "f5",
+        "ctrlOrCmd+r"
+      ],
+      "addRow": "ctrlOrCmd+n",
+      "save": "ctrlOrCmd+s",
+      "openInSqlEditor": "ctrlOrCmd+shift+s",
+      "openQuickSearch": "ctrlOrCmd+p",
+      "copySelection": "ctrlOrCmd+c",
+      "pasteSelection": "ctrlOrCmd+v",
+      "cloneSelection": "ctrlOrCmd+d",
+      "deleteSelection": "delete"
+    },
+    "tab": {
+      "closeTab": "ctrlOrCmd+w",
+      "nextTab": [
+        "ctrl+tab",
+        "ctrlOrCmd+pagedown"
+      ],
+      "previousTab": [
+        "ctrl+shift+tab",
+        "ctrlOrCmd+pageup"
+      ],
+      "reopenLastClosedTab": "ctrlOrCmd+shift+t",
+      "switchTab1": "alt+1",
+      "switchTab2": "alt+2",
+      "switchTab3": "alt+3",
+      "switchTab4": "alt+4",
+      "switchTab5": "alt+5",
+      "switchTab6": "alt+6",
+      "switchTab7": "alt+7",
+      "switchTab8": "alt+8",
+      "switchTab9": "alt+9"
+    },
+    "quickSearch": {
+      "focusSearch": [
+        "ctrlOrCmd+k",
+        "ctrlOrCmd+o"
+      ],
+      "close": "esc",
+      "selectUp": [
+        "up",
+        "ctrlOrCmd+p"
+      ],
+      "selectDown": [
+        "down",
+        "ctrlOrCmd+n"
+      ],
+      "open": "enter",
+      "altOpen": "ctrlOrCmd+enter",
+      "openInBackground": "right",
+      "altOpenInBackground": "ctrlOrCmd+right"
+    },
+    "queryEditor": {
+      "selectEditor": "ctrlOrCmd+l",
+      "submitTabQuery": [
+        "ctrlOrCmd+enter",
+        "f5"
+      ],
+      "submitCurrentQuery": [
+        "ctrlOrCmd+shift+enter",
+        "shift+f5"
+      ],
+      "submitQueryToFile": "ctrlOrCmd+i",
+      "submitCurrentQueryToFile": "ctrlOrCmd+shift+i",
+      "selectNextResult": "shift+up",
+      "selectPreviousResult": "shift+down",
+      "copyResultSelection": "ctrlOrCmd+c",
+      "switchPaneFocus": "ctrlOrCmd+`",
+      "openTableFilter": "ctrlOrCmd+f",
+      "closeTableFilter": "esc"
+    },
+    "tableTable": {
+      "nextPage": "ctrlOrCmd+right",
+      "previousPage": "ctrlOrCmd+left",
+      "focusOnFilterInput": "ctrlOrCmd+f",
+      "openEditorModal": "shift+enter",
+      "firstPage": "ctrlOrCmd+h",
+      "lastPage": "ctrlOrCmd+l"
+    }
+  }
+}
+[2025-09-26 17:20:58.289] [info]  (BksConfig)           System config: {}
+[2025-09-26 17:20:58.289] [info]  (BksConfig)           User config: {}
+[2025-09-26 17:20:59.063] [debug] (export/export)       starting export
+[2025-09-26 17:20:59.064] [debug] (db/util)             building selectTop for toexport null null [] [ '*' ]
+[2025-09-26 17:20:59.065] [debug] (db/util)             building selectTop for toexport null null null [ '*' ]
+[2025-09-26 17:20:59.066] [debug] (export/export)       running export
+[2025-09-26 17:22:36.505] [info]  (BksConfig)           Loading configs.
+[2025-09-26 17:22:36.508] [debug] (BksConfig)           Loading config default.config.ini.
+[2025-09-26 17:22:36.508] [info]  (BksConfig)           Copying bundled config default.config.ini to /home/nbardavid/.config/beekeeper-studio/default.config.ini.
+[2025-09-26 17:22:36.508] [warn]  (BksConfig)           Skipping copy of default.config.ini. Permission denied or dest not writable: ENOENT: no such file or directory, access '/home/nbardavid/.config/beekeeper-studio/default.config.ini'
+[2025-09-26 17:22:36.510] [debug] (BksConfig)           Successfully read config /usr/lib/beekeeper-studio/default.config.ini.
+[2025-09-26 17:22:36.510] [debug] (BksConfig)           Loading config system.config.ini.
+[2025-09-26 17:22:36.510] [warn]  (BksConfig)           Failed loading system config. System config path not found: /etc/beekeeper-studio/system.config.ini
+[2025-09-26 17:22:36.510] [debug] (BksConfig)           Loading config user.config.ini.
+[2025-09-26 17:22:36.510] [info]  (BksConfig)           Copying bundled config user.config.ini to /home/nbardavid/.config/beekeeper-studio/user.config.ini.
+[2025-09-26 17:22:36.510] [warn]  (BksConfig)           Skipping copy of user.config.ini. Permission denied or dest not writable: ENOENT: no such file or directory, access '/home/nbardavid/.config/beekeeper-studio/user.config.ini'
+[2025-09-26 17:22:36.511] [error] (BksConfig)           Failed reading config /home/nbardavid/.config/beekeeper-studio/user.config.ini. Error: ENOENT: no such file or directory, open '/home/nbardavid/.config/beekeeper-studio/user.config.ini'
+    at readFileSync (node:fs:448:20)
+    at t.readFileSync (node:electron/js2c/node_init:2:10175)
+    at readConfig (/usr/lib/beekeeper-studio/app.asar/dist/main.js:278440:77)
+    at loadConfig (/usr/lib/beekeeper-studio/app.asar/dist/main.js:278487:10)
+    at mainBksConfig (/usr/lib/beekeeper-studio/app.asar/dist/main.js:278529:18)
+    at Object.<anonymous> (/usr/lib/beekeeper-studio/app.asar/dist/main.js:278557:15)
+    at Module._compile (node:internal/modules/cjs/loader:1484:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1564:10)
+    at Module.load (node:internal/modules/cjs/loader:1295:32)
+    at Module._load (node:internal/modules/cjs/loader:1111:12)
+[2025-09-26 17:22:36.522] [warn]  (BksConfig)           Failed loading user config. Ignoring. Error: ENOENT: no such file or directory, open '/home/nbardavid/.config/beekeeper-studio/user.config.ini'
+    at readFileSync (node:fs:448:20)
+    at t.readFileSync (node:electron/js2c/node_init:2:10175)
+    at readConfig (/usr/lib/beekeeper-studio/app.asar/dist/main.js:278440:77)
+    at loadConfig (/usr/lib/beekeeper-studio/app.asar/dist/main.js:278487:10)
+    at mainBksConfig (/usr/lib/beekeeper-studio/app.asar/dist/main.js:278529:18)
+    at Object.<anonymous> (/usr/lib/beekeeper-studio/app.asar/dist/main.js:278557:15)
+    at Module._compile (node:internal/modules/cjs/loader:1484:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1564:10)
+    at Module.load (node:internal/modules/cjs/loader:1295:32)
+    at Module._load (node:internal/modules/cjs/loader:1111:12)
+[2025-09-26 17:22:36.522] [info]  (BksConfig)           Configs successfully loaded with 0 warnings.
+[2025-09-26 17:22:36.522] [warn]  (BksConfig)           Warnings: []
+[2025-09-26 17:22:36.523] [info]  (BksConfig)           Default config: {
+  "general": {
+    "checkForUpdatesInterval": 86400000,
+    "dataSyncInterval": 30000,
+    "workspaceSyncInterval": 5000
+  },
+  "security": {
+    "disconnectOnSuspend": false,
+    "disconnectOnLock": false,
+    "disconnectOnIdle": false,
+    "lockMode": "disabled",
+    "idleThresholdSeconds": 300,
+    "idleCheckIntervalSeconds": 30,
+    "minPinLength": 6
+  },
+  "ui": {
+    "general": {
+      "binaryEncoding": "hex"
+    },
+    "layout": {
+      "mainContentMinWidth": 200,
+      "primarySidebarMinWidth": 150,
+      "secondarySidebarMinWidth": 150
+    },
+    "queryEditor": {
+      "maxResults": 50000
+    },
+    "tableTable": {
+      "pageSize": 100,
+      "largeFieldWidth": 300,
+      "maxColumnWidth": 1000,
+      "minColumnWidth": 100,
+      "maxInitialWidth": 500,
+      "defaultColumnWidth": 125
+    },
+    "tableTriggers": {
+      "maxColumnWidth": 300
+    },
+    "tableList": {
+      "itemHeight": 22.8
+    },
+    "export": {
+      "errorNoticeTimeout": 60000
+    }
+  },
+  "db": {
+    "mysql": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "mariadb": {
+      "connectTimeout": 3600000,
+      "allowSkipToLastPage": true
+    },
+    "tidb": {
+      "allowSkipToLastPage": true
+    },
+    "postgres": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": true
+    },
+    "cockroachdb": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "redshift": {
+      "connectionTimeout": 15000,
+      "idleTimeout": 20000,
+      "maxClient": 5,
+      "allowSkipToLastPage": false
+    },
+    "sqlite": {
+      "allowSkipToLastPage": true
+    },
+    "sqlserver": {
+      "allowSkipToLastPage": false
+    },
+    "bigquery": {
+      "allowSkipToLastPage": false
+    },
+    "oracle": {
+      "allowSkipToLastPage": false
+    },
+    "cassandra": {
+      "allowSkipToLastPage": false
+    },
+    "firebird": {
+      "allowSkipToLastPage": false
+    },
+    "clickhouse": {
+      "allowSkipToLastPage": false
+    },
+    "mongodb": {
+      "allowSkipToLastPage": false
+    },
+    "duckdb": {
+      "allowSkipToLastPage": false
+    },
+    "sqlanywhere": {
+      "allowSkipToLastPage": false
+    }
+  },
+  "keybindings": {
+    "general": {
+      "refresh": [
+        "f5",
+        "ctrlOrCmd+r"
+      ],
+      "addRow": "ctrlOrCmd+n",
+      "save": "ctrlOrCmd+s",
+      "openInSqlEditor": "ctrlOrCmd+shift+s",
+      "openQuickSearch": "ctrlOrCmd+p",
+      "copySelection": "ctrlOrCmd+c",
+      "pasteSelection": "ctrlOrCmd+v",
+      "cloneSelection": "ctrlOrCmd+d",
+      "deleteSelection": "delete"
+    },
+    "tab": {
+      "closeTab": "ctrlOrCmd+w",
+      "nextTab": [
+        "ctrl+tab",
+        "ctrlOrCmd+pagedown"
+      ],
+      "previousTab": [
+        "ctrl+shift+tab",
+        "ctrlOrCmd+pageup"
+      ],
+      "reopenLastClosedTab": "ctrlOrCmd+shift+t",
+      "switchTab1": "alt+1",
+      "switchTab2": "alt+2",
+      "switchTab3": "alt+3",
+      "switchTab4": "alt+4",
+      "switchTab5": "alt+5",
+      "switchTab6": "alt+6",
+      "switchTab7": "alt+7",
+      "switchTab8": "alt+8",
+      "switchTab9": "alt+9"
+    },
+    "quickSearch": {
+      "focusSearch": [
+        "ctrlOrCmd+k",
+        "ctrlOrCmd+o"
+      ],
+      "close": "esc",
+      "selectUp": [
+        "up",
+        "ctrlOrCmd+p"
+      ],
+      "selectDown": [
+        "down",
+        "ctrlOrCmd+n"
+      ],
+      "open": "enter",
+      "altOpen": "ctrlOrCmd+enter",
+      "openInBackground": "right",
+      "altOpenInBackground": "ctrlOrCmd+right"
+    },
+    "queryEditor": {
+      "selectEditor": "ctrlOrCmd+l",
+      "submitTabQuery": [
+        "ctrlOrCmd+enter",
+        "f5"
+      ],
+      "submitCurrentQuery": [
+        "ctrlOrCmd+shift+enter",
+        "shift+f5"
+      ],
+      "submitQueryToFile": "ctrlOrCmd+i",
+      "submitCurrentQueryToFile": "ctrlOrCmd+shift+i",
+      "selectNextResult": "shift+up",
+      "selectPreviousResult": "shift+down",
+      "copyResultSelection": "ctrlOrCmd+c",
+      "switchPaneFocus": "ctrlOrCmd+`",
+      "openTableFilter": "ctrlOrCmd+f",
+      "closeTableFilter": "esc"
+    },
+    "tableTable": {
+      "nextPage": "ctrlOrCmd+right",
+      "previousPage": "ctrlOrCmd+left",
+      "focusOnFilterInput": "ctrlOrCmd+f",
+      "openEditorModal": "shift+enter",
+      "firstPage": "ctrlOrCmd+h",
+      "lastPage": "ctrlOrCmd+l"
+    }
+  }
+}
+[2025-09-26 17:22:36.523] [info]  (BksConfig)           System config: {}
+[2025-09-26 17:22:36.523] [info]  (BksConfig)           User config: {}
+[2025-09-26 17:22:36.571] [info]                        initializing background
+[2025-09-26 17:22:40.061] [info]  (main.ts) starting logging
+[2025-09-26 17:22:40.062] [debug] (main.ts) APP BOOTING
+[2025-09-26 17:22:40.063] [debug] (main.ts) ####################################
+[2025-09-26 17:22:40.063] [debug] (main.ts) Platform Information (App)
+[2025-09-26 17:22:40.063] [debug] (main.ts) {
+  "isWindows": false,
+  "isMac": false,
+  "isArm": false,
+  "oracleSupported": true,
+  "parsedArgs": {
+    "_": []
+  },
+  "isLinux": true,
+  "sessionType": "wayland",
+  "isWayland": false,
+  "isPortable": false,
+  "isDevelopment": false,
+  "isAppImage": false,
+  "resourcesPath": "/usr/lib/beekeeper-studio",
+  "env": {
+    "development": false,
+    "test": false,
+    "production": true
+  },
+  "debugEnabled": false,
+  "platform": "linux",
+  "darkMode": false,
+  "userDirectory": "/home/nbardavid/.config/beekeeper-studio",
+  "downloadsDirectory": "/home/nbardavid/Downloads",
+  "homeDirectory": "/home/nbardavid",
+  "pluginsDirectory": "/home/nbardavid/.config/beekeeper-studio/plugins",
+  "testMode": false,
+  "appDbPath": "/home/nbardavid/.config/beekeeper-studio/app.db",
+  "updatesDisabled": true,
+  "appVersion": "5.3.4",
+  "parsedAppVersion": {
+    "major": 5,
+    "minor": 3,
+    "patch": 4,
+    "channel": "stable"
+  },
+  "cloudUrl": "https://app.beekeeperstudio.io",
+  "locale": ""
+}
+[2025-09-26 17:22:40.068] [info]  (renderer/utilityconnection) QUEUEING REQUEST FOR NAME, ID:  license/getStatus bd95fb09-640c-4bed-8542-4f0561697d22
+[2025-09-26 17:22:40.075] [info]  (main.ts)                    Received port in renderer with sId:  35098757-5c6a-4691-91c0-df2c339d72c1
+[2025-09-26 17:22:40.075] [info]  (renderer/utilityconnection) RECEIVED PORT IN UtilityConnection:  {}
+[2025-09-26 17:22:40.075] [info]  (renderer/utilityconnection) PROCESSING QUEUED REQUEST:  license/getStatus bd95fb09-640c-4bed-8542-4f0561697d22
+[2025-09-26 17:22:40.075] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  appdb/setting/find 63327b3a-8fbe-41b8-8aa4-fb9b68737830
+[2025-09-26 17:22:40.078] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  bd95fb09-640c-4bed-8542-4f0561697d22
+[2025-09-26 17:22:40.079] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  license/get b31b665b-0849-4709-99d6-1d5cc80964fd
+[2025-09-26 17:22:40.080] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  63327b3a-8fbe-41b8-8aa4-fb9b68737830
+[2025-09-26 17:22:40.082] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  b31b665b-0849-4709-99d6-1d5cc80964fd
+[2025-09-26 17:22:40.082] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  license/getInstallationId 5baec592-3c4b-4e59-a463-a56c8cc4cca8
+[2025-09-26 17:22:40.084] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  5baec592-3c4b-4e59-a463-a56c8cc4cca8
+[2025-09-26 17:22:40.084] [info]  (renderer/utilityconnection) ADDED LISTENER:  enumFileChanged 5c5e1b1e-968e-49f7-8774-a2ac59eb9cf8
+[2025-09-26 17:22:40.084] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  enum/init 1743c0df-0be2-4371-8aa7-933e4f176357
+[2025-09-26 17:22:40.085] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  1743c0df-0be2-4371-8aa7-933e4f176357
+[2025-09-26 17:22:40.085] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  enum/load a9a26eea-1aef-4bb2-9a75-068551905d97
+[2025-09-26 17:22:40.086] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  a9a26eea-1aef-4bb2-9a75-068551905d97
+[2025-09-26 17:22:40.086] [info]  (renderer/utilityconnection) SENDING REQUEST FOR NAME, ID:  plugin/enabledPlugins 60123c4f-2fb7-4cdf-a492-913db715bc3f
+[2025-09-26 17:22:40.087] [info]  (renderer/utilityconnection) RECEIVED REPLY FOR REQUEST ID:  60123c4f-2fb7-4cdf-a492-913db715bc3f
+[2025-09-26 17:22:40.087] [info]  (WebPluginLoader:bks-ai-shell) Loading plugin {
+  id: 'bks-ai-shell',
+  name: 'AI Shell',
+  version: '1.4.1',
+  minAppVersion: '5.4.0',
+  description: 'Ask AI to analyze your database and generate SQL queries.',
+  author: { name: 'Beekeeper Studio', url: 'https://beekeeperstudio.io' },
+  icon: 'auto_awesome',
+  manifestVersion: 0,
+  capabilities: {
+    views: {
+      tabTypes: [
+        {
+          id: 'bks-ai-shell',
+          name: 'AI Shell',
+          kind: 'shell',
+          entry: 'dist/index.html'
+        }
+      ]
+    },
+    menu: [
+      {
+        command: 'new-tab-dropdown-item',
+        name: 'Add AI Shell',
+        view: 'bks-ai-shell',
+        placement: 'newTabDropdown'
+      }
+    ]
+  },
+  permissions: []
+}
+[2025-09-26 17:22:40.136] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/query/find cb2d20d1-9428-4e19-92c0-f902434fa7a9
+[2025-09-26 17:22:40.137] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/saved/find 0ac0a97e-cc26-41b3-928a-7ea63ff32f72
+[2025-09-26 17:22:40.137] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/usedQuery/find 59de8ba2-02ef-40e7-97b1-c1753ff166bc
+[2025-09-26 17:22:40.138] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/used/find 48aec859-2496-49c2-9fe7-f9c6842b95f5
+[2025-09-26 17:22:40.139] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 4f9c0d9d-d307-4d43-a355-6778ce05897e
+[2025-09-26 17:22:40.174] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/credential/find 98b83770-0cd2-48b3-aef9-1980dd5685c5
+[2025-09-26 17:22:40.233] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/setting/get 9b311176-8f05-4921-ad1b-6f9d5d970046
+[2025-09-26 17:22:40.233] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/setting/get f23bef9e-1263-4de4-87b4-8b0702eea94e
+[2025-09-26 17:22:40.235] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/saved/new 51e0b1c4-02ff-4938-9996-eed6fbc82b9f
+[2025-09-26 17:22:40.273] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  cb2d20d1-9428-4e19-92c0-f902434fa7a9
+[2025-09-26 17:22:40.273] [debug] (StateManager)                 removing from search index 0
+[2025-09-26 17:22:40.273] [debug] (StateManager)                 adding to search index 1
+[2025-09-26 17:22:40.274] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  0ac0a97e-cc26-41b3-928a-7ea63ff32f72
+[2025-09-26 17:22:40.275] [debug] (StateManager)                 removing from search index 0
+[2025-09-26 17:22:40.275] [debug] (StateManager)                 adding to search index 1
+[2025-09-26 17:22:40.290] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  59de8ba2-02ef-40e7-97b1-c1753ff166bc
+[2025-09-26 17:22:40.290] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  48aec859-2496-49c2-9fe7-f9c6842b95f5
+[2025-09-26 17:22:40.290] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  4f9c0d9d-d307-4d43-a355-6778ce05897e
+[2025-09-26 17:22:40.290] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get eddec3bb-ae19-4148-9384-f99ef43aaec0
+[2025-09-26 17:22:40.291] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  98b83770-0cd2-48b3-aef9-1980dd5685c5
+[2025-09-26 17:22:40.292] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  9b311176-8f05-4921-ad1b-6f9d5d970046
+[2025-09-26 17:22:40.292] [info]  (settings-plugin)              get {"id":10,"createdAt":"2025-09-26T15:22:37.000Z","updatedAt":"2025-09-26T15:22:37.000Z","_userValue":"name","defaultValue":"name","valueType":0,"version":0,"key":"connectionsSortBy","linuxDefault":null,"macDefault":null,"windowsDefault":null,"value":"name"}
+[2025-09-26 17:22:40.292] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  f23bef9e-1263-4de4-87b4-8b0702eea94e
+[2025-09-26 17:22:40.292] [info]  (settings-plugin)              get {"id":11,"createdAt":"2025-09-26T15:22:37.000Z","updatedAt":"2025-09-26T15:22:37.000Z","_userValue":"asc","defaultValue":"asc","valueType":0,"version":0,"key":"connectionsSortOrder","linuxDefault":null,"macDefault":null,"windowsDefault":null,"value":"asc"}
+[2025-09-26 17:22:40.293] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  51e0b1c4-02ff-4938-9996-eed6fbc82b9f
+[2025-09-26 17:22:40.293] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/saved/new 6ad5c741-1acb-4026-b268-140c8d766391
+[2025-09-26 17:22:40.295] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/pinconn/find 67e809b2-d85a-4307-861f-06469961ab11
+[2025-09-26 17:22:40.305] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  eddec3bb-ae19-4148-9384-f99ef43aaec0
+[2025-09-26 17:22:40.307] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  6ad5c741-1acb-4026-b268-140c8d766391
+[2025-09-26 17:22:40.308] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  67e809b2-d85a-4307-861f-06469961ab11
+[2025-09-26 17:22:40.308] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/pinconn/save 19feb8f4-4a11-4833-b415-631e6baaaa6c
+[2025-09-26 17:22:40.311] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  19feb8f4-4a11-4833-b415-631e6baaaa6c
+[2025-09-26 17:22:40.311] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/credential/find 0b8093b5-7323-41ec-8599-672d09fb501d
+[2025-09-26 17:22:40.316] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  0b8093b5-7323-41ec-8599-672d09fb501d
+[2025-09-26 17:22:45.638] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/saved/new e3c864c2-db82-47af-a671-5659d1508b7d
+[2025-09-26 17:22:45.695] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  e3c864c2-db82-47af-a671-5659d1508b7d
+[2025-09-26 17:23:31.309] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/test 659a6041-bfd3-42e8-8ee7-325277e3a6b9
+[2025-09-26 17:23:31.354] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  659a6041-bfd3-42e8-8ee7-325277e3a6b9
+[2025-09-26 17:23:36.475] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/create 73d98088-b2d1-480d-98be-292b918cc312
+[2025-09-26 17:23:36.529] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  73d98088-b2d1-480d-98be-292b918cc312
+[2025-09-26 17:23:36.529] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/defaultSchema 35eb18f5-9ee7-4bc3-8803-bfc111d14984
+[2025-09-26 17:23:36.530] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  35eb18f5-9ee7-4bc3-8803-bfc111d14984
+[2025-09-26 17:23:36.530] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/supportedFeatures 18115c4f-9d11-4fd2-acaf-94aa1f280eec
+[2025-09-26 17:23:36.530] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  18115c4f-9d11-4fd2-acaf-94aa1f280eec
+[2025-09-26 17:23:36.531] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/versionString ea9c381a-7b7b-4a12-8b0e-6edc773b029d
+[2025-09-26 17:23:36.531] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  ea9c381a-7b7b-4a12-8b0e-6edc773b029d
+[2025-09-26 17:23:36.531] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getServerConfig 169bb340-372e-486a-80e9-8dd54549d157
+[2025-09-26 17:23:36.531] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  169bb340-372e-486a-80e9-8dd54549d157
+[2025-09-26 17:23:36.533] [debug] (data/usedconnections)         Recording used config for:  {
+  id: null,
+  createdAt: '2025-09-26T15:22:45.639Z',
+  updatedAt: '2025-09-26T15:22:45.639Z',
+  connectionType: 'postgresql',
+  host: 'localhost',
+  port: 5432,
+  socketPath: '/var/run/postgresql',
+  socketPathEnabled: false,
+  username: 'myuser',
+  domain: null,
+  defaultDatabase: 'mydatabase',
+  url: null,
+  uniqueHash: 'DEPRECATED',
+  sshEnabled: false,
+  sshHost: null,
+  sshPort: 22,
+  sshKeyfile: null,
+  sshUsername: null,
+  sshBastionHost: null,
+  sshKeepaliveInterval: 60,
+  ssl: false,
+  sslCaFile: null,
+  sslCertFile: null,
+  sslKeyFile: null,
+  sslRejectUnauthorized: true,
+  readOnlyMode: false,
+  options: { connectionMethod: 'manual' },
+  redshiftOptions: {},
+  cassandraOptions: {},
+  bigQueryOptions: {},
+  azureAuthOptions: {},
+  authId: null,
+  libsqlOptions: { mode: 'url' },
+  sqlAnywhereOptions: { mode: 'server' },
+  trustServerCertificate: false,
+  serviceName: null,
+  labelColor: 'default',
+  workspaceId: -1,
+  rememberPassword: true,
+  password: 'mypassword',
+  sshKeyfilePassword: null,
+  sshPassword: null,
+  sshMode: 'agent'
+}
+[2025-09-26 17:23:36.533] [debug] (data/usedconnections)         Found used config undefined
+[2025-09-26 17:23:36.533] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/used/save f0a66ebb-45c0-4463-9115-aaeadf662558
+[2025-09-26 17:23:36.555] [warn]  (BksConfig:default)            key not found: plugins.bks-ai-shell.disabled
+[2025-09-26 17:23:36.576] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/setting/get d1f89a21-cd84-4835-b2e6-dbefb4fa54e5
+[2025-09-26 17:23:36.576] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/setting/get 1215378c-ecdc-4df7-9e48-103d32d431e2
+[2025-09-26 17:23:36.643] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  f0a66ebb-45c0-4463-9115-aaeadf662558
+[2025-09-26 17:23:36.643] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listDatabases 03aefdb8-f667-47f7-bf83-4ccbfaa42cfc
+[2025-09-26 17:23:36.644] [info]  (app.vue)                      database changed mydatabase
+[2025-09-26 17:23:36.644] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/pins/find eebb0d6b-cf4b-41be-991f-996e1e306a77
+[2025-09-26 17:23:36.656] [info]  (TabModule)                    Loading tabs for  -1 1
+[2025-09-26 17:23:36.658] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/find 9be0e5d9-c547-4780-bc2e-e5818d779966
+[2025-09-26 17:23:36.658] [warn]  (BksConfig:default)            key not found: plugins.bks-ai-shell.disabled
+[2025-09-26 17:23:36.659] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  d1f89a21-cd84-4835-b2e6-dbefb4fa54e5
+[2025-09-26 17:23:36.660] [info]  (settings-plugin)              get null
+[2025-09-26 17:23:36.660] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  1215378c-ecdc-4df7-9e48-103d32d431e2
+[2025-09-26 17:23:36.660] [info]  (settings-plugin)              get null
+[2025-09-26 17:23:36.660] [info]  (settings-plugin)              set pinSortField position
+[2025-09-26 17:23:36.660] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/setting/set 84af268f-d5bb-4b41-8c17-de5251412fdf
+[2025-09-26 17:23:36.660] [info]  (settings-plugin)              set pinSortOrder asc
+[2025-09-26 17:23:36.660] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/setting/set 914f4b67-522d-4a5c-9ab9-ac3efb4553ba
+[2025-09-26 17:23:36.672] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  eebb0d6b-cf4b-41be-991f-996e1e306a77
+[2025-09-26 17:23:36.673] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  03aefdb8-f667-47f7-bf83-4ccbfaa42cfc
+[2025-09-26 17:23:36.673] [info]  (store/index)                  databaseList:  [ 'mydatabase', 'postgres' ]
+[2025-09-26 17:23:36.673] [debug] (StateManager)                 removing from search index 0
+[2025-09-26 17:23:36.673] [debug] (StateManager)                 adding to search index 1
+[2025-09-26 17:23:36.675] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listTables bda68807-15c9-4e6a-b52a-0a698a2af63e
+[2025-09-26 17:23:36.676] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  9be0e5d9-c547-4780-bc2e-e5818d779966
+[2025-09-26 17:23:36.732] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  file/pathJoin 844f0926-3045-45e5-81bf-0b9a3532695d
+[2025-09-26 17:23:36.742] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  84af268f-d5bb-4b41-8c17-de5251412fdf
+[2025-09-26 17:23:36.742] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  914f4b67-522d-4a5c-9ab9-ac3efb4553ba
+[2025-09-26 17:23:36.742] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  bda68807-15c9-4e6a-b52a-0a698a2af63e
+[2025-09-26 17:23:36.742] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listViews 45ce7a6e-6060-4154-b85b-71166af0aa4d
+[2025-09-26 17:23:36.743] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  844f0926-3045-45e5-81bf-0b9a3532695d
+[2025-09-26 17:23:36.743] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  file/exists 36cebf73-250d-4aa9-9298-8fa04ea1780d
+[2025-09-26 17:23:36.745] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  36cebf73-250d-4aa9-9298-8fa04ea1780d
+[2025-09-26 17:23:36.751] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  45ce7a6e-6060-4154-b85b-71166af0aa4d
+[2025-09-26 17:23:36.751] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listMaterializedViews 052b1c0b-0aca-4c4c-9186-312509d513fc
+[2025-09-26 17:23:36.756] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  052b1c0b-0aca-4c4c-9186-312509d513fc
+[2025-09-26 17:23:36.757] [debug] (StateManager)                 removing from search index 0
+[2025-09-26 17:23:36.757] [debug] (StateManager)                 adding to search index 211
+[2025-09-26 17:23:36.769] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listRoutines 15e701e9-91be-4fb7-9d38-8648390b2bc3
+[2025-09-26 17:23:36.998] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  15e701e9-91be-4fb7-9d38-8648390b2bc3
+[2025-09-26 17:23:37.004] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabhistory/clearDeletedTabs 16606106-b10b-421e-9a81-aaf0889fdc06
+[2025-09-26 17:23:37.006] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  16606106-b10b-421e-9a81-aaf0889fdc06
+[2025-09-26 17:23:37.176] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save 0d4983fa-305d-47bf-b61a-1b74d66ea83a
+[2025-09-26 17:23:37.194] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  0d4983fa-305d-47bf-b61a-1b74d66ea83a
+[2025-09-26 17:23:37.715] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save a1e71d9f-be63-478c-9d17-9927ac9cac01
+[2025-09-26 17:23:37.739] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  a1e71d9f-be63-478c-9d17-9927ac9cac01
+[2025-09-26 17:23:47.941] [info]  (core-sidebar)                 Pool database selected postgres
+[2025-09-26 17:23:47.942] [info]  (store/index)                  Pool changing database to postgres
+[2025-09-26 17:23:47.942] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/changeDatabase aa191a4e-c455-4028-8b0d-6e09e9e0554d
+[2025-09-26 17:23:47.981] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  aa191a4e-c455-4028-8b0d-6e09e9e0554d
+[2025-09-26 17:23:47.981] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listTables 0b93edc5-36ca-4f6c-b6f3-f3f6bd62ebaa
+[2025-09-26 17:23:47.981] [info]  (app.vue)                      database changed postgres
+[2025-09-26 17:23:47.982] [debug] (StateManager)                 removing from search index 1
+[2025-09-26 17:23:47.982] [debug] (StateManager)                 adding to search index 1
+[2025-09-26 17:23:48.000] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  0b93edc5-36ca-4f6c-b6f3-f3f6bd62ebaa
+[2025-09-26 17:23:48.000] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listViews 06b3c2ba-5b55-438c-81e0-2c2976c67e87
+[2025-09-26 17:23:48.003] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  06b3c2ba-5b55-438c-81e0-2c2976c67e87
+[2025-09-26 17:23:48.003] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listMaterializedViews c1a521bf-eb15-4328-8c42-8fd042548cad
+[2025-09-26 17:23:48.006] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  c1a521bf-eb15-4328-8c42-8fd042548cad
+[2025-09-26 17:23:48.011] [debug] (StateManager)                 removing from search index 2
+[2025-09-26 17:23:48.012] [debug] (StateManager)                 adding to search index 0
+[2025-09-26 17:23:48.023] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listDatabases 2648dab4-6406-4ff9-a215-162e37f999bd
+[2025-09-26 17:23:48.030] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  2648dab4-6406-4ff9-a215-162e37f999bd
+[2025-09-26 17:23:48.031] [info]  (store/index)                  databaseList:  [ 'mydatabase', 'postgres' ]
+[2025-09-26 17:23:48.031] [debug] (StateManager)                 removing from search index 0
+[2025-09-26 17:23:48.032] [debug] (StateManager)                 adding to search index 0
+[2025-09-26 17:23:48.033] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listRoutines 90c3b185-165a-4435-b9d4-9b1bebed233a
+[2025-09-26 17:23:48.105] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  90c3b185-165a-4435-b9d4-9b1bebed233a
+[2025-09-26 17:23:50.154] [info]  (core-sidebar)                 Pool database selected mydatabase
+[2025-09-26 17:23:50.154] [info]  (store/index)                  Pool changing database to mydatabase
+[2025-09-26 17:23:50.154] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/changeDatabase 431b2c40-ed96-459c-89aa-303a531a2dd3
+[2025-09-26 17:23:50.160] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  431b2c40-ed96-459c-89aa-303a531a2dd3
+[2025-09-26 17:23:50.160] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listTables 675a2c6d-89ff-415e-a663-99ad59dd2495
+[2025-09-26 17:23:50.160] [info]  (app.vue)                      database changed mydatabase
+[2025-09-26 17:23:50.161] [debug] (StateManager)                 removing from search index 1
+[2025-09-26 17:23:50.161] [debug] (StateManager)                 adding to search index 1
+[2025-09-26 17:23:50.166] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  675a2c6d-89ff-415e-a663-99ad59dd2495
+[2025-09-26 17:23:50.166] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listViews bf35e07c-aae6-4f40-af41-1c77e825d011
+[2025-09-26 17:23:50.170] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  bf35e07c-aae6-4f40-af41-1c77e825d011
+[2025-09-26 17:23:50.170] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listMaterializedViews 5f5fcdaa-5172-43f1-a487-75ad842fdb64
+[2025-09-26 17:23:50.173] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  5f5fcdaa-5172-43f1-a487-75ad842fdb64
+[2025-09-26 17:23:50.176] [debug] (StateManager)                 removing from search index 0
+[2025-09-26 17:23:50.176] [debug] (StateManager)                 adding to search index 2
+[2025-09-26 17:23:50.189] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listDatabases 23314a13-80fa-4640-a837-ff923be06d2b
+[2025-09-26 17:23:50.195] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  23314a13-80fa-4640-a837-ff923be06d2b
+[2025-09-26 17:23:50.195] [info]  (store/index)                  databaseList:  [ 'mydatabase', 'postgres' ]
+[2025-09-26 17:23:50.196] [debug] (StateManager)                 removing from search index 0
+[2025-09-26 17:23:50.196] [debug] (StateManager)                 adding to search index 0
+[2025-09-26 17:23:50.197] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listRoutines 3064372e-b5a1-4b49-ad5f-c4e5894e7c83
+[2025-09-26 17:23:50.236] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  3064372e-b5a1-4b49-ad5f-c4e5894e7c83
+[2025-09-26 17:23:54.399] [debug] (store/index)                  actions/updateTableColumns schema_migrations
+[2025-09-26 17:23:54.399] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listTableColumns 2e72dedf-f93c-4bdf-8a24-86c028a6af9a
+[2025-09-26 17:23:54.421] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  2e72dedf-f93c-4bdf-8a24-86c028a6af9a
+[2025-09-26 17:23:54.422] [debug] (store/index)                  Should I update table columns? [
+  {
+    schemaName: 'public',
+    tableName: 'schema_migrations',
+    columnName: 'version',
+    dataType: 'int8(64,0)',
+    nullable: false,
+    defaultValue: null,
+    ordinalPosition: 1,
+    hasDefault: false,
+    generated: false,
+    array: false,
+    comment: null,
+    bksField: { name: 'version', bksType: 'UNKNOWN' }
+  },
+  {
+    schemaName: 'public',
+    tableName: 'schema_migrations',
+    columnName: 'dirty',
+    dataType: 'bool',
+    nullable: false,
+    defaultValue: null,
+    ordinalPosition: 2,
+    hasDefault: false,
+    generated: false,
+    array: false,
+    comment: null,
+    bksField: { name: 'dirty', bksType: 'UNKNOWN' }
+  }
+]
+[2025-09-26 17:23:54.423] [debug] (StateManager)                 removing from search index 0
+[2025-09-26 17:23:54.423] [debug] (StateManager)                 adding to search index 0
+[2025-09-26 17:23:58.151] [debug] (store/index)                  actions/updateTableColumns users
+[2025-09-26 17:23:58.151] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listTableColumns db02b464-e60c-4721-ba29-6fd50c2e93c1
+[2025-09-26 17:23:58.206] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  db02b464-e60c-4721-ba29-6fd50c2e93c1
+[2025-09-26 17:23:58.206] [debug] (store/index)                  Should I update table columns? [
+  {
+    schemaName: 'public',
+    tableName: 'users',
+    columnName: 'id',
+    dataType: 'int4(32,0)',
+    nullable: false,
+    defaultValue: "nextval('users_id_seq'::regclass)",
+    ordinalPosition: 1,
+    hasDefault: true,
+    generated: false,
+    array: false,
+    comment: null,
+    bksField: { name: 'id', bksType: 'UNKNOWN' }
+  },
+  {
+    schemaName: 'public',
+    tableName: 'users',
+    columnName: 'name',
+    dataType: 'text',
+    nullable: false,
+    defaultValue: null,
+    ordinalPosition: 2,
+    hasDefault: false,
+    generated: false,
+    array: false,
+    comment: null,
+    bksField: { name: 'name', bksType: 'UNKNOWN' }
+  },
+  {
+    schemaName: 'public',
+    tableName: 'users',
+    columnName: 'password',
+    dataType: 'text',
+    nullable: false,
+    defaultValue: null,
+    ordinalPosition: 3,
+    hasDefault: false,
+    generated: false,
+    array: false,
+    comment: null,
+    bksField: { name: 'password', bksType: 'UNKNOWN' }
+  }
+]
+[2025-09-26 17:23:58.207] [debug] (StateManager)                 removing from search index 0
+[2025-09-26 17:23:58.207] [debug] (StateManager)                 adding to search index 0
+[2025-09-26 17:24:00.032] [info]  (TabModule)                    saving tab {
+  tabType: 'table',
+  title: 'users',
+  tableName: 'users',
+  schemaName: 'public',
+  entityType: 'table',
+  filters: null,
+  titleScope: 'all',
+  position: 100
+}
+[2025-09-26 17:24:00.032] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save 30f7f817-a8e6-4db5-a00e-88c6ac5ebdd6
+[2025-09-26 17:24:00.051] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  30f7f817-a8e6-4db5-a00e-88c6ac5ebdd6
+[2025-09-26 17:24:00.085] [debug] (AppEvent)                     trigger switchingTab [
+  {
+    id: 2,
+    createdAt: '2025-09-26T15:24:00.033Z',
+    updatedAt: '2025-09-26T15:24:00.033Z',
+    version: 1,
+    tabType: 'table',
+    unsavedChanges: false,
+    title: 'users',
+    titleScope: 'all',
+    alert: false,
+    position: 100,
+    active: true,
+    queryId: null,
+    unsavedQueryText: null,
+    tableName: 'users',
+    schemaName: 'public',
+    entityType: 'table',
+    connectionId: 1,
+    workspaceId: -1,
+    filters: null,
+    context: null,
+    lastActive: null,
+    deletedAt: null
+  }
+]
+[2025-09-26 17:24:00.085] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save aad7f83a-5862-4fb8-b3cf-b12b8d78a421
+[2025-09-26 17:24:00.088] [debug] (store/index)                  actions/updateTableColumns users
+[2025-09-26 17:24:00.088] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listTableColumns 967bd108-2563-4492-a50f-582951502373
+[2025-09-26 17:24:00.098] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  aad7f83a-5862-4fb8-b3cf-b12b8d78a421
+[2025-09-26 17:24:00.098] [debug] (AppEvent)                     trigger switchedTab [
+  {
+    id: 2,
+    createdAt: '2025-09-26T15:24:00.033Z',
+    updatedAt: '2025-09-26T15:24:00.033Z',
+    version: 1,
+    tabType: 'table',
+    unsavedChanges: false,
+    title: 'users',
+    titleScope: 'all',
+    alert: false,
+    position: 100,
+    active: true,
+    queryId: null,
+    unsavedQueryText: null,
+    tableName: 'users',
+    schemaName: 'public',
+    entityType: 'table',
+    connectionId: 1,
+    workspaceId: -1,
+    filters: null,
+    context: null,
+    lastActive: '2025-09-26T15:24:00.085Z',
+    deletedAt: null
+  }
+]
+[2025-09-26 17:24:00.098] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: null,
+    value: {},
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'id', 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:00.099] [warn]  (json-viewer)                  Unable to find editable path `id` in value object.
+[2025-09-26 17:24:00.099] [warn]  (json-viewer)                  Unable to find editable path `name` in value object.
+[2025-09-26 17:24:00.099] [warn]  (json-viewer)                  Unable to find editable path `password` in value object.
+[2025-09-26 17:24:00.101] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  967bd108-2563-4492-a50f-582951502373
+[2025-09-26 17:24:00.101] [debug] (store/index)                  Should I update table columns? []
+[2025-09-26 17:24:00.101] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getTableKeys f3990f68-41dc-4ad1-8512-7a243059afc4
+[2025-09-26 17:24:00.112] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  f3990f68-41dc-4ad1-8512-7a243059afc4
+[2025-09-26 17:24:00.113] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getPrimaryKeys 2268f1f6-5f6c-46cf-ab2c-7545577c61f6
+[2025-09-26 17:24:00.116] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  2268f1f6-5f6c-46cf-ab2c-7545577c61f6
+[2025-09-26 17:24:00.146] [info]  (TableTable)                   fetch params {
+  filter: [],
+  page: 1,
+  size: 100,
+  sort: [ { field: 'id', dir: 'asc' } ]
+}
+[2025-09-26 17:24:00.146] [info]  (TableTable)                   filters []
+[2025-09-26 17:24:00.147] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/selectTop 7585e2e2-46d3-4ba6-9978-773e31742f6c
+[2025-09-26 17:24:00.151] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  7585e2e2-46d3-4ba6-9978-773e31742f6c
+[2025-09-26 17:24:00.152] [debug] (TableTable)                   table has changed, updating
+[2025-09-26 17:24:00.152] [debug] (store/index)                  actions/updateTableColumns users
+[2025-09-26 17:24:00.152] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listTableColumns 53e6c4fa-472e-4cdc-a69d-01a506ed0e6d
+[2025-09-26 17:24:00.159] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  53e6c4fa-472e-4cdc-a69d-01a506ed0e6d
+[2025-09-26 17:24:00.160] [debug] (store/index)                  Should I update table columns? []
+[2025-09-26 17:24:00.160] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getTableKeys 7d763d0b-bdac-4645-8d5e-fa1d97109f5d
+[2025-09-26 17:24:00.161] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save fc3cb95c-c129-4c2f-ab5a-349688ee2fe6
+[2025-09-26 17:24:00.196] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  fc3cb95c-c129-4c2f-ab5a-349688ee2fe6
+[2025-09-26 17:24:00.196] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  7d763d0b-bdac-4645-8d5e-fa1d97109f5d
+[2025-09-26 17:24:00.196] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getPrimaryKeys 6399f331-104a-4973-bc23-a6a508d28b62
+[2025-09-26 17:24:00.198] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  6399f331-104a-4973-bc23-a6a508d28b62
+[2025-09-26 17:24:00.213] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:00.215] [warn]  (partialReadOnly)              Invalid editable range: name RangeError: Invalid line number 3 in 1-line document
+    at TextLeaf.line (app://./assets/index-UqkobiW5.js:3455:13691)
+    at StateField.update (app://./assets/index-UqkobiW5.js:3889:9619)
+    at Object.update (app://./assets/index-UqkobiW5.js:3458:17868)
+    at EditorState.computeSlot (app://./assets/index-UqkobiW5.js:3458:28717)
+    at ensureAddr (app://./assets/index-UqkobiW5.js:3458:21328)
+    at new EditorState (app://./assets/index-UqkobiW5.js:3458:27729)
+    at EditorState.applyTransaction (app://./assets/index-UqkobiW5.js:3458:28671)
+    at get state (app://./assets/index-UqkobiW5.js:3458:23159)
+    at EditorView.update (app://./assets/index-UqkobiW5.js:3464:7101)
+    at EditorView.dispatchTransactions (app://./assets/index-UqkobiW5.js:3464:5895)
+[2025-09-26 17:24:00.216] [warn]  (partialReadOnly)              Invalid editable range: password RangeError: Invalid line number 4 in 1-line document
+    at TextLeaf.line (app://./assets/index-UqkobiW5.js:3455:13691)
+    at StateField.update (app://./assets/index-UqkobiW5.js:3889:9619)
+    at Object.update (app://./assets/index-UqkobiW5.js:3458:17868)
+    at EditorState.computeSlot (app://./assets/index-UqkobiW5.js:3458:28717)
+    at ensureAddr (app://./assets/index-UqkobiW5.js:3458:21328)
+    at new EditorState (app://./assets/index-UqkobiW5.js:3458:27729)
+    at EditorState.applyTransaction (app://./assets/index-UqkobiW5.js:3458:28671)
+    at get state (app://./assets/index-UqkobiW5.js:3458:23159)
+    at EditorView.update (app://./assets/index-UqkobiW5.js:3464:7101)
+    at EditorView.dispatchTransactions (app://./assets/index-UqkobiW5.js:3464:5895)
+[2025-09-26 17:24:00.423] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save d4660021-d6bb-4b0d-a1de-17af4ae223c0
+[2025-09-26 17:24:00.428] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  d4660021-d6bb-4b0d-a1de-17af4ae223c0
+[2025-09-26 17:24:00.624] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save 0f5ccce8-c23d-4828-8816-9211f3c56562
+[2025-09-26 17:24:00.625] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  0f5ccce8-c23d-4828-8816-9211f3c56562
+[2025-09-26 17:24:01.088] [warn]  (query-editor)                 Timed out waiting for text editor to blur
+[2025-09-26 17:24:02.218] [info]  (TabModule)                    saving tab {
+  tabType: 'table',
+  title: 'schema_migrations',
+  tableName: 'schema_migrations',
+  schemaName: 'public',
+  entityType: 'table',
+  filters: null,
+  titleScope: 'all',
+  position: 101
+}
+[2025-09-26 17:24:02.218] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save dd2e055c-7f88-4578-a606-fb4557872555
+[2025-09-26 17:24:02.229] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  dd2e055c-7f88-4578-a606-fb4557872555
+[2025-09-26 17:24:02.242] [debug] (AppEvent)                     trigger switchingTab [
+  {
+    id: 3,
+    createdAt: '2025-09-26T15:24:02.219Z',
+    updatedAt: '2025-09-26T15:24:02.219Z',
+    version: 1,
+    tabType: 'table',
+    unsavedChanges: false,
+    title: 'schema_migrations',
+    titleScope: 'all',
+    alert: false,
+    position: 101,
+    active: true,
+    queryId: null,
+    unsavedQueryText: null,
+    tableName: 'schema_migrations',
+    schemaName: 'public',
+    entityType: 'table',
+    connectionId: 1,
+    workspaceId: -1,
+    filters: null,
+    context: null,
+    lastActive: null,
+    deletedAt: null
+  }
+]
+[2025-09-26 17:24:02.242] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save 4ecbcecc-50ce-4124-ad42-7c89bfb052d9
+[2025-09-26 17:24:02.245] [debug] (store/index)                  actions/updateTableColumns schema_migrations
+[2025-09-26 17:24:02.245] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listTableColumns fb30c619-2ba9-4304-9a74-f997f39cb2f7
+[2025-09-26 17:24:02.253] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  4ecbcecc-50ce-4124-ad42-7c89bfb052d9
+[2025-09-26 17:24:02.253] [debug] (AppEvent)                     trigger switchedTab [
+  {
+    id: 3,
+    createdAt: '2025-09-26T15:24:02.219Z',
+    updatedAt: '2025-09-26T15:24:02.219Z',
+    version: 1,
+    tabType: 'table',
+    unsavedChanges: false,
+    title: 'schema_migrations',
+    titleScope: 'all',
+    alert: false,
+    position: 101,
+    active: true,
+    queryId: null,
+    unsavedQueryText: null,
+    tableName: 'schema_migrations',
+    schemaName: 'public',
+    entityType: 'table',
+    connectionId: 1,
+    workspaceId: -1,
+    filters: null,
+    context: null,
+    lastActive: '2025-09-26T15:24:02.242Z',
+    deletedAt: null
+  }
+]
+[2025-09-26 17:24:02.253] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: null,
+    value: {},
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'version', 'dirty' ]
+  }
+]
+[2025-09-26 17:24:02.253] [warn]  (json-viewer)                  Unable to find editable path `version` in value object.
+[2025-09-26 17:24:02.253] [warn]  (json-viewer)                  Unable to find editable path `dirty` in value object.
+[2025-09-26 17:24:02.263] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  fb30c619-2ba9-4304-9a74-f997f39cb2f7
+[2025-09-26 17:24:02.263] [debug] (store/index)                  Should I update table columns? []
+[2025-09-26 17:24:02.263] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getTableKeys 902e4deb-6946-41b6-8c62-fd2e276f75d9
+[2025-09-26 17:24:02.271] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  902e4deb-6946-41b6-8c62-fd2e276f75d9
+[2025-09-26 17:24:02.271] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getPrimaryKeys 4494a3bd-3745-4320-a356-37f0b644ad42
+[2025-09-26 17:24:02.273] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  4494a3bd-3745-4320-a356-37f0b644ad42
+[2025-09-26 17:24:02.286] [info]  (TableTable)                   fetch params {
+  filter: [],
+  page: 1,
+  size: 100,
+  sort: [ { field: 'version', dir: 'asc' } ]
+}
+[2025-09-26 17:24:02.286] [info]  (TableTable)                   filters []
+[2025-09-26 17:24:02.286] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/selectTop 1484f1cc-a275-4d8a-922a-4eb259825bb3
+[2025-09-26 17:24:02.289] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  1484f1cc-a275-4d8a-922a-4eb259825bb3
+[2025-09-26 17:24:02.289] [debug] (TableTable)                   table has changed, updating
+[2025-09-26 17:24:02.289] [debug] (store/index)                  actions/updateTableColumns schema_migrations
+[2025-09-26 17:24:02.289] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listTableColumns 55d2cd0b-0632-4b42-8d8f-5be072dea15f
+[2025-09-26 17:24:02.295] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  55d2cd0b-0632-4b42-8d8f-5be072dea15f
+[2025-09-26 17:24:02.295] [debug] (store/index)                  Should I update table columns? []
+[2025-09-26 17:24:02.296] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getTableKeys ded53f25-389f-4cf4-a964-20f22e3998a7
+[2025-09-26 17:24:02.296] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save 989606f3-47f6-45b5-86a0-29b57f23e66e
+[2025-09-26 17:24:02.303] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  989606f3-47f6-45b5-86a0-29b57f23e66e
+[2025-09-26 17:24:02.305] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  ded53f25-389f-4cf4-a964-20f22e3998a7
+[2025-09-26 17:24:02.305] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getPrimaryKeys b94644f5-aabd-43a7-9c79-4cf96d25cd72
+[2025-09-26 17:24:02.309] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  b94644f5-aabd-43a7-9c79-4cf96d25cd72
+[2025-09-26 17:24:02.320] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { version: '1', dirty: false },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'dirty' ]
+  }
+]
+[2025-09-26 17:24:02.322] [warn]  (partialReadOnly)              Invalid editable range: dirty RangeError: Invalid line number 3 in 1-line document
+    at TextLeaf.line (app://./assets/index-UqkobiW5.js:3455:13691)
+    at StateField.update (app://./assets/index-UqkobiW5.js:3889:9619)
+    at Object.update (app://./assets/index-UqkobiW5.js:3458:17868)
+    at EditorState.computeSlot (app://./assets/index-UqkobiW5.js:3458:28717)
+    at ensureAddr (app://./assets/index-UqkobiW5.js:3458:21328)
+    at new EditorState (app://./assets/index-UqkobiW5.js:3458:27729)
+    at EditorState.applyTransaction (app://./assets/index-UqkobiW5.js:3458:28671)
+    at get state (app://./assets/index-UqkobiW5.js:3458:23159)
+    at EditorView.update (app://./assets/index-UqkobiW5.js:3464:7101)
+    at EditorView.dispatchTransactions (app://./assets/index-UqkobiW5.js:3464:5895)
+[2025-09-26 17:24:02.576] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save fe59fffa-daba-4ed4-ba44-21476e85202f
+[2025-09-26 17:24:02.580] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  fe59fffa-daba-4ed4-ba44-21476e85202f
+[2025-09-26 17:24:02.777] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save 6c39d042-26b9-4d35-b920-6ddf54a3db2a
+[2025-09-26 17:24:02.780] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  6c39d042-26b9-4d35-b920-6ddf54a3db2a
+[2025-09-26 17:24:04.318] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { version: '1', dirty: false },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'dirty' ]
+  }
+]
+[2025-09-26 17:24:07.051] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save ca1be75e-fb73-44bb-84fc-1a592fd5395a
+[2025-09-26 17:24:07.073] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  ca1be75e-fb73-44bb-84fc-1a592fd5395a
+[2025-09-26 17:24:07.552] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save d6efefc4-0437-4d81-9cd3-57b1c653b534
+[2025-09-26 17:24:07.553] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  d6efefc4-0437-4d81-9cd3-57b1c653b534
+[2025-09-26 17:24:07.983] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:08.439] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:08.983] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:09.501] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:09.847] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:10.209] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:10.506] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:11.048] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:11.502] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:12.111] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:13.115] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:13.519] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:14.339] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:14.707] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:15.006] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:24:15.264] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:25:03.634] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save 09e47b38-2aef-4ff3-b42e-9847bafedbf5
+[2025-09-26 17:25:03.691] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  09e47b38-2aef-4ff3-b42e-9847bafedbf5
+[2025-09-26 17:25:04.136] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save 055ca2ab-4463-4b0b-a408-2f94cf4ab514
+[2025-09-26 17:25:04.137] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  055ca2ab-4463-4b0b-a408-2f94cf4ab514
+[2025-09-26 17:25:11.923] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save f4f26417-51de-4e61-9853-d0ee6cabb0e7
+[2025-09-26 17:25:11.983] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  f4f26417-51de-4e61-9853-d0ee6cabb0e7
+[2025-09-26 17:25:12.424] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save fccdf489-97b5-48f7-87ce-2b8a67fc4ce7
+[2025-09-26 17:25:12.428] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  fccdf489-97b5-48f7-87ce-2b8a67fc4ce7
+[2025-09-26 17:25:48.123] [debug] (ClientMenuActionHandler)      Sending menu action to electron thread switchTheme dark
+[2025-09-26 17:25:48.145] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/setting/find 0c3adbf2-acce-429f-b0f5-cd95148d377c
+[2025-09-26 17:25:48.145] [debug] (AppEventHandler)              Received from electron, forwarding to app sc-refresh
+[2025-09-26 17:25:48.147] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  0c3adbf2-acce-429f-b0f5-cd95148d377c
+[2025-09-26 17:25:48.148] [debug] (AppEvent)                     trigger changedTheme [ 'dark' ]
+[2025-09-26 17:25:50.612] [debug] (ClientMenuActionHandler)      Sending menu action to electron thread switchTheme solarized
+[2025-09-26 17:25:50.708] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/setting/find c75a106e-283a-4c3b-90e1-5f62c86b863e
+[2025-09-26 17:25:50.709] [debug] (AppEventHandler)              Received from electron, forwarding to app sc-refresh
+[2025-09-26 17:25:50.711] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  c75a106e-283a-4c3b-90e1-5f62c86b863e
+[2025-09-26 17:25:50.712] [debug] (AppEvent)                     trigger changedTheme [ 'solarized' ]
+[2025-09-26 17:25:54.590] [debug] (ClientMenuActionHandler)      Sending menu action to electron thread switchTheme solarized-dark
+[2025-09-26 17:25:54.651] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/setting/find fc0bda4c-1a1e-4b3e-a033-45d2d7f523ea
+[2025-09-26 17:25:54.652] [debug] (AppEventHandler)              Received from electron, forwarding to app sc-refresh
+[2025-09-26 17:25:54.678] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  fc0bda4c-1a1e-4b3e-a033-45d2d7f523ea
+[2025-09-26 17:25:54.678] [debug] (AppEvent)                     trigger changedTheme [ 'solarized-dark' ]
+[2025-09-26 17:26:00.820] [debug] (ClientMenuActionHandler)      Sending menu action to electron thread switchTheme dark
+[2025-09-26 17:26:00.842] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/setting/find 640567a2-c8d6-4cc7-945e-d0fc502b4a63
+[2025-09-26 17:26:00.842] [debug] (AppEventHandler)              Received from electron, forwarding to app sc-refresh
+[2025-09-26 17:26:00.870] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  640567a2-c8d6-4cc7-945e-d0fc502b4a63
+[2025-09-26 17:26:00.870] [debug] (AppEvent)                     trigger changedTheme [ 'dark' ]
+[2025-09-26 17:29:16.125] [debug] (TableTable)                   refreshing table
+[2025-09-26 17:29:16.126] [info]  (TableTable)                   fetch params {
+  filter: [],
+  page: 1,
+  size: 100,
+  sort: [ { field: 'id', dir: 'asc' } ]
+}
+[2025-09-26 17:29:16.126] [info]  (TableTable)                   filters []
+[2025-09-26 17:29:16.126] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/selectTop cddf5ec8-0ed6-4eb0-9cf4-2607801e0e8f
+[2025-09-26 17:29:16.135] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  cddf5ec8-0ed6-4eb0-9cf4-2607801e0e8f
+[2025-09-26 17:29:16.135] [debug] (TableTable)                   table has changed, updating
+[2025-09-26 17:29:16.135] [debug] (store/index)                  actions/updateTableColumns users
+[2025-09-26 17:29:16.135] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listTableColumns 416f7d76-5936-4d42-a479-1a61ea1ac0bc
+[2025-09-26 17:29:16.150] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  416f7d76-5936-4d42-a479-1a61ea1ac0bc
+[2025-09-26 17:29:16.150] [debug] (store/index)                  Should I update table columns? []
+[2025-09-26 17:29:16.151] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getTableKeys 392cdad2-70be-420b-aa53-9a67e77de096
+[2025-09-26 17:29:16.151] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save db44568f-37e8-453c-a383-bb9bd9d12833
+[2025-09-26 17:29:16.152] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  db44568f-37e8-453c-a383-bb9bd9d12833
+[2025-09-26 17:29:16.158] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  392cdad2-70be-420b-aa53-9a67e77de096
+[2025-09-26 17:29:16.158] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getPrimaryKeys 8202b47b-e7bb-4a65-ad75-58211d46fd87
+[2025-09-26 17:29:16.161] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  8202b47b-e7bb-4a65-ad75-58211d46fd87
+[2025-09-26 17:29:16.174] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:29:16.188] [info]  (TableTable)                   fetch params {
+  filter: [],
+  page: 1,
+  size: 100,
+  sort: [ { field: 'id', dir: 'asc' } ]
+}
+[2025-09-26 17:29:16.188] [info]  (TableTable)                   filters []
+[2025-09-26 17:29:16.188] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/selectTop f118de64-59d2-43d6-8797-53d310def822
+[2025-09-26 17:29:16.191] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  f118de64-59d2-43d6-8797-53d310def822
+[2025-09-26 17:29:16.191] [debug] (TableTable)                   table has changed, updating
+[2025-09-26 17:29:16.191] [debug] (store/index)                  actions/updateTableColumns users
+[2025-09-26 17:29:16.191] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/listTableColumns 1a4f2720-b147-4a95-9756-b6c65dfe176c
+[2025-09-26 17:29:16.198] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  1a4f2720-b147-4a95-9756-b6c65dfe176c
+[2025-09-26 17:29:16.198] [debug] (store/index)                  Should I update table columns? []
+[2025-09-26 17:29:16.199] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getTableKeys 923776ab-f10c-4b82-bb4b-2c3b1d352f2e
+[2025-09-26 17:29:16.200] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  appdb/tabs/save c061aab1-49b4-41c1-b94c-26e0f2d9ed8d
+[2025-09-26 17:29:16.204] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  c061aab1-49b4-41c1-b94c-26e0f2d9ed8d
+[2025-09-26 17:29:16.209] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  923776ab-f10c-4b82-bb4b-2c3b1d352f2e
+[2025-09-26 17:29:16.209] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  conn/getPrimaryKeys 3f2d6ea4-30b1-46db-805c-096154bf21d1
+[2025-09-26 17:29:16.211] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  3f2d6ea4-30b1-46db-805c-096154bf21d1
+[2025-09-26 17:29:16.221] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '1',
+    value: { id: 1, name: 'nbardavid', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:29:17.753] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '2',
+    value: { id: 2, name: 'warrox', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:29:18.353] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '2',
+    value: { id: 2, name: 'warrox', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:29:18.968] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '2',
+    value: { id: 2, name: 'warrox', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:29:19.603] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '2',
+    value: { id: 2, name: 'warrox', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:29:19.986] [debug] (AppEvent)                     trigger updateJsonViewerSidebar [
+  {
+    dataId: '2',
+    value: { id: 2, name: 'warrox', password: 'password' },
+    expandablePaths: [],
+    signs: {},
+    editablePaths: [ 'name', 'password' ]
+  }
+]
+[2025-09-26 17:32:40.111] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 76a8a87d-e310-4640-9023-e833212d643a
+[2025-09-26 17:32:40.112] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 6530992a-5d98-4605-8d8c-6eb3afdc1dd2
+[2025-09-26 17:32:40.113] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  76a8a87d-e310-4640-9023-e833212d643a
+[2025-09-26 17:32:40.113] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get 0d7cf975-47c7-438a-9e93-259ffc049450
+[2025-09-26 17:32:40.113] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  6530992a-5d98-4605-8d8c-6eb3afdc1dd2
+[2025-09-26 17:32:40.113] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get ef717be8-8679-4060-aaf7-fec36df4befd
+[2025-09-26 17:32:40.114] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  0d7cf975-47c7-438a-9e93-259ffc049450
+[2025-09-26 17:32:40.118] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  ef717be8-8679-4060-aaf7-fec36df4befd
+[2025-09-26 17:32:40.139] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 1ed014e2-7f49-4d4f-a63c-390a518a4a28
+[2025-09-26 17:32:40.142] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  1ed014e2-7f49-4d4f-a63c-390a518a4a28
+[2025-09-26 17:32:40.142] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get cd71d51e-bc2b-474f-852e-a82c1a4a3ccc
+[2025-09-26 17:32:40.143] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  cd71d51e-bc2b-474f-852e-a82c1a4a3ccc
+[2025-09-26 17:42:40.085] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus eb11ad34-34d5-4ef8-a7e0-5bbe64f3f325
+[2025-09-26 17:42:40.112] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  eb11ad34-34d5-4ef8-a7e0-5bbe64f3f325
+[2025-09-26 17:42:40.113] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get 3a6e12bf-5fe6-4820-9dd5-5e75040bff13
+[2025-09-26 17:42:40.113] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 6bd9b641-1ae5-4355-973b-79712c9a0a98
+[2025-09-26 17:42:40.113] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  3a6e12bf-5fe6-4820-9dd5-5e75040bff13
+[2025-09-26 17:42:40.116] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  6bd9b641-1ae5-4355-973b-79712c9a0a98
+[2025-09-26 17:42:40.116] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get 2b41b907-d401-4d06-b824-11cbaa2343ec
+[2025-09-26 17:42:40.117] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  2b41b907-d401-4d06-b824-11cbaa2343ec
+[2025-09-26 17:42:40.139] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus fa752581-b203-4616-938e-b201c729edcc
+[2025-09-26 17:42:40.140] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  fa752581-b203-4616-938e-b201c729edcc
+[2025-09-26 17:42:40.140] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get 40846a41-34af-45c7-b972-b5fdf9648ff7
+[2025-09-26 17:42:40.141] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  40846a41-34af-45c7-b972-b5fdf9648ff7
+[2025-09-26 17:52:40.085] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 12da76f6-b0fa-41c2-b0c5-bd094e84a2ae
+[2025-09-26 17:52:40.111] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  12da76f6-b0fa-41c2-b0c5-bd094e84a2ae
+[2025-09-26 17:52:40.111] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get a06c0063-107f-45d0-99e1-4d517b21f1ea
+[2025-09-26 17:52:40.112] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 10bd77cd-3b4d-416c-b1ec-7a5060cea5c2
+[2025-09-26 17:52:40.112] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  a06c0063-107f-45d0-99e1-4d517b21f1ea
+[2025-09-26 17:52:40.115] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  10bd77cd-3b4d-416c-b1ec-7a5060cea5c2
+[2025-09-26 17:52:40.115] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get 7a347552-5681-498a-b821-55b118293f7e
+[2025-09-26 17:52:40.116] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  7a347552-5681-498a-b821-55b118293f7e
+[2025-09-26 17:52:40.139] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus f6e0f20f-cec7-4afb-a553-0dbe86cf6299
+[2025-09-26 17:52:40.140] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  f6e0f20f-cec7-4afb-a553-0dbe86cf6299
+[2025-09-26 17:52:40.140] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get d33f794b-6a5b-448a-b3f0-f4364a80f954
+[2025-09-26 17:52:40.141] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  d33f794b-6a5b-448a-b3f0-f4364a80f954
+[2025-09-26 18:02:40.085] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 11e54ee1-26b6-41c8-8e49-c25f7971c8b9
+[2025-09-26 18:02:40.086] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  11e54ee1-26b6-41c8-8e49-c25f7971c8b9
+[2025-09-26 18:02:40.086] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get cb152d66-797b-4a3d-b95b-9f88a9ed57b7
+[2025-09-26 18:02:40.110] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  cb152d66-797b-4a3d-b95b-9f88a9ed57b7
+[2025-09-26 18:02:40.114] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus f4bd5918-db72-4020-a679-deed4e841662
+[2025-09-26 18:02:40.115] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  f4bd5918-db72-4020-a679-deed4e841662
+[2025-09-26 18:02:40.115] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get ad2b5ebe-d1c5-4d47-be84-1492466f0200
+[2025-09-26 18:02:40.116] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  ad2b5ebe-d1c5-4d47-be84-1492466f0200
+[2025-09-26 18:02:40.139] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 0d6f42fe-f06f-4725-8f14-aab285bb5231
+[2025-09-26 18:02:40.140] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  0d6f42fe-f06f-4725-8f14-aab285bb5231
+[2025-09-26 18:02:40.140] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get bad652b4-67d2-42e5-ae7c-48e1b580a07c
+[2025-09-26 18:02:40.141] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  bad652b4-67d2-42e5-ae7c-48e1b580a07c
+[2025-09-26 18:12:40.084] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus d223b4f4-35cd-4d64-9cac-9b344de2c1bf
+[2025-09-26 18:12:40.086] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  d223b4f4-35cd-4d64-9cac-9b344de2c1bf
+[2025-09-26 18:12:40.086] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get c7e60a6e-fed1-40a4-9e70-9e7b944d370a
+[2025-09-26 18:12:40.113] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  c7e60a6e-fed1-40a4-9e70-9e7b944d370a
+[2025-09-26 18:12:40.118] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 4d01e375-e307-4711-8988-abd4a5679c68
+[2025-09-26 18:12:40.119] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  4d01e375-e307-4711-8988-abd4a5679c68
+[2025-09-26 18:12:40.119] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get d9b8f646-606c-4c56-bd26-2d7210805be2
+[2025-09-26 18:12:40.120] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  d9b8f646-606c-4c56-bd26-2d7210805be2
+[2025-09-26 18:12:40.139] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 67871c3a-da13-4020-9da8-14804f55f3b5
+[2025-09-26 18:12:40.140] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  67871c3a-da13-4020-9da8-14804f55f3b5
+[2025-09-26 18:12:40.140] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get 61451421-382d-403b-836a-d5a57b0a9875
+[2025-09-26 18:12:40.141] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  61451421-382d-403b-836a-d5a57b0a9875
+[2025-09-26 18:22:40.085] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus b1a8c7b1-5079-42ad-83e5-0a2f2edc09f1
+[2025-09-26 18:22:40.087] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  b1a8c7b1-5079-42ad-83e5-0a2f2edc09f1
+[2025-09-26 18:22:40.087] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get fb01ac58-05ef-46ea-ab86-b5db568ba5fc
+[2025-09-26 18:22:40.114] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  fb01ac58-05ef-46ea-ab86-b5db568ba5fc
+[2025-09-26 18:22:40.116] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 099ef912-0859-427a-821c-528fa68d09e3
+[2025-09-26 18:22:40.117] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  099ef912-0859-427a-821c-528fa68d09e3
+[2025-09-26 18:22:40.117] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get 748d3d95-3d27-4ab5-ba06-65bac52fb051
+[2025-09-26 18:22:40.118] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  748d3d95-3d27-4ab5-ba06-65bac52fb051
+[2025-09-26 18:22:40.139] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/getStatus 9dfa5921-1ba7-44f6-bbe2-96a70c8ad834
+[2025-09-26 18:22:40.140] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  9dfa5921-1ba7-44f6-bbe2-96a70c8ad834
+[2025-09-26 18:22:40.140] [info]  (renderer/utilityconnection)   SENDING REQUEST FOR NAME, ID:  license/get 496a0373-11b4-4bd6-9a42-bdae0661cf00
+[2025-09-26 18:22:40.141] [info]  (renderer/utilityconnection)   RECEIVED REPLY FOR REQUEST ID:  496a0373-11b4-4bd6-9a42-bdae0661cf00
