@@ -1,7 +1,0 @@
-@theme "./colors.rasi"
-
-configuration {
-    modi: "drun,run,window";
-    show-icons: true;
-}
-

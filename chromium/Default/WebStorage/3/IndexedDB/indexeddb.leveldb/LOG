@@ -1,6 +1,0 @@
-2025/09/24-10:59:21.420 10c24 Creating DB /home/nbardavid/.config/chromium/Default/WebStorage/3/IndexedDB/indexeddb.leveldb since it was missing.
-2025/09/24-10:59:21.426 10c24 Reusing MANIFEST /home/nbardavid/.config/chromium/Default/WebStorage/3/IndexedDB/indexeddb.leveldb/MANIFEST-000001
-2025/09/24-10:59:21.457 10c24 Level-0 table #5: started
-2025/09/24-10:59:21.460 10c24 Level-0 table #5: 1181 bytes OK
-2025/09/24-10:59:21.464 10c24 Delete type=0 #3
-2025/09/24-10:59:21.464 10c23 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
