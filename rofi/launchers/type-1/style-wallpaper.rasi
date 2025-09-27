@@ -10,7 +10,7 @@
 /*****----- Configuration -----*****/
 configuration {
 	modi:                       "drun,window";
-    show-icons:                 false;
+    show-icons:                 true;
     display-drun:               "";
     display-run:                "";
     display-filebrowser:        "";
@@ -250,7 +250,7 @@ element alternate.active {
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        24px;
+    size:                        320px;
     cursor:                      inherit;
 }
 element-text {
