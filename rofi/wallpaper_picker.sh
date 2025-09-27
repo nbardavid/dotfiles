@@ -18,7 +18,6 @@ FILE=$(
 
 if [ -n "$FILE" ]; then
     swww img "$DIR/$FILE" --transition-type center --transition-duration 2; matugen image "$DIR/$FILE"
-    python3 ~/.config/nvim/pywal/chadwal.py
 fi
 
 cp "$DIR/$FILE" "$SYMLINK_PATH"
