@@ -1,0 +1,25 @@
+{
+  "author": "acct_9181e805142440b5a2cbc163d20ec895",
+  "authorAccount": {
+    "email": "nbabardavid@gmail.com",
+    "firstName": "Nathan",
+    "lastName": ""
+  },
+  "created": "2024-12-16T14:54:01.123525Z",
+  "description": "",
+  "id": "e59c9766cf6ecd3ed19a4aa8a36a833959ee2c08",
+  "name": "Initial Snapshot",
+  "parent": "0000000000000000000000000000000000000000",
+  "state": [
+    {
+      "blob": "16e65bf4eb3207caaf769ed4ea1f45a15892dc5c",
+      "key": "env_c45709e7a2283adadf652387754bfe17cc5e361d",
+      "name": "Base Environment"
+    },
+    {
+      "blob": "ae3e1cb232807dcbaf9b4764be036e141b80b6ba",
+      "key": "wrk_6f070a98fffe42cb85599e8672ac65f0",
+      "name": "My Collection"
+    }
+  ]
+}
